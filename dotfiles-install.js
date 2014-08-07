@@ -8,6 +8,7 @@ cd(__dirname);
 /**
  * Install .zprezto if present
  */
+// TODO
 /*if (test('-d', ".zprezto")) {
 	echo('Installing prezto...');
 	cd(".zprezto/runcoms");
