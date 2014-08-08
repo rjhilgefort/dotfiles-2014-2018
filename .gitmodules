@@ -4,3 +4,6 @@
 [submodule ".src/terminal-piperita"]
 	path = .src/terminal-piperita
 	url = https://github.com/jacobtomlinson/terminal-piperita.git
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
