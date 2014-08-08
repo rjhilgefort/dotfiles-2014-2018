@@ -4,6 +4,8 @@ filetype off		" Required (for Vundle)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" New plugins can be found at: http://vim-scripts.org/vim/scripts.html
+
 
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -12,6 +14,36 @@ call vundle#begin()
 
 " Let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" Programming
+Plugin 'jQuery'
+
+" Snippets
+Plugin 'gmarik/snipmate.vim'
+
+" Syntax highlight
+Plugin 'cucumber.zip'
+Plugin 'Markdown'
+
+" Git integration
+Plugin 'git.zip'
+Plugin 'fugitive.vim'
+
+" (HT|X)ml tool
+Plugin 'ragtag.vim'
+
+" Utility
+Plugin 'repeat.vim'
+Plugin 'surround.vim'
+Plugin 'SuperTab'
+Plugin 'file-line'
+Plugin 'Align'
+
+" FuzzyFinder
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+
+Plugin 'ctrlp.vim'
 
 call vundle#end()
 
@@ -31,7 +63,10 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Color Scheme
+set number
+syntax enable
 "set background=dark
+"let g:molokai_termcolors = 256
 "colorscheme molokai
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)

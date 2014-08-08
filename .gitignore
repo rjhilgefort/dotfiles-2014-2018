@@ -1,2 +1,5 @@
+# vim
 .vim/.netrwhist
 .vim/swaps/*
+.vim/bundle/*
+!.vim/bundle/Vundle.vim
