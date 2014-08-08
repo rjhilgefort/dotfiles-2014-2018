@@ -30,7 +30,7 @@ cd(__dirname);
  */
 var blacklist = [
 	".git",
-	"dotfiles-install.js"
+	"install.js"
 ];
 
 ls('-A').forEach(function(toLink) {
