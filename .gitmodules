@@ -1,3 +1,9 @@
 [submodule ".src/solarized"]
 	path = .src/solarized
 	url = git://github.com/altercation/solarized.git
+[submodule ".src/dircolors-solarized"]
+	path = .src/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git
+[submodule ".src/terminal-piperita"]
+	path = .src/terminal-piperita
+	url = https://github.com/jacobtomlinson/terminal-piperita.git
