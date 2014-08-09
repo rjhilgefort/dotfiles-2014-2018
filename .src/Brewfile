@@ -44,6 +44,7 @@ install file-formula
 install git
 install less
 install openssh --with-brewed-openssl
+tap homebrew/versions # required for perl518
 install perl518 # must run "brew tap homebrew/versions" first!
 install python --with-brewed-openssl
 install rsync
