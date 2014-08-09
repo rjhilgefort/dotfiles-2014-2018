@@ -1,0 +1,86 @@
+# Install command-line tools using Homebrew
+# Usage: `brew bundle [.src/]Brewfile`
+
+# Make sure we’re using the latest Homebrew, Upgrade any already-installed formulae
+update
+upgrade
+
+# Install GNU core utilities (those that come with OS X are outdated)
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+install coreutils
+
+# GNU Command Line Tools
+# Note: --default-name ignores the 'g' prefix (which fixes conflict)
+install moreutils
+install binutils
+install diffutils
+install ed --default-names
+install findutils --default-names
+install gawk
+install gnu-indent --default-names
+install gnu-sed --default-names
+install gnu-tar --default-names
+install gnu-which --default-names
+install gnutls --default-names
+install grep --default-names
+install gzip
+install tmux
+install watch
+install wdiff --with-gettext
+install wget --enable-iri
+
+# Updated OSX tools
+install bash # Don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`
+install bash-completion
+install emacs
+install gdb # gdb requires further actions to make it work. See `brew info gdb`
+install gpatch
+install m4
+install make
+install nano
+
+# Install more recent versions of some OS X tools
+install file-formula
+install git
+install less
+install openssh --with-brewed-openssl
+install perl518 # must run "brew tap homebrew/versions" first!
+install python --with-brewed-openssl
+install rsync
+install svn
+install unzip
+install vim --override-system-vi
+install macvim --override-system-vim --custom-system-icons
+install zsh
+
+# install homebrew/dupes/grep
+# install homebrew/dupes/screen
+# install homebrew/php/php55 --with-gmp
+
+# Install other useful binaries
+# install ack
+# install bfg
+# # install exiv2
+# install foremost
+# install git
+# install hashpump
+# install imagemagick --with-webp
+# install lynx
+# install nmap
+# install node
+# install p7zip
+# install pigz
+# install pv
+# install rename
+# install rhino
+# install sqlmap
+# install tree
+# install ucspi-tcp # `tcpserver` et al.
+# install webkit2png
+# install xpdf
+# install zopfli
+
+# install homebrew/versions/lua52
+
+# Remove outdated versions from the cellar
+cleanup
