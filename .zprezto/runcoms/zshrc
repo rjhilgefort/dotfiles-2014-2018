@@ -71,9 +71,9 @@ alias mountdrobo="mount -t smbfs //rjhilgefort@10.0.1.2/Home ~/Drobo"
 alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
 
 # Mac dock mods - change the behavior of the dock
-alias dock-meh="defaults write com.apple.dock autohide-delay -float 3 && killall Dock" # 5 seconds
-alias dock-fuckoff="defaults write com.apple.dock autohide-delay -float 1000 && killall Dock" # 1000 seconds
 alias dock-reset="defaults delete com.apple.dock autohide-delay && killall Dock" # Back to normal
+alias dock-meh="defaults write com.apple.dock autohide-delay -float 2 && killall Dock" # 2 seconds
+alias dock-fuckoff="defaults write com.apple.dock autohide-delay -float 1000 && killall Dock" # 1000 seconds
 
 # control volume
 alias stfu="osascript -e 'set volume output muted true'"
