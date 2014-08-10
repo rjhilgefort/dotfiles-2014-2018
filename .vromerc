@@ -1,2 +1,3 @@
-" Increase default scroll increment a bit
-map j 5j
+" Increase default scroll a bit
+map j 3j
+map k 3k
