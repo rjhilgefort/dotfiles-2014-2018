@@ -1,3 +1,7 @@
+" vrome configuration file, see link below for more settings
+" https://github.com/jinzhu/vrome/wiki/vromerc-example-file
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Increase default scroll a bit
 map j 3j
 map k 3k
