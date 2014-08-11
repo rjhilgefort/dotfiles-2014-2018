@@ -1,0 +1,44 @@
+{
+	////////////////////////////////////////////////////////////////////////////
+	// General Config
+	////////////////////////////////////////////////////////////////////////////
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"vintage_start_in_command_mode": false,
+	"ensure_newline_at_eof_on_save": true,
+	"trim_trailing_white_space_on_save": true,
+	"spell_check": false,
+
+	////////////////////////////////////////////////////////////////////////////
+	// Theme + ST Window Settings
+	////////////////////////////////////////////////////////////////////////////
+	"theme": "Phoenix Dark.sublime-theme",
+	"bold_folder_labels": true,
+	"phoenix_color_expanded_folder": true,
+	"phoenix_color_green": true,
+	"phoenix_dirty_bottom_bar": true,
+	"phoenix_dirty_bottom_bar_red": true,
+	"phoenix_highlight_current_tab": true,
+	"phoenix_sidebar_tree_small": true,
+	"phoenix_solid_current_tab": true,
+	"phoenix_tabs_auto_width": true,
+	"phoenix_tabs_font_small": true,
+
+	////////////////////////////////////////////////////////////////////////////
+	// Color Scheme + Editor Settings
+	////////////////////////////////////////////////////////////////////////////
+	"color_scheme": "Packages/User/Tomorrow-Night-Eighties (SL).tmTheme",
+	"font_size": 15.0,
+	"tab_size": 4,
+	"highlight_line": true,
+	"detect_indentation": true,
+	"word_wrap": false,
+	"rulers":
+	[
+		80,
+		120
+	]
+}
