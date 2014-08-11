@@ -30,8 +30,6 @@ cd(__dirname);
  */
 var blacklist = [
 	".git",
-	"Brewfile",
-	"Caskfile",
 	"install.js"
 ];
 
