@@ -13,6 +13,10 @@ fi
 # http://stackoverflow.com/questions/564648/zsh-tab-completion-for-cd
 zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
 
+# tmuxinator completions
+# TODO: broken, tmux completions was called with "no arguments"
+# source ~/.bin/tmuxinator.zsh
+
 ################################################################################
 # Alias
 ################################################################################
