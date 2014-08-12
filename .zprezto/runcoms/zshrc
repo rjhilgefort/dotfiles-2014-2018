@@ -79,3 +79,6 @@ alias pumpitup="osascript -e 'set volume 7'"
 # clvv/fasd
 alias j='fasd_cd -d'
 alias jj='fasd_cd -d -i'
+alias v='fasd -f -e vim' # quick opening files with vim
+#alias m='fasd -f -e mplayer' # quick opening files with mplayer
+alias o='fasd -a -e open' # quick opening files with open
