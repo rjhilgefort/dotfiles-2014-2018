@@ -20,9 +20,6 @@ zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(
 # not helpfull helpers
 alias starwars="telnet towel.blinkenlights.nl"
 
-# v => vim
-alias v="vim"
-
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
@@ -78,3 +75,7 @@ alias dock-fuckoff="defaults write com.apple.dock autohide-delay -float 1000 && 
 # control volume
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
+
+# clvv/fasd
+alias j='fasd_cd -d'
+alias jj='fasd_cd -d -i'
