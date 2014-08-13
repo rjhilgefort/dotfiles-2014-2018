@@ -9,6 +9,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Up the default ulimit
+ulimit -n 2048
+
 # Bash style ..[TAB] completion
 # http://stackoverflow.com/questions/564648/zsh-tab-completion-for-cd
 zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
