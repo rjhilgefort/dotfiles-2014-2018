@@ -203,6 +203,19 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
 endif
 
+" Set rulers
+set colorcolumn=80
+
+" ctrlp settings
+"""""""""""""""""""""""""""""
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_user_command = 'find %s -type f'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+
 " Disable arrow keys
 map <up> <nop>
 map <down> <nop>
@@ -214,4 +227,5 @@ imap <left> <nop>
 imap <right> <nop>
 
 " <Esc> key alternative
+set timeout timeoutlen=1000 ttimeoutlen=100
 :imap jk <Esc>
