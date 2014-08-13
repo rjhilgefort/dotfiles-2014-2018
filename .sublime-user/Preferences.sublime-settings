@@ -1,0 +1,35 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Tomorrow-Night-Eighties (SL).tmTheme",
+	"detect_indentation": true,
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 15.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Markdown"
+	],
+	"rulers":
+	[
+		80,
+		120
+	],
+	"spell_check": false,
+	"tab_size": 4,
+	"theme": "Brogrammer.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": false,
+	"vintageous_autoindent": true,
+	"vintageous_enable_cmdline_mode": true,
+	"vintageous_hlsearch": true,
+	"vintageous_ignorecase": true,
+	"vintageous_incsearch": true,
+	"vintageous_log_level": "error",
+	"vintageous_magic": true,
+	"vintageous_reset_mode_when_switching_tabs": true,
+	"vintageous_use_ctrl_keys": true,
+	"vintageous_use_sys_clipboard": true,
+	"vintageous_verbose": false,
+	"word_wrap": false
+}

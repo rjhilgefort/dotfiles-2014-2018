@@ -1,0 +1,33 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"Comments Aware Enter",
+		"DashDoc",
+		"Dayle Rees Color Schemes",
+		"DocBlockr",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"JavaScript Snippets",
+		"JsFormat",
+		"LESS",
+		"Markdown Preview",
+		"RailsCasts Colour Scheme",
+		"Sass",
+		"SASS Snippets",
+		"SassBeautify",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-shellcheck",
+		"Theme - Phoenix",
+		"Tomorrow Color Schemes",
+		"Vintageous"
+	]
+}

@@ -3,3 +3,6 @@
 .vim/swaps/*
 .vim/bundle/*
 !.vim/bundle/Vundle.vim
+
+# sublime text
+.sublime-user/*.cache
