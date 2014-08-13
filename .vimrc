@@ -6,7 +6,6 @@ filetype off		" Required (for Vundle)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " New plugins can be found at: http://vim-scripts.org/vim/scripts.html
 
-
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -37,7 +36,7 @@ Plugin 'repeat.vim'
 Plugin 'surround.vim'
 Plugin 'SuperTab'
 Plugin 'file-line'
-Plugin 'Align'
+"Plugin 'Align'
 
 " FuzzyFinder
 Plugin 'L9'
@@ -104,7 +103,8 @@ if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
 
-set backupskip=/tmp/*,/private/tmp/*			" Don’t create backups when editing files in certain directories
+" Don’t create backups when editing files in certain directories
+set backupskip=/tmp/*,/private/tmp/*
 
 " Respect modeline in files
 set modeline
@@ -212,3 +212,6 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" <Esc> key alternative
+:imap jk <Esc>
