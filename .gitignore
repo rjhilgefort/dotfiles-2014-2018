@@ -6,3 +6,9 @@
 
 # sublime text
 .sublime-user/*.cache
+.sublime-user/Package\ Control.last-run
+.sublime-user/Package\ Control.ca-list
+.sublime-user/Package\ Control.ca-bundle
+.sublime-user/Package\ Control.system-ca-bundle
+.sublime-user/Package\ Control.cache/
+.sublime-user/Package\ Control.ca-certs/
