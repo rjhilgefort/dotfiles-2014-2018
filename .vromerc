@@ -6,5 +6,8 @@
 map j 3j
 map k 3k
 
-# Don't follow new tab
+" Don't follow new tab
 set follow_new_tab=0
+
+" Disable Vrome in some sites, multiple URLs can be separated with ','
+set disablesites=mail.google.com, newsblur.com
