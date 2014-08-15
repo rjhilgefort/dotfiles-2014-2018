@@ -10,6 +10,7 @@ tap caskroom/versions
 ###############################################################################
 cask install dropbox 2> /dev/null
 cask install google-chrome 2> /dev/null
+cask install alfred 2> /dev/null
 cask install iterm2 2> /dev/null
 cask install sublime-text3 2> /dev/null
 cask install virtualbox 2> /dev/null
