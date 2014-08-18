@@ -13,6 +13,8 @@ cask install google-chrome 2> /dev/null
 cask install alfred 2> /dev/null
 cask install iterm2 2> /dev/null
 cask install sublime-text3 2> /dev/null
+cask install evernote 2> /dev/null
+cask install spotify 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
 
