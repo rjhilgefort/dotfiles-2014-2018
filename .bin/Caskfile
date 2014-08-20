@@ -15,14 +15,22 @@ cask install iterm2 2> /dev/null
 cask install sublime-text3 2> /dev/null
 cask install evernote 2> /dev/null
 cask install spotify 2> /dev/null
+# cask install spotify-notifications 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
 
 ###############################################################################
 # Nice To Have
 ###############################################################################
+cask install colloquy 2> /dev/null
 cask install imagealpha 2> /dev/null
 cask install torbrowser 2> /dev/null
+
+###############################################################################
+# Utility
+###############################################################################
+# cask install java 2> /dev/null
+cask install silverlight 2> /dev/null
 
 ###############################################################################
 # Maybe/Suggested/Archive
