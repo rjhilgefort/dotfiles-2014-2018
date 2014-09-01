@@ -3,8 +3,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Increase default scroll a bit
-map j 3j
-map k 3k
+map j 4j
+map k 4k
 
 " Don't follow new tab
 set follow_new_tab=0
