@@ -24,6 +24,9 @@ zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(
 # Alias
 ################################################################################
 
+# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
+alias zs-qa-tunnel="ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N"
+
 # not helpfull helpers
 alias starwars="telnet towel.blinkenlights.nl"
 
