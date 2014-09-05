@@ -93,7 +93,7 @@ slate.bindAll({
         d: $.focus('Dash'),
         t: $.focus('iTerm'),
         f: $.focus('Finder'),
-        e: $.focus('Sparrow'),
+        e: $.focus('Airmail Beta'),
         x: $.focus('X11'),
         p: $.focus('Spotify'),
         r: $.focus('Reminders'),
