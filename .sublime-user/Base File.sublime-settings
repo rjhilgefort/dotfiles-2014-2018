@@ -1,5 +1,5 @@
 {
-	"jsdocs_indentation_spaces_same_para": 3,
+	"jsdocs_indentation_spaces_same_para": 4,
 	"jsdocs_align_tags": "deep",
 	"jsdocs_extra_tags": [
 		"@since v${1:0.0.0}"
