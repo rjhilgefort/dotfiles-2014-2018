@@ -59,6 +59,7 @@ install tmux
 install node
 install ack
 install fasd
+install git-extras
 
 # install homebrew/dupes/grep
 # install homebrew/dupes/screen
