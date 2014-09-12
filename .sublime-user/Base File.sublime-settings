@@ -1,0 +1,10 @@
+{
+	"jsdocs_indentation_spaces_same_para": 3,
+	"jsdocs_align_tags": "deep",
+	"jsdocs_extra_tags": [
+		"@since v${1:0.0.0}"
+	],
+	"jsdocs_extra_tags_go_after": true,
+	"jsdocs_spacer_between_sections": "after_description",
+	"jsdocs_autoadd_method_tag": true
+}
