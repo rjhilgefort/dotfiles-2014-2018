@@ -5,6 +5,8 @@
 update
 upgrade
 
+tap homebrew/dupes
+
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 install coreutils
@@ -17,6 +19,7 @@ install diffutils
 install ed --default-names
 install findutils --default-names
 install gawk
+install guile --default-names
 install gnu-indent --default-names
 install gnu-sed --default-names
 install gnu-tar --default-names
@@ -32,7 +35,7 @@ install wget --enable-iri
 install bash # Don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`
 install bash-completion
 install emacs
-install gdb # gdb requires further actions to make it work. See `brew info gdb`
+install gdb --with-brewed-python # gdb requires further actions to make it work. See `brew info gdb`
 install gpatch
 install m4
 install make
@@ -61,16 +64,16 @@ install ack
 install fasd
 install git-extras
 
-# install homebrew/dupes/grep
-# install homebrew/dupes/screen
-# install homebrew/php/php55 --with-gmp
+install homebrew/dupes/grep
+install homebrew/dupes/screen
+install homebrew/php/php55 --with-gmp
 
-# Install other useful binaries
+# Other useful binaries
 # install bfg
-# # install exiv2
+# install exiv2
 # install foremost
 # install hashpump
-# install imagemagick --with-webp
+install imagemagick --with-webp
 # install lynx
 # install nmap
 # install p7zip

@@ -1,4 +1,4 @@
-# Install native apps
+# Install Native Apps
 # Usage: `brew bundle [.src/]Caskfile`
 
 # Setup 
@@ -36,7 +36,7 @@ cask install torbrowser 2> /dev/null
 ###############################################################################
 # Utility
 ###############################################################################
-# cask install java 2> /dev/null
+cask install java 2> /dev/null
 cask install silverlight 2> /dev/null
 
 ###############################################################################
