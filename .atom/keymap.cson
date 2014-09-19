@@ -19,3 +19,24 @@
 # You can find more information about keymaps in these guides:
 # * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
 # * https://atom.io/docs/latest/advanced/keymaps
+
+# work around missing window pane bindings in vim-mode
+'.vim-mode.command-mode:not(.mini)':
+  'ctrl-f h': 'window:focus-pane-on-left'
+  'ctrl-f left': 'window:focus-pane-on-left'
+  'ctrl-f j': 'window:focus-pane-below'
+  'ctrl-f down': 'window:focus-pane-below'
+  'ctrl-f k': 'window:focus-pane-above'
+  'ctrl-f up': 'window:focus-pane-above'
+  'ctrl-f l': 'window:focus-pane-on-right'
+  'ctrl-f right': 'window:focus-pane-on-right'
+  'ctrl-f o': 'window:focus-next-pane'
+  'ctrl-f ctrl-o': 'window:focus-previous-pane'
+  'ctrl-f ctrl-x': 'pane:close'
+  'ctrl-f q': 'core:close'
+
+# Remap escape for vim
+'.editor.vim-mode:not(.command-mode)':
+  'j k': 'vim-mode:activate-command-mode'
+'.editor.vim-mode.insert-mode':
+  'j': 'insert-incomplete-keybinding'

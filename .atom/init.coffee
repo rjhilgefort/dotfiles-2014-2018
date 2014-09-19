@@ -12,3 +12,9 @@
 #   editor = editorView.getEditor()
 #   if path.extname(editor.getPath()) is '.md'
 #     editor.setSoftWrapped(true)
+
+atom.workspaceView.command 'insert-incomplete-keybinding', (e)->
+  if oe = e.originalEvent && e.originalEvent.originalEvent
+    char = String.fromCharCode(oe.which)
+    char = char.toLowerCase() unless oe.shift
+    atom.workspace.activePaneItem.insertText(char)
