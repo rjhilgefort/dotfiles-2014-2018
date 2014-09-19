@@ -87,9 +87,9 @@ slate.bindAll({
         '3': $('toss', '2', 'resize'),
         
 		// direct focus 
-        a: $.focus('Messages'),
+        a: $.focus('Atom'),
         c: $.focus('Google Chrome'),
-        s: $.focus('Sublime Text'),
+        s: $.focus('Messages'),
         d: $.focus('Dash'),
         t: $.focus('iTerm'),
         f: $.focus('Finder'),

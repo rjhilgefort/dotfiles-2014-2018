@@ -11,11 +11,12 @@ tap caskroom/versions
 cask install dropbox 2> /dev/null
 cask install google-chrome 2> /dev/null
 cask install alfred 2> /dev/null
+cask install bartender 2> /dev/null
 cask install iterm2 2> /dev/null
 cask install slate 2> /dev/null
-cask install sublime-text3 2> /dev/null
 cask install dash 2> /dev/null
-cask install bartender 2> /dev/null
+cask install sublime-text3 2> /dev/null
+cask install atom 2> /dev/null
 cask install airmail-beta 2> /dev/null
 cask install evernote 2> /dev/null
 cask install spotify 2> /dev/null
