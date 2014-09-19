@@ -1,0 +1,17 @@
+'exception-reporting':
+  'userId': 'd51e27c2-19ee-e044-dcfe-6cc5174383b7'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': 'f725ce6db1cf0f7a124a271653f2250f407f4822'
+'editor':
+  'fontSize': 15
+  'invisibles': {}
+  'tabLength': 4
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'tomorrow-night-eighties-syntax'
+  ]
+  'projectHome': '/Users/rjhilgefort/Projects'
+'jsformat': 'format_on_save'
