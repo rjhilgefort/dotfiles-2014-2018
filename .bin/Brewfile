@@ -5,7 +5,9 @@
 update
 upgrade
 
+# MOAR PACKAGES!
 tap homebrew/dupes
+tap homebrew/versions
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -35,7 +37,6 @@ install wget --enable-iri
 install bash # Don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`
 install bash-completion
 install emacs
-install gdb --with-brewed-python # gdb requires further actions to make it work. See `brew info gdb`
 install gpatch
 install m4
 install make
@@ -46,23 +47,26 @@ install file-formula
 install git
 install less
 install openssh --with-brewed-openssl
-tap homebrew/versions # required for perl518
 install perl518 # must run "brew tap homebrew/versions" first!
 install python --with-brewed-openssl
 install rsync
 install svn
 install unzip
 install vim --override-system-vi
-install macvim --override-system-vim --custom-system-icons
-install zsh
 
 # General Utilities
-install reattach-to-user-namespace
-install tmux
 install node
+install zsh
+install mongo
+install tmux
+install reattach-to-user-namespace
+install tig
 install ack
 install fasd
 install git-extras
+install macvim --custom-system-icons
+install zlib
+install gdb --with-brewed-python
 
 install homebrew/dupes/grep
 install homebrew/dupes/screen
