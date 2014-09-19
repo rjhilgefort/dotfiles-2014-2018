@@ -3,3 +3,23 @@
   'paths': [
     '/Users/rjhilgefort/Dropbox/Projects/zipscene/wildcat'
   ]
+'clientdashboard':
+  'title': 'clientdashboard'
+  'paths': [
+    '/Users/rjhilgefort/Dropbox/Projects/zipscene/clientdashboard'
+  ]
+'presentation':
+  'title': 'presentation'
+  'paths': [
+    '/Users/rjhilgefort/Dropbox/Projects/zipscene/presentation'
+  ]
+'zs-api':
+  'title': 'zs-api'
+  'paths': [
+    '/Users/rjhilgefort/Dropbox/Projects/zipscene/zs-api'
+  ]
+'dotfiles':
+  'title': 'dotfiles'
+  'paths': [
+    '/Users/rjhilgefort/Dropbox/Projects/dotfiles'
+  ]

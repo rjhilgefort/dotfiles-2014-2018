@@ -18,7 +18,7 @@
 'docblockr':
   'extra_tags_go_after': true
   'extra_tags': [
-    '["@since v${1:0.0.0}"]'
+    '@since v${1:0.0.0}'
   ]
   'auto_add_method_tag': true
   'indentation_spaces_same_para': 4
