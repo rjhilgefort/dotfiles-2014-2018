@@ -1,6 +1,6 @@
 [submodule ".src/solarized"]
 	path = .src/solarized
-	url = git://github.com/altercation/solarized.git
+	url = https://github.com/altercation/solarized.git
 [submodule ".src/terminal-piperita"]
 	path = .src/terminal-piperita
 	url = https://github.com/jacobtomlinson/terminal-piperita.git
@@ -9,4 +9,4 @@
 	url = https://github.com/gmarik/Vundle.vim.git
 [submodule ".src/reslate"]
 	path = .src/reslate
-	url = gh:lunixbochs/reslate
+	url = https://github.com/lunixbochs/reslate.git
