@@ -1,3 +1,8 @@
+[user]
+
+	name = Rob Hilgefort
+	email = rjhilgefort@gmail.com
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -27,6 +32,7 @@
 
 	# Switch to a branch, creating it if necessary
 	co = checkout
+
 	# go = checkout -B
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
@@ -155,20 +161,13 @@
 
 [push]
 
-	# Use the Git 1.x.x default to avoid errors on machines with old Git
-	# installations. To use `simple` instead, add this to your `~/.extra` file:
-	# `git config --global push.default simple`. See http://git.io/mMah-w.
 	default = simple
-
-# URL shorthands #
-##################
 
 # github
 [url "git@github.com:"]
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
-
 [url "git://github.com/"]
 	insteadOf = "github:"
 
@@ -177,7 +176,6 @@
 	insteadOf = "gst:"
 	pushInsteadOf = "gist:"
 	pushInsteadOf = "git://gist.github.com/"
-
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 
@@ -186,7 +184,6 @@
 	insteadOf = "bb:"
 	pushInsteadOf = "bitbucket:"
 	pushInsteadOf = "git://bitbucket.org/"
-
 [url "git://bitbucket.org/"]
 	insteadOf = "bitbucket:"
 
@@ -195,14 +192,6 @@
 	insteadOf = "zs:"
 	pushInsteadOf = "zipscene:"
 	pushInsteadOf = "git://git.zipscene.com/"
-
 [url "git://git.zipscene.com/"]
 	insteadOf = "zipscene:"
-
-[push]
-	default = current
-
-[user]
-	name = Rob Hilgefort
-	email = rjhilgefort@gmail.com
 

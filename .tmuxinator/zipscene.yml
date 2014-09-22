@@ -1,0 +1,43 @@
+# ~/.tmuxinator/zipscene.yml
+
+name: zipscene
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+windows:
+  - wildcat:
+      layout: main-vertical
+      panes:
+        - editor:
+          - j wildcat
+          - clear
+        - runner:
+          - j wildcat
+          - grunt serve -B zcafe -D gma --open
+        - tig:
+          - j wildcat
+          - tig status
+  - dotfiles:
+      layout: main-vertical
+      panes:
+        - editor:
+          - j dotfiles
+          - vim
+        - tig:
+          - j dotfiles
+          - tig status
+  - misc:

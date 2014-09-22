@@ -12,3 +12,9 @@
 .sublime-user/Package\ Control.system-ca-bundle
 .sublime-user/Package\ Control.cache/
 .sublime-user/Package\ Control.ca-certs/
+
+# atom
+.atom/.gitignore
+.atom/compile-cache
+.atom/packages
+.atom/storage

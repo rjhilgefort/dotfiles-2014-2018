@@ -7,8 +7,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Markdown",
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"rulers":
 	[
