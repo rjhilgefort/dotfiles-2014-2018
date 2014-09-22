@@ -8,6 +8,8 @@
   'fontSize': 15
   'invisibles': {}
   'tabLength': 4
+  'showInvisibles': true
+  'softTabs': false
 'core':
   'themes': [
     'atom-dark-ui'
