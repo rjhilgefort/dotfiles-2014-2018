@@ -1,5 +1,5 @@
 # Install command-line tools using Homebrew
-# Usage: `brew bundle [.src/]Brewfile`
+# Usage: `brew bundle [.bin/]Brewfile`
 
 # Make sure we’re using the latest Homebrew, Upgrade any already-installed formulae
 update
