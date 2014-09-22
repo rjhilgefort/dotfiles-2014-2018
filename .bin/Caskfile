@@ -1,5 +1,5 @@
 # Install Native Apps
-# Usage: `brew bundle [.src/]Caskfile`
+# Usage: `brew bundle [.bin/]Caskfile`
 
 # Setup 
 install caskroom/cask/brew-cask
@@ -23,10 +23,12 @@ cask install spotify 2> /dev/null
 # cask install spotify-notifications 2> /dev/null
 cask install firefox-esr-us 2> /dev/null
 cask install vlc 2> /dev/null
+# cask install istat-menus4 2> /dev/null
 
 ###############################################################################
 # Nice To Have
 ###############################################################################
+cask install google-drive 2> /dev/null
 cask install adobe-reader 2> /dev/null
 cask install flash 2> /dev/null
 cask install robomongo 2> /dev/null
