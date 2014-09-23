@@ -5,7 +5,7 @@
 'metrics':
   'userId': 'f725ce6db1cf0f7a124a271653f2250f407f4822'
 'editor':
-  'fontSize': 15
+  'fontSize': 14
   'invisibles': {}
   'tabLength': 4
   'showInvisibles': true
@@ -16,6 +16,7 @@
     'tomorrow-night-eighties-syntax'
   ]
   'projectHome': '/Users/rjhilgefort/Projects'
+  'destroyEmptyPanes': false
 'jsformat': 'format_on_save'
 'docblockr':
   'extra_tags_go_after': true
@@ -24,5 +25,7 @@
   ]
   'auto_add_method_tag': true
   'indentation_spaces_same_para': 4
-  'spacer_between_sections': true
 'vim-mode': {}
+'whitespace': {}
+'wordcount':
+  'files': {}
