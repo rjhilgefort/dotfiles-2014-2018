@@ -7,6 +7,9 @@ cd(__dirname);
 // Link items at root of dotfiles project
 var blacklist = [
 	".git",
+	".gitignore",
+	".gitmodules",
+	"TODO.md",
 	"install.js"
 ];
 
