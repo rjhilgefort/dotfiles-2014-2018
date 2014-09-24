@@ -26,6 +26,12 @@
   'auto_add_method_tag': true
   'indentation_spaces_same_para': 4
 'vim-mode': {}
+'highlight-column':
+  'opacity': 0.15
+  'enableHighlight': false
 'whitespace': {}
 'wordcount':
   'files': {}
+'git-blame':
+  'useCustomUrlTemplateIfStandardRemotesFail': true
+  'customCommitUrlTemplateString': 'https://git.zipscene.com/<%- project %>/<%- repo %>/commit/<%- revision %>'
