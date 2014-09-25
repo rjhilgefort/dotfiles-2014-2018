@@ -3,7 +3,7 @@
 	url = https://github.com/lunixbochs/reslate.git
 [submodule ".zprezto"]
 	path = .zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
+	url = https://github.com/rjhilgefort/prezto.git
 [submodule ".src/solarized"]
 	path = .src/solarized
 	url = https://github.com/altercation/solarized.git
