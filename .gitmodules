@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/Vundle.vim"]
 	path = .vim/bundle/Vundle.vim
 	url = https://github.com/gmarik/Vundle.vim.git
+[submodule ".src/tomorrow-theme"]
+	path = .src/tomorrow-theme
+	url = https://github.com/chriskempson/tomorrow-theme.git
