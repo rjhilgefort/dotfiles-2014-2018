@@ -72,6 +72,10 @@ install homebrew/dupes/grep
 install homebrew/dupes/screen
 install homebrew/php/php55 --with-gmp
 
+# Android
+install android-sdk
+install ant
+
 # Other useful binaries
 # install bfg
 # install exiv2
