@@ -1,7 +1,8 @@
-npm
-* shelljs
-* grunt-cli
-* grunt
-
-gem
-* tmuxinator
+- npm install script
+	- shelljs
+	- grunt-cli
+	- grunt
+- gem install script
+	- tmuxinator
+- setup
+	- link prezto submodule `pure` to prompts
