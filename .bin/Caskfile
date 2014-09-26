@@ -23,6 +23,7 @@ cask install spotify 2> /dev/null
 # cask install spotify-notifications 2> /dev/null
 cask install firefox-esr-us 2> /dev/null
 cask install vlc 2> /dev/null
+cask install onepassword 2> /dev/null
 # cask install istat-menus4 2> /dev/null
 
 ###############################################################################
