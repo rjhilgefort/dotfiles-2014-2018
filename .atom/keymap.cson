@@ -20,6 +20,10 @@
 # * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
 # * https://atom.io/docs/latest/advanced/keymaps
 
+'body':
+  'ctrl-f v': 'pane:split-right'
+  'ctrl-f s': 'pane:split-down'
+
 # work around missing window pane bindings in vim-mode
 '.vim-mode.command-mode:not(.mini)':
   'ctrl-f h': 'window:focus-pane-on-left'
@@ -32,7 +36,7 @@
   'ctrl-f right': 'window:focus-pane-on-right'
   'ctrl-f o': 'window:focus-next-pane'
   'ctrl-f ctrl-o': 'window:focus-previous-pane'
-  'ctrl-f ctrl-x': 'pane:close'
+  'ctrl-f x': 'pane:close'
   'ctrl-f q': 'core:close'
 
 # Remap escape for vim
