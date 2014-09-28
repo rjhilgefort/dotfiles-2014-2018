@@ -42,9 +42,7 @@
 		" Color Scheme
 		set number
 		syntax enable
-		"set background=dark
-		"let g:molokai_termcolors = 256
-		"colorscheme molokai
+		colorscheme Tomorrow-Night
 
 		" Use the OS clipboard by default (on versions compiled with `+clipboard`)
 		set clipboard=unnamed
