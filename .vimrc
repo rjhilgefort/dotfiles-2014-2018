@@ -39,168 +39,170 @@
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Color Scheme
-set number
-syntax enable
-"set background=dark
-"let g:molokai_termcolors = 256
-"colorscheme molokai
+		" Color Scheme
+		set number
+		syntax enable
+		"set background=dark
+		"let g:molokai_termcolors = 256
+		"colorscheme molokai
 
-" Use the OS clipboard by default (on versions compiled with `+clipboard`)
-set clipboard=unnamed
+		" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+		set clipboard=unnamed
 
-" Enhance command-line completion
-set wildmenu
+		" Enhance command-line completion
+		set wildmenu
 
-" Allow cursor keys in insert mode
-set esckeys
+		" Allow cursor keys in insert mode
+		set esckeys
 
-" Allow backspace in insert mode
-set backspace=indent,eol,start
+		" Allow backspace in insert mode
+		set backspace=indent,eol,start
 
-" Optimize for fast terminal connections
-set ttyfast
+		" Optimize for fast terminal connections
+		set ttyfast
 
-" Add the g flag to search/replace by default
-set gdefault
+		" Add the g flag to search/replace by default
+		set gdefault
 
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
+		" Use UTF-8 without BOM
+		set encoding=utf-8 nobomb
 
-" Change mapleader
-let mapleader=","
+		" Change mapleader
+		let mapleader=","
 
-" Don’t add empty newlines at the end of files
-"set binary
-"set noeol
+		" Don’t add empty newlines at the end of files
+		"set binary
+		"set noeol
 
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-if exists("&undodir")
-	set undodir=~/.vim/undo
-endif
+		" Centralize backups, swapfiles and undo history
+		set backupdir=~/.vim/backups
+		set directory=~/.vim/swaps
+		if exists("&undodir")
+			set undodir=~/.vim/undo
+		endif
 
-" Don’t create backups when editing files in certain directories
-set backupskip=/tmp/*,/private/tmp/*
+		" Don’t create backups when editing files in certain directories
+		set backupskip=/tmp/*,/private/tmp/*
 
-" Respect modeline in files
-set modeline
-set modelines=4
+		" Respect modeline in files
+		set modeline
+		set modelines=4
 
-" Enable per-directory .vimrc files and disable unsafe commands in them
-set exrc
-set secure
+		" Enable per-directory .vimrc files and disable unsafe commands in them
+		set exrc
+		set secure
 
-" Enable line numbers
-set number
+		" Enable line numbers
+		set number
 
-" Enable syntax highlighting
-syntax on
+		" Enable syntax highlighting
+		syntax on
 
-" Highlight current line
-set cursorline
+		" Highlight current line
+		set cursorline
 
-" Make tabs as wide as four spaces
-set tabstop=4
+		" Make tabs as wide as four spaces
+		set tabstop=4
 
-" Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list " nolist
+		" Show “invisible” characters
+		set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_
+		set list " nolist
 
-" Highlight searches
-set hlsearch
+		" Highlight searches
+		set hlsearch
 
-" Ignore case of searches
-set ignorecase
+		" Ignore case of searches
+		set ignorecase
 
-" Highlight dynamically as pattern is typed
-set incsearch
+		" Highlight dynamically as pattern is typed
+		set incsearch
 
-" Always show status line
-set laststatus=2
+		" Always show status line
+		set laststatus=2
 
-" Enable mouse in all modes
-set mouse=
+		" Enable mouse in all modes
+		set mouse=
 
-" Disable error bells
-"set noerrorbells
+		" Disable error bells
+		"set noerrorbells
 
-" Don’t reset cursor to start of line when moving around.
-set nostartofline
+		" Don’t reset cursor to start of line when moving around.
+		set nostartofline
 
-" Show the cursor position
-set ruler
+		" Show the cursor position
+		set ruler
 
-" Don’t show the intro message when starting Vim
-set shortmess=atI
+		" Don’t show the intro message when starting Vim
+		set shortmess=atI
 
-" Show the current mode
-set showmode
+		" Show the current mode
+		set showmode
 
-" Show the filename in the window titlebar
-set title
+		" Show the filename in the window titlebar
+		set title
 
-" Show the (partial) command as it’s being typed
-set showcmd
+		" Show the (partial) command as it’s being typed
+		set showcmd
 
-" Use relative line numbers
-"if exists("&relativenumber")
-"	set relativenumber
-"	au BufReadPost * set relativenumber
-"endif
+		" Use relative line numbers
+		"if exists("&relativenumber")
+		"	set relativenumber
+		"	au BufReadPost * set relativenumber
+		"endif
 
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
+		" Start scrolling three lines before the horizontal window border
+		set scrolloff=3
 
-" NO wordwrap
-set nowrap
+		" No wordwrap
+		set nowrap
 
-" Strip trailing whitespace (,ss)
-function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
-endfunction
-noremap <leader>ss :call StripWhitespace()<CR>
+		" Strip trailing whitespace (,ss)
+		function! StripWhitespace()
+			let save_cursor = getpos(".")
+			let old_query = getreg('/')
+			:%s/\s\+$//e
+			call setpos('.', save_cursor)
+			call setreg('/', old_query)
+		endfunction
+		noremap <leader>ss :call StripWhitespace()<CR>
 
-" Save a file as root (,W)
-noremap <leader>W :w !sudo tee % > /dev/null<CR>
+		" Save a file as root (,W)
+		noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
-" Automatic commands
-if has("autocmd")
-	" Enable file type detection
-	filetype on
-	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-	autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
-endif
+		" Automatic commands
+		if has("autocmd")
+			" Enable file type detection
+			filetype on
+			" Treat .json files as .js
+			autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+			autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
+		endif
 
-" Set rulers
-set colorcolumn=80
+		" Set rulers
+		set colorcolumn=80,120
 
+		" Disable arrow keys
+		map <up> <nop>
+		map <down> <nop>
+		map <left> <nop>
+		map <right> <nop>
+		imap <up> <nop>
+		imap <down> <nop>
+		imap <left> <nop>
+		imap <right> <nop>
+
+		" <Esc> key alternative
+		set timeout timeoutlen=1000 ttimeoutlen=100
+		:imap jk <Esc>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ctrlp settings
-"""""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_user_command = 'find %s -type f'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ }
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+		let g:ctrlp_working_path_mode = 'ra'
+		let g:ctrlp_show_hidden = 1
+		let g:ctrlp_user_command = 'find %s -type f'
+		let g:ctrlp_custom_ignore = {
+		  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+		  \ 'file': '\v\.(exe|so|dll)$',
+		  \ }
 
-" Disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
-" <Esc> key alternative
-set timeout timeoutlen=1000 ttimeoutlen=100
-:imap jk <Esc>
