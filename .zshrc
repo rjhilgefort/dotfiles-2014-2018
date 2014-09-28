@@ -96,6 +96,7 @@ alias jless='fasd -f -e less'
 # ssh shortcuts
 alias ssh-gd='ssh robhilgefort@97.74.249.1'
 alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
+alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
 alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
 alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
 # ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
