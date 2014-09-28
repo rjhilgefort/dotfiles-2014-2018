@@ -27,9 +27,6 @@ zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(
 # Always list after cd
 cd() { builtin cd "$@"; l; }
 
-# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
-alias zs-qa-tunnel="ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N"
-
 # not helpfull helpers
 alias starwars="telnet towel.blinkenlights.nl"
 
@@ -95,4 +92,12 @@ alias jvim='fasd -f -e vim'
 alias jopen='fasd -f -e open'
 alias jcat='fasd -f -e cat'
 alias jless='fasd -f -e less'
+
+# ssh shortcuts
+alias ssh-gd='ssh robhilgefort@97.74.249.1'
+alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
+alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
+alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
+# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
+alias ssh-zs-qa-tunnel="ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N"
 

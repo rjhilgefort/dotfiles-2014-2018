@@ -36,3 +36,4 @@
   'useCustomUrlTemplateIfStandardRemotesFail': true
   'customCommitUrlTemplateString': 'https://git.zipscene.com/<%- project %>/<%- repo %>/commit/<%- revision %>'
 'autocomplete-plus': {}
+'spell-check': {}
