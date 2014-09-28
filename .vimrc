@@ -1,61 +1,32 @@
-set nocompatible	" Be iMproved, required
-filetype off		" Required (for Vundle)
+""""""""""""""""""""
+" NEOBUNDLE:
+""""""""""""""""""""
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vundle
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" New plugins can be found at: http://vim-scripts.org/vim/scripts.html
+		" Note: Skip initialization for vim-tiny or vim-small.
+		 if !1 | finish | endif
 
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+		 if has('vim_starting')
+		   set nocompatible " Be iMproved
+		   set runtimepath+=~/.vim/bundle/neobundle.vim/
+		 endif
 
-call vundle#begin()
+		 call neobundle#begin(expand('~/.vim/bundle/'))
 
-" Let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+		 " Plugins
+		 """""""""
 
-" Programming
-Plugin 'jQuery'
+				" Let NeoBundle manage NeoBundle
+				NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Snippets
-Plugin 'gmarik/snipmate.vim'
+		""""""""""
+		" /Plugins
 
-" Syntax highlight
-Plugin 'cucumber.zip'
-Plugin 'Markdown'
+		 call neobundle#end()
 
-" Git integration
-Plugin 'git.zip'
-Plugin 'fugitive.vim'
+		 filetype plugin indent on
 
-" (HT|X)ml tool
-Plugin 'ragtag.vim'
-
-" Utility
-Plugin 'repeat.vim'
-Plugin 'surround.vim'
-Plugin 'SuperTab'
-Plugin 'file-line'
-"Plugin 'Align'
-
-" FuzzyFinder
-Plugin 'L9'
-Plugin 'FuzzyFinder'
-
-Plugin 'ctrlp.vim'
-
-call vundle#end()
-
-filetype plugin indent on
-"filetype plugin on			" Use instead to ignore plugin indent changes
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
+		 " Install any uninstalled bundles found on startup
+		 NeoBundleCheck
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General

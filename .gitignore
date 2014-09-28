@@ -2,7 +2,7 @@
 .vim/.netrwhist
 .vim/swaps/*
 .vim/bundle/*
-!.vim/bundle/Vundle.vim
+!.vim/bundle/neobundle.vim
 
 # sublime text
 .sublime-user/*.cache
