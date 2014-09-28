@@ -1,6 +1,6 @@
-""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NEOBUNDLE:
-""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 		" Note: Skip initialization for vim-tiny or vim-small.
 		 if !1 | finish | endif
@@ -17,7 +17,14 @@
 
 				" Let NeoBundle manage NeoBundle
 				NeoBundleFetch 'Shougo/neobundle.vim'
-
+				
+				" Install vimproc.vim
+				let g:make = 'gmake'
+				if system('uname -o') =~ '^GNU/'
+						let g:make = 'make'
+				endif
+				NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
+				
 		""""""""""
 		" /Plugins
 
@@ -28,9 +35,9 @@
 		 " Install any uninstalled bundles found on startup
 		 NeoBundleCheck
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Color Scheme
 set number
@@ -94,15 +101,12 @@ syntax on
 " Highlight current line
 set cursorline
 
-" Make tabs as wide as two spaces
+" Make tabs as wide as four spaces
 set tabstop=4
 
 " Show “invisible” characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-"set list
-
-" Hide invisible characters
-set nolist
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list " nolist
 
 " Highlight searches
 set hlsearch
@@ -120,7 +124,7 @@ set laststatus=2
 set mouse=
 
 " Disable error bells
-set noerrorbells
+"set noerrorbells
 
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
