@@ -2,212 +2,261 @@
 " NEOBUNDLE:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-		" Note: Skip initialization for vim-tiny or vim-small.
-		 if !1 | finish | endif
+	" Note: Skip initialization for vim-tiny or vim-small.
+	 if !1 | finish | endif
 
-		 if has('vim_starting')
-		   set nocompatible " Be iMproved
-		   set runtimepath+=~/.vim/bundle/neobundle.vim/
-		 endif
+	 if has('vim_starting')
+	   set nocompatible " Be iMproved
+	   set runtimepath+=~/.vim/bundle/neobundle.vim/
+	 endif
 
-		 call neobundle#begin(expand('~/.vim/bundle/'))
+	 call neobundle#begin(expand('~/.vim/bundle/'))
 
-		 " Plugins
-		 """""""""
+	 " Plugins
+	 """""""""
 
-				" Let NeoBundle manage NeoBundle
-				NeoBundleFetch 'Shougo/neobundle.vim'
-				
-				" Install vimproc.vim
-				let g:make = 'gmake'
-				if system('uname -o') =~ '^GNU/'
-						let g:make = 'make'
-				endif
-				NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
-				
-				NeoBundle 'airblade/vim-gitgutter'
+		" Let NeoBundle manage NeoBundle
+		NeoBundleFetch 'Shougo/neobundle.vim'
 
-		""""""""""
-		" /Plugins
+		" Install vimproc.vim
+		let g:make = 'gmake'
+		if system('uname -o') =~ '^GNU/'
+			let g:make = 'make'
+		endif
+		NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
 
-		 call neobundle#end()
+		" enhancements
+			NeoBundle 'tpope/vim-repeat'	" let `.` repeat things like plugin mappings
+			NeoBundle 'ervandew/supertab'	" <tab>-complete in insert mode
+			NeoBundle 'SearchComplete'		" <tab>-complete in the search prompt
 
-		 filetype plugin indent on
+		" navigation
+			NeoBundle 'Lokaltog/vim-easymotion'
 
-		 " Install any uninstalled bundles found on startup
-		 NeoBundleCheck
+		" languages
+			NeoBundle 'Chiel92/vim-autoformat'
+			NeoBundle 'mustache/vim-mustache-handlebars'
+
+		" unite
+			NeoBundle 'Shougo/unite.vim'
+			NeoBundle 'Shougo/neomru.vim'
+			NeoBundle 'Shougo/unite-outline'
+			NeoBundle 'thinca/vim-unite-history'
+
+		" utils
+			NeoBundle 'tpope/vim-sensible'				" sensible default settings
+			NeoBundle 'tpope/vim-sleuth'				" auto-detuct indent settings
+			NeoBundle 'tpope/vim-surround'
+			NeoBundle 'tpope/vim-commentary'			" comment mappings
+			NeoBundle 'tpope/vim-unimpaired'			" settings toggles and symmetrical before/after mappings
+			NeoBundle 'scrooloose/nerdtree'
+			NeoBundle 'jistr/vim-nerdtree-tabs'
+			NeoBundle 'sjl/gundo.vim'					" visualized undo tree
+			NeoBundle 'terryma/vim-multiple-cursors'	" better multiple-cursor functionality
+			NeoBundle 'AndrewRadev/linediff.vim'		" diff two selections
+			NeoBundle 'scrooloose/syntastic'
+			NeoBundle 'thinca/vim-qfreplace'
+			NeoBundle 'ntpeters/vim-better-whitespace'	" show trailing whitespace, and provide a command to clean it
+
+		" UI
+			NeoBundle 'bling/vim-airline'
+			NeoBundle 'nanotech/jellybeans.vim'
+			NeoBundle 'tomasr/molokai'
+			NeoBundle 'xoria256.vim'
+			NeoBundle 'altercation/vim-colors-solarized'
+			NeoBundle 'chriskempson/base16-vim'
+
+		" integration
+			NeoBundle 'tpope/vim-fugitive'
+			NeoBundle 'airblade/vim-gitgutter'
+			NeoBundle 'rking/ag.vim'
+			NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
+
+		" external
+			NeoBundle 'christoomey/vim-tmux-navigator'
+			NeoBundle 'edkolev/tmuxline.vim'
+			NeoBundle 'edkolev/promptline.vim'
+
+	""""""""""
+	" /Plugins
+
+	 call neobundle#end()
+
+	 filetype plugin indent on
+
+	 " Install any uninstalled bundles found on startup
+	 NeoBundleCheck
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-		" Color Scheme
-		syntax enable
-		set term=screen-256color
-		set t_Co=256
-		set background=dark
-		let base16colorspace=256  " Access colors present in 256 colorspace
-		colorscheme base16-eighties
+	" Color Scheme
+	syntax enable
+	set term=screen-256color
+	set t_Co=256
+	set background=dark
+	let base16colorspace=256  " Access colors present in 256 colorspace
+	colorscheme base16-eighties
 
-		set number
-		
-		" Use the OS clipboard by default (on versions compiled with `+clipboard`)
-		set clipboard=unnamed
+	set number
 
-		" Enhance command-line completion
-		set wildmenu
+	" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+	set clipboard=unnamed
 
-		" Allow cursor keys in insert mode
-		set esckeys
+	" Enhance command-line completion
+	set wildmenu
 
-		" Allow backspace in insert mode
-		set backspace=indent,eol,start
+	" Allow cursor keys in insert mode
+	set esckeys
 
-		" Optimize for fast terminal connections
-		set ttyfast
+	" Allow backspace in insert mode
+	set backspace=indent,eol,start
 
-		" Add the g flag to search/replace by default
-		set gdefault
+	" Optimize for fast terminal connections
+	set ttyfast
 
-		" Use UTF-8 without BOM
-		set encoding=utf-8 nobomb
+	" Add the g flag to search/replace by default
+	set gdefault
 
-		" Change mapleader
-		let mapleader=","
+	" Use UTF-8 without BOM
+	set encoding=utf-8 nobomb
 
-		" Don’t add empty newlines at the end of files
-		"set binary
-		"set noeol
+	" Change mapleader
+	let mapleader=","
 
-		" Centralize backups, swapfiles and undo history
-		set backupdir=~/.vim/backups
-		set directory=~/.vim/swaps
-		if exists("&undodir")
-			set undodir=~/.vim/undo
-		endif
+	" Don’t add empty newlines at the end of files
+	"set binary
+	"set noeol
 
-		" Don’t create backups when editing files in certain directories
-		set backupskip=/tmp/*,/private/tmp/*
+	" Centralize backups, swapfiles and undo history
+	set backupdir=~/.vim/backups
+	set directory=~/.vim/swaps
+	if exists("&undodir")
+		set undodir=~/.vim/undo
+	endif
 
-		" Respect modeline in files
-		set modeline
-		set modelines=4
+	" Don’t create backups when editing files in certain directories
+	set backupskip=/tmp/*,/private/tmp/*
 
-		" Enable per-directory .vimrc files and disable unsafe commands in them
-		set exrc
-		set secure
+	" Respect modeline in files
+	set modeline
+	set modelines=4
 
-		" Enable line numbers
-		set number
+	" Enable per-directory .vimrc files and disable unsafe commands in them
+	set exrc
+	set secure
 
-		" Enable syntax highlighting
-		syntax on
+	" Enable line numbers
+	set number
 
-		" Highlight current line
-		set cursorline
+	" Enable syntax highlighting
+	syntax on
 
-		" Make tabs as wide as four spaces
-		set tabstop=4
+	" Highlight current line
+	set cursorline
 
-		" Show “invisible” characters
-		set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_
-		set list " nolist
+	" Make tabs as wide as four spaces
+	set tabstop=4
 
-		" Highlight searches
-		set hlsearch
+	" Show “invisible” characters
+	set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_
+	set list " nolist
 
-		" Ignore case of searches
-		set ignorecase
+	" Highlight searches
+	set hlsearch
 
-		" Highlight dynamically as pattern is typed
-		set incsearch
+	" Ignore case of searches
+	set ignorecase
 
-		" Always show status line
-		set laststatus=2
+	" Highlight dynamically as pattern is typed
+	set incsearch
 
-		" Enable mouse in all modes
-		set mouse=
+	" Always show status line
+	set laststatus=2
 
-		" Disable error bells
-		"set noerrorbells
+	" Enable mouse in all modes
+	set mouse=
 
-		" Don’t reset cursor to start of line when moving around.
-		set nostartofline
+	" Disable error bells
+	"set noerrorbells
 
-		" Show the cursor position
-		set ruler
+	" Don’t reset cursor to start of line when moving around.
+	set nostartofline
 
-		" Don’t show the intro message when starting Vim
-		set shortmess=atI
+	" Show the cursor position
+	set ruler
 
-		" Show the current mode
-		set showmode
+	" Don’t show the intro message when starting Vim
+	set shortmess=atI
 
-		" Show the filename in the window titlebar
-		set title
+	" Show the current mode
+	set showmode
 
-		" Show the (partial) command as it’s being typed
-		set showcmd
+	" Show the filename in the window titlebar
+	set title
 
-		" Use relative line numbers
-		"if exists("&relativenumber")
-		"	set relativenumber
-		"	au BufReadPost * set relativenumber
-		"endif
+	" Show the (partial) command as it’s being typed
+	set showcmd
 
-		" Start scrolling three lines before the horizontal window border
-		set scrolloff=3
+	" Use relative line numbers
+	"if exists("&relativenumber")
+	"	set relativenumber
+	"	au BufReadPost * set relativenumber
+	"endif
 
-		" No wordwrap
-		set nowrap
+	" Start scrolling three lines before the horizontal window border
+	set scrolloff=3
 
-		" Strip trailing whitespace (,ss)
-		function! StripWhitespace()
-			let save_cursor = getpos(".")
-			let old_query = getreg('/')
-			:%s/\s\+$//e
-			call setpos('.', save_cursor)
-			call setreg('/', old_query)
-		endfunction
-		noremap <leader>ss :call StripWhitespace()<CR>
+	" No wordwrap
+	set nowrap
 
-		" Save a file as root (,W)
-		noremap <leader>W :w !sudo tee % > /dev/null<CR>
+	" Strip trailing whitespace (,ss)
+	function! StripWhitespace()
+		let save_cursor = getpos(".")
+		let old_query = getreg('/')
+		:%s/\s\+$//e
+		call setpos('.', save_cursor)
+		call setreg('/', old_query)
+	endfunction
+	noremap <leader>ss :call StripWhitespace()<CR>
 
-		" Automatic commands
-		if has("autocmd")
-			" Enable file type detection
-			filetype on
-			" Treat .json files as .js
-			autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-			autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
-		endif
+	" Save a file as root (,W)
+	noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
-		" Set rulers
-		set colorcolumn=80,120
+	" Automatic commands
+	if has("autocmd")
+		" Enable file type detection
+		filetype on
+		" Treat .json files as .js
+		autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+		autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
+	endif
 
-		" Disable arrow keys
-		map <up> <nop>
-		map <down> <nop>
-		map <left> <nop>
-		map <right> <nop>
-		imap <up> <nop>
-		imap <down> <nop>
-		imap <left> <nop>
-		imap <right> <nop>
+	" Set rulers
+	set colorcolumn=80,120
 
-		" <Esc> key alternative
-		set timeout timeoutlen=1000 ttimeoutlen=100
-		:imap jk <Esc>
+	" Disable arrow keys
+	map <up> <nop>
+	map <down> <nop>
+	map <left> <nop>
+	map <right> <nop>
+	imap <up> <nop>
+	imap <down> <nop>
+	imap <left> <nop>
+	imap <right> <nop>
+
+	" <Esc> key alternative
+	set timeout timeoutlen=1000 ttimeoutlen=100
+	:imap jk <Esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ctrlp settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-		let g:ctrlp_working_path_mode = 'ra'
-		let g:ctrlp_show_hidden = 1
-		let g:ctrlp_user_command = 'find %s -type f'
-		let g:ctrlp_custom_ignore = {
-		  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-		  \ 'file': '\v\.(exe|so|dll)$',
-		  \ }
-
+	let g:ctrlp_working_path_mode = 'ra'
+	let g:ctrlp_show_hidden = 1
+	let g:ctrlp_user_command = 'find %s -type f'
+	let g:ctrlp_custom_ignore = {
+	  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+	  \ 'file': '\v\.(exe|so|dll)$',
+	  \ }
