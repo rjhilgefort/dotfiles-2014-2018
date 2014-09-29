@@ -52,7 +52,7 @@ install python --with-brewed-openssl
 install rsync
 install svn
 install unzip
-install vim --override-system-vi
+install vim --with-python --with-ruby --with-perl --override-system-vi
 
 # General Utilities
 install node
