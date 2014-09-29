@@ -34,7 +34,7 @@
 			NeoBundle 'Lokaltog/vim-easymotion'
 
 		" languages
-			NeoBundle 'Chiel92/vim-autoformat'
+			NeoBundle 'Chiel92/vim-autoformat'				" jsjbuetifier
 			NeoBundle 'mustache/vim-mustache-handlebars'
 
 		" unite
@@ -59,23 +59,18 @@
 			NeoBundle 'ntpeters/vim-better-whitespace'	" show trailing whitespace, and provide a command to clean it
 
 		" UI
-			NeoBundle 'bling/vim-airline'
-			NeoBundle 'nanotech/jellybeans.vim'
+			" NeoBundle 'bling/vim-airline'
 			NeoBundle 'tomasr/molokai'
-			NeoBundle 'xoria256.vim'
-			NeoBundle 'altercation/vim-colors-solarized'
-			NeoBundle 'chriskempson/base16-vim'
 
 		" integration
 			NeoBundle 'tpope/vim-fugitive'
 			NeoBundle 'airblade/vim-gitgutter'
-			NeoBundle 'rking/ag.vim'
-			NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
+			NeoBundle 'rking/ag.vim' " ack-flack
 
 		" external
 			NeoBundle 'christoomey/vim-tmux-navigator'
-			NeoBundle 'edkolev/tmuxline.vim'
-			NeoBundle 'edkolev/promptline.vim'
+			" NeoBundle 'edkolev/tmuxline.vim'
+			" NeoBundle 'edkolev/promptline.vim'
 
 	""""""""""
 	" /Plugins
@@ -93,7 +88,12 @@
 
 	set number
 	syntax enable
-	set term=screen-256color
+
+	set guifont=Source\ Code\ Pro\ for\ Powerline:h15
+	let g:Powerline_symbols = 'fancy'
+	set fillchars+=stl:\ ,stlnc:\
+	set term=xterm-256color
+	" set term=screen-256color
 	set t_Co=256
 	set background=dark
 	let base16colorspace=256  " Access colors present in 256 colorspace
@@ -119,6 +119,7 @@
 
 	" Use UTF-8 without BOM
 	set encoding=utf-8 nobomb
+	set termencoding=utf-8
 
 	" Change mapleader
 	let mapleader=","
@@ -197,7 +198,7 @@
 
 		" Enable file type detection
 		filetype on
-		
+
 		" Treat .json files as .js
 		autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 		autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
@@ -221,3 +222,9 @@
 	set timeout timeoutlen=1000 ttimeoutlen=100
 	:imap jk <Esc>
 
+	" vim-airline:
+		" powerline symbols
+		let g:airline#extensions#tabline#enabled = 1
+		let g:airline_powerline_fonts   = 1
+		" let g:airline_theme             = 'base16-eighties'
+		let g:airline_enable_branch     = 1
