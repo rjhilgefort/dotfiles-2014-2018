@@ -4,15 +4,21 @@
 [submodule ".zprezto"]
 	path = .zprezto
 	url = https://github.com/rjhilgefort/prezto.git
-[submodule ".src/solarized"]
-	path = .src/solarized
-	url = https://github.com/altercation/solarized.git
 [submodule ".src/terminal-piperita"]
 	path = .src/terminal-piperita
 	url = https://github.com/jacobtomlinson/terminal-piperita.git
-[submodule ".src/tomorrow-theme"]
-	path = .src/tomorrow-theme
-	url = https://github.com/chriskempson/tomorrow-theme.git
 [submodule ".vim/bundle/neobundle.vim"]
 	path = .vim/bundle/neobundle.vim
 	url = https://github.com/Shougo/neobundle.vim
+[submodule ".src/base16-iterm2"]
+	path = .src/base16-iterm2
+	url = https://github.com/chriskempson/base16-iterm2.git
+[submodule ".src/base16-vim"]
+	path = .src/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule ".src/base16-osx-color-palette"]
+	path = .src/base16-osx-color-palette
+	url = https://github.com/chriskempson/base16-osx-color-palette.git
+[submodule ".src/base16-builder"]
+	path = .src/base16-builder
+	url = https://github.com/chriskempson/base16-builder.git

@@ -42,8 +42,8 @@
 		" Color Scheme
 		set number
 		syntax enable
-		colorscheme Tomorrow-Night
-
+		colorscheme base16-eighties
+		
 		" Use the OS clipboard by default (on versions compiled with `+clipboard`)
 		set clipboard=unnamed
 
