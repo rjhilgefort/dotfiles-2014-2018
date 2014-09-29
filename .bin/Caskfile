@@ -1,7 +1,7 @@
 # Install Native Apps
 # Usage: `brew bundle [.bin/]Caskfile`
 
-# Setup 
+# Setup
 install caskroom/cask/brew-cask
 tap caskroom/versions
 
