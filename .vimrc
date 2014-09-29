@@ -40,9 +40,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 		" Color Scheme
-		set number
 		syntax enable
+		set background=dark
+		let base16colorspace=256  " Access colors present in 256 colorspace
 		colorscheme base16-eighties
+		
+		set number
 		
 		" Use the OS clipboard by default (on versions compiled with `+clipboard`)
 		set clipboard=unnamed
