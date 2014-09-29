@@ -25,6 +25,8 @@
 				endif
 				NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
 				
+				NeoBundle 'airblade/vim-gitgutter'
+
 		""""""""""
 		" /Plugins
 
