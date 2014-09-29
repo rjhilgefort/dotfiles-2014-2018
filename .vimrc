@@ -28,6 +28,7 @@
 			NeoBundle 'tpope/vim-repeat'	" let `.` repeat things like plugin mappings
 			NeoBundle 'ervandew/supertab'	" <tab>-complete in insert mode
 			NeoBundle 'SearchComplete'		" <tab>-complete in the search prompt
+			" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 		" navigation
 			NeoBundle 'Lokaltog/vim-easymotion'
