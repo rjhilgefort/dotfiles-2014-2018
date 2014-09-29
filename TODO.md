@@ -5,5 +5,3 @@
 - gem install script
 	- tmuxinator
 - setup
-	- link prezto submodule `pure` to prompts
-	- link tomorrow-theme vim file to .vim/colors dir

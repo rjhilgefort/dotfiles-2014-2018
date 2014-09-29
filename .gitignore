@@ -3,6 +3,7 @@
 .vim/swaps/*
 .vim/bundle/*
 !.vim/bundle/neobundle.vim
+.vim/colors/base16*
 
 # sublime text
 .sublime-user/*.cache
