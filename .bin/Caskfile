@@ -13,6 +13,7 @@ cask install google-chrome 2> /dev/null
 cask install alfred 2> /dev/null
 cask install bartender 2> /dev/null
 cask install iterm2 2> /dev/null
+cask install iterm2-nightly 2> /dev/null
 cask install slate 2> /dev/null
 cask install dash 2> /dev/null
 cask install sublime-text3 2> /dev/null
