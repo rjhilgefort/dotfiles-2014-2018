@@ -86,20 +86,48 @@
 " UI & Color Scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-	syntax enable
+	" Scheme
+	""""""""
 
-	set guifont=Source\ Code\ Pro\ for\ Powerline:h15
-	let g:Powerline_symbols = 'fancy'
-	set fillchars+=stl:\ ,stlnc:\
-	" set term=xterm-256color
-	" set term=screen-256color
-	set t_Co=256
-	set background=dark
-	let base16colorspace=256  " Access colors present in 256 colorspace
-	colorscheme base16-eighties
+		set guifont=Source\ Code\ Pro\ for\ Powerline:h15
+		let g:Powerline_symbols = 'fancy'
+		set fillchars+=stl:\ ,stlnc:\
+		" set term=xterm-256color
+		" set term=screen-256color
+		set t_Co=256
+		set background=dark
+		let base16colorspace=256  " Access colors present in 256 colorspace
+		colorscheme base16-eighties
 
+	" General
+	"""""""""
 
-	set number
+		" Enable syntax highlighting
+		syntax enable
+		syntax on
+
+		" Enable line numbers
+		set number
+
+		" Highlight current line
+		set cursorline
+
+	" Cursor mods
+	"""""""""""""
+
+		" set the cursor to a vertical line in insert mode and a solid block in command mode
+		let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+		let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+		" Upon hitting escape to change modes, send successive move-left and move-right
+		" commands to immediately redraw the cursor
+		inoremap <special> <Esc> <Esc>hl
+
+		" TODO: http://vim.wikia.com/wiki/Configuring_the_cursor
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Everything else, TODO
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 	" Use the OS clipboard by default (on versions compiled with `+clipboard`)
 	set clipboard=unnamed
@@ -139,15 +167,6 @@
 	" Respect modeline in files
 	set modeline
 	set modelines=4
-
-	" Enable line numbers
-	set number
-
-	" Enable syntax highlighting
-	syntax on
-
-	" Highlight current line
-	set cursorline
 
 	" Make tabs as wide as four spaces
 	set tabstop=4
@@ -222,7 +241,13 @@
 
 	" <Esc> key alternative
 	set timeout timeoutlen=1000 ttimeoutlen=100
-	:imap jk <Esc>
+	" :imap jk <Esc> " TODO: If no problems with below, remove this line
+	inoremap jk <Esc>
+	xnoremap jk <Esc>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 	" vim-airline:
 		" powerline symbols
