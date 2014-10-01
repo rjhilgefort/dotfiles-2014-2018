@@ -53,6 +53,7 @@ install rsync
 install svn
 install unzip
 install vim --with-python --with-ruby --with-perl --override-system-vi
+install macvim --custom-system-icons --override-system-vim
 
 # General Utilities
 install node
@@ -64,7 +65,6 @@ install tig
 install ack
 install fasd
 install git-extras
-install macvim --custom-system-icons
 install zlib
 install gdb --with-brewed-python
 
