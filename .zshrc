@@ -1,8 +1,8 @@
 # Executes commands at the start of an interactive session.
 
-################################################################################
+###############################################################################
 # Config, Scripts
-################################################################################
+###############################################################################
 
 # Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -28,6 +28,10 @@ BASE16_SHELL="$HOME/.src/base16-shell/base16-$BASE16_SCHEME.dark.sh"
   # # Accept suggestions without leaving insert mode
   # bindkey '^<Enter>' vi-forward-word
 
+  # zsh prediction
+  autoload predict-on
+  predict-on
+
 # Up the default ulimit
 ulimit -n 2048
 
@@ -39,9 +43,9 @@ zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(
 # TODO: broken, tmux completions was called with "no arguments"
 # source ~/.bin/tmuxinator.zsh
 
-################################################################################
+###############################################################################
 # Alias
-################################################################################
+###############################################################################
 
 # Always list after cd
 cd() { builtin cd "$@"; l; }
