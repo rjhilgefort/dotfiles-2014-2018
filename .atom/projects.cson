@@ -28,3 +28,8 @@
   'paths': [
     '/Users/rjhilgefort/Dropbox/Projects/rjhdj'
   ]
+'readonly':
+  'title': 'readonly'
+  'paths': [
+    '/Users/rjhilgefort/Dropbox/Projects/zipscene/_readonly'
+  ]

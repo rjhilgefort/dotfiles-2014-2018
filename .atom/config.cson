@@ -5,7 +5,8 @@
 'metrics':
   'userId': 'f725ce6db1cf0f7a124a271653f2250f407f4822'
 'editor':
-  'fontSize': 14
+  'fontSize': 15
+  'fontFamily': 'Source Code Pro for Powerline'
   'invisibles': {}
   'tabLength': 4
   'showInvisibles': true
@@ -37,3 +38,4 @@
   'customCommitUrlTemplateString': 'https://git.zipscene.com/<%- project %>/<%- repo %>/commit/<%- revision %>'
 'autocomplete-plus': {}
 'spell-check': {}
+'git-history': {}
