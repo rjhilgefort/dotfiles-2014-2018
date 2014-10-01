@@ -98,6 +98,16 @@
 	 " Install any uninstalled bundles found on startup
 	 NeoBundleCheck
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Configs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+	" Unite
+	"""""""
+
+		 nnoremap <C-p> :Unite file_rec/async<cr>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI & Color Scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -269,5 +279,5 @@
 		" powerline symbols
 		let g:airline#extensions#tabline#enabled = 1
 		let g:airline_powerline_fonts   = 1
-		" let g:airline_theme             = 'base16-eighties'
+		let g:airline_theme             = 'base16'
 		let g:airline_enable_branch     = 1
