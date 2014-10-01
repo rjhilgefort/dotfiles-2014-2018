@@ -13,6 +13,8 @@
 	 call neobundle#begin(expand('~/.vim/bundle/'))
 
 	 " Plugins
+	 " REF: http://vimawesome.com
+	 """"""""""""""""""""""""""""
 
 		" Let NeoBundle manage NeoBundle
 		NeoBundleFetch 'Shougo/neobundle.vim'
@@ -24,56 +26,70 @@
 		endif
 		NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
 
-		" enhancements
-			NeoBundle 'tpope/vim-repeat'	" let `.` repeat things like plugin mappings
-			NeoBundle 'ervandew/supertab'	" <tab>-complete in insert mode
-			NeoBundle 'SearchComplete'		" <tab>-complete in the search prompt
-			" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-		" navigation
-			NeoBundle 'Lokaltog/vim-easymotion'
-
-		" languages
-			NeoBundle 'Chiel92/vim-autoformat'				" jsjbuetifier
-			NeoBundle 'mustache/vim-mustache-handlebars'
-
-		" unite
-			NeoBundle 'Shougo/unite.vim'
-			NeoBundle 'Shougo/neomru.vim'
-			NeoBundle 'Shougo/unite-outline'
-			NeoBundle 'thinca/vim-unite-history'
-
-		" utils
-			NeoBundle 'tpope/vim-sensible'				" sensible default settings
-			NeoBundle 'tpope/vim-sleuth'				" auto-detuct indent settings
+		" Language
+		""""""""""
 			NeoBundle 'tpope/vim-surround'
-			NeoBundle 'tpope/vim-commentary'			" comment mappings
-			NeoBundle 'tpope/vim-unimpaired'			" settings toggles and symmetrical before/after mappings
-			NeoBundle 'scrooloose/nerdtree'
-			NeoBundle 'jistr/vim-nerdtree-tabs'
-			NeoBundle 'sjl/gundo.vim'					" visualized undo tree
-			NeoBundle 'terryma/vim-multiple-cursors'	" better multiple-cursor functionality
-			NeoBundle 'AndrewRadev/linediff.vim'		" diff two selections
-			NeoBundle 'scrooloose/syntastic'
-			NeoBundle 'thinca/vim-qfreplace'
-			NeoBundle 'ntpeters/vim-better-whitespace'	" show trailing whitespace, and provide a command to clean it
-
-		" UI
-			" NeoBundle 'bling/vim-airline'
+			NeoBundle 'pangloss/vim-javascript'
+			NeoBundle 'tpope/vim-markdown'
+			NeoBundle 'groenewege/vim-less'
+			NeoBundle 'othree/html5.vim'
+			NeoBundle 'elzr/vim-json'
+			NeoBundle 'cakebaker/scss-syntax.vim'
+			NeoBundle 'nono/vim-handlebars'
+			NeoBundle 'Chiel92/vim-autoformat'
+		" Completion
+		""""""""""""
+			" NeoBundle 'ervandew/supertab'
+			NeoBundle 'Shougo/neocomplcache.vim'
+			NeoBundle 'honza/vim-snippets'
+			NeoBundle 'mustache/vim-mustache-handlebars'
+		" Code Display
+		""""""""""""""
+			NeoBundle 'nathanaelkane/vim-indent-guides'
+			NeoBundle 'chriskempson/base16-vim'
 			NeoBundle 'tomasr/molokai'
-
-		" integration
+		" Integrations
+		""""""""""""""
 			NeoBundle 'tpope/vim-fugitive'
+			NeoBundle 'scrooloose/syntastic'
+			NeoBundle 'mileszs/ack.vim'
+			NeoBundle 'rking/ag.vim'
+			" Unite
+				NeoBundle 'Shougo/unite.vim'
+				NeoBundle 'Shougo/neomru.vim'
+				NeoBundle 'Shougo/unite-outline'
+				NeoBundle 'thinca/vim-unite-history'
 			NeoBundle 'airblade/vim-gitgutter'
-			NeoBundle 'rking/ag.vim' " ack-flack
-
-		" external
+			NeoBundle 'Shougo/vimshell.vim'
 			NeoBundle 'christoomey/vim-tmux-navigator'
+			NeoBundle 'rizzatti/dash.vim'
 			" NeoBundle 'edkolev/tmuxline.vim'
 			" NeoBundle 'edkolev/promptline.vim'
-
-	""""""""""
-	" /Plugins
+		" Interface
+		"""""""""""
+			NeoBundle 'scrooloose/nerdtree'
+			" NeoBundle 'jistr/vim-nerdtree-tabs'
+			" NeoBundle 'bling/vim-airline'
+			" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+			NeoBundle 'sjl/gundo.vim'
+			NeoBundle 'myusuf3/numbers.vim'
+		" Commands
+		""""""""""
+			NeoBundle 'ntpeters/vim-better-whitespace'
+			" NeoBundle 'scrooloose/nerdcommenter'
+			NeoBundle 'tpope/vim-commentary'
+			NeoBundle 'Lokaltog/vim-easymotion'
+			NeoBundle 'godlygeek/tabular'
+			NeoBundle 'tpope/vim-repeat'
+			NeoBundle 'tpope/vim-unimpaired'
+			NeoBundle 'tpope/vim-sensible'
+			NeoBundle 'terryma/vim-multiple-cursors'
+		" Other
+		"""""""
+			NeoBundle 'tpope/vim-sleuth'
+			NeoBundle 'thinca/vim-qfreplace'
+			NeoBundle 'AndrewRadev/linediff.vim'
+			NeoBundle 'SearchComplete'
 
 	 call neobundle#end()
 
@@ -229,15 +245,15 @@
 	" Set rulers
 	set colorcolumn=80,120
 
-	" Disable arrow keys
-	map <up> <nop>
-	map <down> <nop>
-	map <left> <nop>
-	map <right> <nop>
-	imap <up> <nop>
-	imap <down> <nop>
-	imap <left> <nop>
-	imap <right> <nop>
+	" Disable arrow keys, prank arrow key users
+	map <up> <down>
+	map <down> <up>
+	map <left> <right>
+	map <right> <left>
+	imap <up> <down>
+	imap <down> <up>
+	imap <left> <right>
+	imap <right> <left>
 
 	" <Esc> key alternative
 	set timeout timeoutlen=1000 ttimeoutlen=100

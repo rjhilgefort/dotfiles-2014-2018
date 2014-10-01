@@ -63,6 +63,7 @@ install tmux
 install reattach-to-user-namespace
 install tig
 install ack
+install ag
 install fasd
 install git-extras
 install zlib

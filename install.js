@@ -9,13 +9,14 @@ var source, dest;
 // Link base16-vim schemes to .vim dir
 ///////////////////////////////////////////////////////////////////////////////
 
-source = __dirname + '/.src/base16-vim/colors/';
-dest = __dirname + '/.vim/colors/';
+if (false) {
+	source = __dirname + '/.src/base16-vim/colors/';
+	dest = __dirname + '/.vim/colors/';
 
-ls(source).forEach(function(scheme) {
-	ln('-sf', source + scheme, dest + scheme);
-});
-
+	ls(source).forEach(function(scheme) {
+		ln('-sf', source + scheme, dest + scheme);
+	});
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // .prezto prompt installs
