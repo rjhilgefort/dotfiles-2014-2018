@@ -29,8 +29,8 @@ BASE16_SHELL="$HOME/.src/base16-shell/base16-$BASE16_SCHEME.dark.sh"
   # bindkey '^<Enter>' vi-forward-word
 
   # zsh prediction
-  autoload predict-on
-  predict-on
+  # autoload predict-on
+  # predict-on
 
 # Up the default ulimit
 ulimit -n 2048
