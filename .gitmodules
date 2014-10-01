@@ -31,3 +31,6 @@
 [submodule ".src/tmux-powerline"]
 	path = .src/tmux-powerline
 	url = https://github.com/erikw/tmux-powerline.git
+[submodule ".src/zsh-autosuggestions"]
+	path = .src/zsh-autosuggestions
+	url = https://github.com/tarruda/zsh-autosuggestions.git

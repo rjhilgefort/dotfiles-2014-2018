@@ -14,6 +14,20 @@ BASE16_SCHEME="eighties"
 BASE16_SHELL="$HOME/.src/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
+# Setup zsh-autosuggestions
+  # source ~/.src/zsh-autosuggestions/autosuggestions.zsh
+
+  # Enable autosuggestions automatically
+  # zle-line-init() {
+  #   zle autosuggest-start
+  # }
+  # zle -N zle-line-init
+
+  # # `ctrl+t` to toggle autosuggestions
+  # bindkey '^T' autosuggest-toggle
+  # # Accept suggestions without leaving insert mode
+  # bindkey '^<Enter>' vi-forward-word
+
 # Up the default ulimit
 ulimit -n 2048
 
