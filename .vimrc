@@ -163,6 +163,10 @@
 " Everything else, TODO
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+	" Spell checking
+	:setlocal spell spelllang=en_us
+	set complete+=kspell
+
 	" Use the OS clipboard by default (on versions compiled with `+clipboard`)
 	set clipboard=unnamed
 
