@@ -37,6 +37,7 @@
 			NeoBundle 'cakebaker/scss-syntax.vim'
 			NeoBundle 'nono/vim-handlebars'
 			NeoBundle 'Chiel92/vim-autoformat'
+			NeoBundle 'suan/vim-instant-markdown'
 		" Completion
 		""""""""""""
 			" NeoBundle 'ervandew/supertab'
@@ -84,6 +85,7 @@
 			NeoBundle 'tpope/vim-unimpaired'
 			NeoBundle 'tpope/vim-sensible'
 			NeoBundle 'terryma/vim-multiple-cursors'
+			NeoBundle 'bronson/vim-toggle-wrap'
 		" Other
 		"""""""
 			NeoBundle 'tpope/vim-sleuth'
@@ -107,6 +109,12 @@
 	"""""""
 
 		 nnoremap <C-p> :Unite file_rec/async<cr>
+
+	" suan/vim-instant-markdown
+	"""""""""""""""""""""""""""
+		au FileType markdown setl shell=bash\ -i
+		let g:instant_markdown_slow = 0
+		let g:instant_markdown_autostart = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI & Color Scheme

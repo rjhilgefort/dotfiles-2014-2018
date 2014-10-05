@@ -2,6 +2,9 @@
 	- shelljs
 	- grunt-cli
 	- grunt
+	- instant-markdown-d
 - gem install script
 	- tmuxinator
+	- pygments.rb
+	- redcarpet
 - setup
