@@ -318,15 +318,16 @@
 	" Set rulers
 	set colorcolumn=80,120
 
-	" Disable arrow keys, prank arrow key users
-	map <up> <down>
-	map <down> <up>
-	map <left> <right>
-	map <right> <left>
-	imap <up> <down>
-	imap <down> <up>
-	imap <left> <right>
-	imap <right> <left>
+	" Disable arrow keys
+	let arrowKeyWarn = "You no like hjkl?"
+	map <up> :echo arrowKeyWarn<CR>
+	map <down> :echo arrowKeyWarn<CR>
+	map <left> :echo arrowKeyWarn<CR>
+	map <right> :echo arrowKeyWarn<CR>
+	imap <up> :echo arrowKeyWarn<CR>
+	imap <down> :echo arrowKeyWarn<CR>
+	imap <left> :echo arrowKeyWarn<CR>
+	imap <right> :echo arrowKeyWarn<CR>
 
 	" <Esc> key alternative
 	set timeout timeoutlen=1000 ttimeoutlen=100
