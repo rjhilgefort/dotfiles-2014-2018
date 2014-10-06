@@ -116,6 +116,18 @@
 		let g:instant_markdown_slow = 0
 		let g:instant_markdown_autostart = 1
 
+
+	" scrooloose/nerdtree
+	"""""""""""""""""""""
+		" Start nerdtree on startup (even if no files were specified)
+		autocmd StdinReadPre * let s:std_in=1
+		autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+		let NERDTreeShowHidden=1
+
+		map <C-n> :NERDTreeToggle<CR>
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI & Color Scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -169,6 +181,9 @@
 
 	" Use the OS clipboard by default (on versions compiled with `+clipboard`)
 	set clipboard=unnamed
+
+	" background buffers
+	" :set hidden
 
 	" Enhance command-line completion
 	set wildmenu
