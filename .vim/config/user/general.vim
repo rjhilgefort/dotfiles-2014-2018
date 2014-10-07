@@ -46,6 +46,7 @@ set modelines=4
 
 " Make tabs as wide as four spaces
 set tabstop=4
+set noexpandtab
 
 " Show “invisible” characters
 set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_
@@ -117,8 +118,9 @@ imap <left> :echo arrowKeyWarn<CR>
 imap <right> :echo arrowKeyWarn<CR>
 
 " <Esc> key alternative
-set timeout timeoutlen=1000 ttimeoutlen=100
-" :imap jk <Esc> " TODO: If no problems with below, remove this line
+set timeout timeoutlen=500 ttimeoutlen=50
 inoremap jk <Esc>
-xnoremap jk <Esc>
+xnoremap ;; <Esc>
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/node_modules/*,*/\.git/*
 
