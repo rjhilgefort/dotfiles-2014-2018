@@ -70,7 +70,7 @@
 		"""""""""""
 			NeoBundle 'scrooloose/nerdtree'
 			" NeoBundle 'jistr/vim-nerdtree-tabs'
-			" NeoBundle 'bling/vim-airline'
+			NeoBundle 'bling/vim-airline'
 			" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 			NeoBundle 'sjl/gundo.vim'
 			NeoBundle 'myusuf3/numbers.vim'
