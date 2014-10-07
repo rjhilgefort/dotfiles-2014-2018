@@ -7,4 +7,6 @@
 	- tmuxinator
 	- pygments.rb
 	- redcarpet
+- Other
+	- pip install --user git+git://github.com/Lokaltog/powerline
 - setup

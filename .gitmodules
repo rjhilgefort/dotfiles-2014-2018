@@ -34,3 +34,6 @@
 [submodule ".src/zsh-autosuggestions"]
 	path = .src/zsh-autosuggestions
 	url = https://github.com/tarruda/zsh-autosuggestions.git
+[submodule ".src/powerline"]
+	path = .src/powerline
+	url = https://github.com/Lokaltog/powerline.git
