@@ -38,17 +38,20 @@
 			NeoBundle 'nono/vim-handlebars'
 			NeoBundle 'Chiel92/vim-autoformat'
 			NeoBundle 'suan/vim-instant-markdown'
+
 		" Completion
 		""""""""""""
-			" NeoBundle 'ervandew/supertab'
-			NeoBundle 'Shougo/neocomplcache.vim'
+			NeoBundle 'ervandew/supertab'
+			" NeoBundle 'Shougo/neocomplcache.vim'
 			NeoBundle 'honza/vim-snippets'
 			NeoBundle 'mustache/vim-mustache-handlebars'
+
 		" Code Display
 		""""""""""""""
 			NeoBundle 'nathanaelkane/vim-indent-guides'
 			NeoBundle 'chriskempson/base16-vim'
 			NeoBundle 'tomasr/molokai'
+
 		" Integrations
 		""""""""""""""
 			NeoBundle 'tpope/vim-fugitive'
@@ -66,6 +69,7 @@
 			NeoBundle 'rizzatti/dash.vim'
 			" NeoBundle 'edkolev/tmuxline.vim'
 			" NeoBundle 'edkolev/promptline.vim'
+
 		" Interface
 		"""""""""""
 			NeoBundle 'scrooloose/nerdtree'
@@ -74,10 +78,10 @@
 			" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 			NeoBundle 'sjl/gundo.vim'
 			NeoBundle 'myusuf3/numbers.vim'
+
 		" Commands
 		""""""""""
 			NeoBundle 'ntpeters/vim-better-whitespace'
-			" NeoBundle 'scrooloose/nerdcommenter'
 			NeoBundle 'tpope/vim-commentary'
 			NeoBundle 'Lokaltog/vim-easymotion'
 			NeoBundle 'godlygeek/tabular'
@@ -86,11 +90,12 @@
 			NeoBundle 'tpope/vim-sensible'
 			NeoBundle 'terryma/vim-multiple-cursors'
 			NeoBundle 'bronson/vim-toggle-wrap'
+
 		" Other
 		"""""""
 			NeoBundle 'tpope/vim-sleuth'
 			NeoBundle 'thinca/vim-qfreplace'
-			NeoBundle 'AndrewRadev/linediff.vim'
+			" NeoBundle 'AndrewRadev/linediff.vim'
 			NeoBundle 'SearchComplete'
 
 	 call neobundle#end()
