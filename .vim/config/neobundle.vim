@@ -98,6 +98,8 @@
 		NeoBundle 'thinca/vim-qfreplace'
 		" NeoBundle 'AndrewRadev/linediff.vim'
 		NeoBundle 'SearchComplete'
+		NeoBundle 'xolox/vim-misc'
+		NeoBundle 'xolox/vim-session'
 
  call neobundle#end()
 
