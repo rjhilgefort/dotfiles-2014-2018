@@ -27,8 +27,12 @@ set gdefault
 set encoding=utf-8 nobomb
 set termencoding=utf-8
 
-" Change mapleader
-let mapleader=","
+" Change leader
+let mapleader = "\<Space>"
+
+" Easier saving, and quiting
+nmap <Leader><Leader> :w<CR>
+nmap <Leader><Leader><Leader> :wq<CR>
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
