@@ -3,10 +3,10 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Start nerdtree-tabs when opening vim
-let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_console_startup=0
 
 " Don't start nerdtree when opening a diff
-let g:nerdtree_tabs_no_startup_for_diff=0
+let g:nerdtree_tabs_no_startup_for_diff=1
 
 " Sync scroll and cursor across tabs
 let g:nerdtree_tabs_synchronize_view=1
