@@ -9,8 +9,8 @@ set winminheight=5
 " Faster split resizing
 nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
-nnoremap <silent> > :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-nnoremap <silent> < :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+nnoremap <silent> < :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nnoremap <silent> > :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 
 " Window splitting
 nnoremap <Leader>swh :topleft  vnew<CR>
