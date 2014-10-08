@@ -27,9 +27,9 @@ slate.configAll({
 slate.bindAll({
 
     hyper: {
-        
-		shift: {     
-			// edges
+
+	shift: {
+		    // edges
             h: [$('barResize', 'left',   3),
                 $('center',    'left',   3, 3)],
             j: [$('barResize', 'bottom', 2),
@@ -56,7 +56,7 @@ slate.bindAll({
                 $('center', 'bottom', 3, 3)],
             'return': $('center', 'center', 1.25, 1.25)
         },
-        
+
 		// bars
         h: [$('barResize', 'left',  2),
             $('barResize', 'left',  1.5)],
@@ -64,8 +64,8 @@ slate.bindAll({
         k: $('barResize', 'top',    2),
         l: [$('barResize', 'right', 2),
             $('barResize', 'right', 1.5)],
-        'return': $('barResize', 'top', 1),
-        
+            'return': $('barResize', 'top', 1),
+
 		// corners
         y: [$('corner', 'top-left'),
             $('corner', 'top-left', 1.5)],
@@ -75,18 +75,18 @@ slate.bindAll({
             $('corner', 'bottom-left', 1.5)],
         m: [$('corner', 'bottom-right'),
             $('corner', 'bottom-right', 1.5)],
-        
-		// centers
+
+        // centers
         u: $('center', 'top'),
         n: $('center', 'bottom'),
-        
-		// throw to monitor
+
+        // throw to monitor
         '`': ['throw 0 resize', 'throw 1 resize'],
         '1': $('toss', '0', 'resize'),
         '2': $('toss', '1', 'resize'),
         '3': $('toss', '2', 'resize'),
-        
-		// direct focus 
+
+		// direct focus
         a: $.focus('Atom'),
         c: $.focus('Google Chrome'),
         s: $.focus('Messages'),
@@ -97,12 +97,12 @@ slate.bindAll({
         x: $.focus('X11'),
         p: $.focus('Spotify'),
         r: $.focus('Reminders'),
-        
-		// utility functions
+
+    	// utility functions
         f1: 'relaunch',
         z: 'undo',
         tab: 'hint'
     },
-	
-	'esc:cmd': 'hint'
+
+    'esc:cmd': 'hint'
 });
