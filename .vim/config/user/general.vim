@@ -31,8 +31,9 @@ set termencoding=utf-8
 let mapleader = "\<Space>"
 
 " Easier saving, and quiting
-nmap <Leader><Leader> :w<CR>
-nmap <Leader><Leader><Leader> :wq<CR>
+nnoremap <Leader><Leader> :w<CR>
+nnoremap <Leader><Leader>q :wq<CR>
+nnoremap <Leader><Leader>qa :wqa<CR>
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
@@ -93,7 +94,7 @@ set scrolloff=3
 set nowrap
 
 " Save a file as root (,W)
-noremap <leader>W :w !sudo tee % > /dev/null<CR>
+noremap <Leader>W :w !sudo tee % > /dev/null<CR>
 
 " Automatic commands
 if has("autocmd")
@@ -103,7 +104,7 @@ if has("autocmd")
 
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-	autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
+	" autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
 
 endif
 

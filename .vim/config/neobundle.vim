@@ -74,7 +74,7 @@
 	" Interface
 	"""""""""""
 		NeoBundle 'scrooloose/nerdtree'
-		" NeoBundle 'jistr/vim-nerdtree-tabs'
+		NeoBundle 'jistr/vim-nerdtree-tabs'
 		NeoBundle 'bling/vim-airline'
 		" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 		NeoBundle 'sjl/gundo.vim'
