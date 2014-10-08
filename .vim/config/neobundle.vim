@@ -68,7 +68,7 @@
 			NeoBundle 'Shougo/vimshell.vim'
 			NeoBundle 'christoomey/vim-tmux-navigator'
 			NeoBundle 'rizzatti/dash.vim'
-			" NeoBundle 'edkolev/tmuxline.vim'
+			NeoBundle 'edkolev/tmuxline.vim'
 			" NeoBundle 'edkolev/promptline.vim'
 
 		" Interface
