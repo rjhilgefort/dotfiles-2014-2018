@@ -90,7 +90,8 @@
 		NeoBundle 'tpope/vim-unimpaired'
 		NeoBundle 'tpope/vim-sensible'
 		NeoBundle 'terryma/vim-multiple-cursors'
-		NeoBundle 'bronson/vim-toggle-wrap'
+		" Removed because not flexible
+		" NeoBundle 'bronson/vim-toggle-wrap'
 
 	" Other
 	"""""""

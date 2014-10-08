@@ -31,9 +31,10 @@ set termencoding=utf-8
 let mapleader = "\<Space>"
 
 " Easier saving, and quiting
-nnoremap <Leader><Leader> :w<CR>
-nnoremap <Leader><Leader>q :wq<CR>
-nnoremap <Leader><Leader>qa :wqa<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>wq :wq<CR>
+nnoremap <Leader>wqa :wqa<CR>
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
