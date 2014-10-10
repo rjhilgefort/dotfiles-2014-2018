@@ -33,6 +33,7 @@ let mapleader = "\<Space>"
 " Easier saving, and quiting
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>ww :wq<CR>
 nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>wqa :wqa<CR>
 
@@ -114,14 +115,14 @@ set colorcolumn=80,120
 
 " Disable arrow keys
 let arrowKeyWarn = "You no like hjkl?"
-map <up> :echo arrowKeyWarn<CR>
-map <down> :echo arrowKeyWarn<CR>
-map <left> :echo arrowKeyWarn<CR>
-map <right> :echo arrowKeyWarn<CR>
-imap <up> :echo arrowKeyWarn<CR>
-imap <down> :echo arrowKeyWarn<CR>
-imap <left> :echo arrowKeyWarn<CR>
-imap <right> :echo arrowKeyWarn<CR>
+noremap <up> :echo arrowKeyWarn<CR>
+noremap <down> :echo arrowKeyWarn<CR>
+noremap <left> :echo arrowKeyWarn<CR>
+noremap <right> :echo arrowKeyWarn<CR>
+inoremap <up> :echo arrowKeyWarn<CR>
+inoremap <down> :echo arrowKeyWarn<CR>
+inoremap <left> :echo arrowKeyWarn<CR>
+inoremap <right> :echo arrowKeyWarn<CR>
 
 " <Esc> key alternative
 set timeout timeoutlen=500 ttimeoutlen=50
