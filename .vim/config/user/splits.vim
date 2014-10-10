@@ -1,4 +1,4 @@
-" More natural split
+" More natural split when using default split hotkeys
 set splitbelow
 set splitright
 
@@ -7,10 +7,10 @@ set winheight=30
 set winminheight=5
 
 " Faster split resizing
-nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
-nnoremap <silent> < :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-nnoremap <silent> > :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+nnoremap <silent> <Leader>srh :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
+nnoremap <silent> <Leader>srl :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
+nnoremap <silent> <Leader>srk :exe "resize " . (winheight(0) * 5/4)<CR>
+nnoremap <silent> <Leader>srj :exe "resize " . (winheight(0) * 4/5)<CR>
 
 " Window splitting
 nnoremap <Leader>swh :topleft  vnew<CR>
