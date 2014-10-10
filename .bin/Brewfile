@@ -58,7 +58,9 @@ install macvim --custom-system-icons --override-system-vim
 # General Utilities
 install node
 install zsh
-install mongo
+install mongodb
+install mongoose
+install redis
 install tmux
 install reattach-to-user-namespace
 install tig
