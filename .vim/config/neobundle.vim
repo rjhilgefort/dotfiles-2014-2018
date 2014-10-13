@@ -48,6 +48,7 @@
 		" NeoBundle 'Shougo/neocomplcache.vim'
 		NeoBundle 'honza/vim-snippets'
 		NeoBundle 'mustache/vim-mustache-handlebars'
+		NeoBundle 'heavenshell/vim-jsdoc'
 
 	" Code Display
 	""""""""""""""
