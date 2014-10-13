@@ -94,8 +94,7 @@
 		NeoBundle 'tpope/vim-unimpaired'
 		NeoBundle 'tpope/vim-sensible'
 		NeoBundle 'terryma/vim-multiple-cursors'
-		" Removed because not flexible
-		" NeoBundle 'bronson/vim-toggle-wrap'
+		NeoBundle 'junegunn/vim-easy-align'
 
 	" Other
 	"""""""
