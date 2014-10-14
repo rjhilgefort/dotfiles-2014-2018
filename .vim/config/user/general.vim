@@ -57,7 +57,7 @@ set noexpandtab
 
 " Show “invisible” characters
 set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_
-set nolist " set nolist
+set nolist
 
 " Ignore case of searches
 set ignorecase
