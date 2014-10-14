@@ -12,4 +12,5 @@
 : endif
 :endfunction
 
-noremap <Leader>tw :call ToggleWrap()<CR>
+" noremap <Leader>tw :call ToggleWrap()<CR>
+noremap cow :call ToggleWrap()<CR>

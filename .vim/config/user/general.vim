@@ -93,6 +93,7 @@ set showcmd
 set scrolloff=3
 
 " No wordwrap
+set linebreak
 set nowrap
 
 " Save a file as root (,W)
