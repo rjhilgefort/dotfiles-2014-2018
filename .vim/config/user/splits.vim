@@ -2,9 +2,9 @@
 set splitbelow
 set splitright
 
-" Min and Max size
-set winheight=30
-set winminheight=5
+" " Min and Max size
+" set winheight=30
+" set winminheight=5
 
 " Faster split resizing
 nnoremap <silent> <Leader>srh :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
