@@ -33,7 +33,7 @@ let mapleader = "\<Space>"
 " Easier saving, and quiting
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>ww :wq<CR>
+nnoremap <Leader>wa :wa<CR>
 nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>wqa :wqa<CR>
 
