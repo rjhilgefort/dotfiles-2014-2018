@@ -69,7 +69,7 @@ set incsearch
 set laststatus=2
 
 " Enable mouse in all modes
-set mouse=
+set mouse=a
 
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
