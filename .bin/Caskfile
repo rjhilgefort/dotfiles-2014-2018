@@ -30,12 +30,13 @@ cask install onepassword 2> /dev/null
 ###############################################################################
 # Nice To Have
 ###############################################################################
+cask install ksdiff 2> /dev/null
 cask install google-drive 2> /dev/null
 cask install adobe-reader 2> /dev/null
 cask install flash 2> /dev/null
 cask install robomongo 2> /dev/null
+cask install steam 2> /dev/null
 cask install virtualbox 2> /dev/null
-cask install ksdiff 2> /dev/null
 cask install colloquy 2> /dev/null
 cask install imagealpha 2> /dev/null
 cask install torbrowser 2> /dev/null
