@@ -1,9 +1,10 @@
-" Hotkey halp
-"""""""""""""
-" In normal mode...
-" 	zM - fold everything
-" 	zR - unfold everything
-" 	za - toggle fold within block
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" user/folding.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" zM - fold everything
+" zR - unfold everything
+" za - toggle fold within block
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set foldmethod=indent
 set foldnestmax=10
