@@ -1,16 +1,26 @@
-" Toggle through wrap modes
-:function ToggleWrap()
-: if (&wrap == 1)
-:   if (&linebreak == 0)
-:     set linebreak
-:   else
-:     set nowrap
-:   endif
-: else
-:   set wrap
-:   set nolinebreak
-: endif
-:endfunction
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" user/wrap.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" noremap <Leader>tw :call ToggleWrap()<CR>
-noremap cow :call ToggleWrap()<CR>
+" Cycle through wrap options
+function! s:ToggleWrap()
+	if (&wrap == 1)
+		if (&linebreak == 0)
+			set linebreak
+			echo "set linebreak"
+		else
+			set nowrap
+			echo "set nowrap"
+		endif
+	else
+		set wrap
+		set nolinebreak
+		echo "set wrap | set nolinebreak"
+	endif
+endfunction
+
+" :ToggleWrap
+command! ToggleWrap call <SID>ToggleWrap()
+
+" Go ahead and setup expected mapping
+noremap cow :ToggleWrap<CR>
