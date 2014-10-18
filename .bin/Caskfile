@@ -36,6 +36,7 @@ cask install adobe-reader 2> /dev/null
 cask install flash 2> /dev/null
 cask install robomongo 2> /dev/null
 cask install steam 2> /dev/null
+cask install origin 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install colloquy 2> /dev/null
 cask install imagealpha 2> /dev/null
