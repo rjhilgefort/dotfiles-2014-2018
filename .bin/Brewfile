@@ -70,6 +70,7 @@ install fasd
 install git-extras
 install zlib
 install gdb --with-brewed-python
+install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 
 install homebrew/dupes/grep
 install homebrew/dupes/screen
