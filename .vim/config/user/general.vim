@@ -139,3 +139,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/node_modules/*,*/\.git/*
 " Execute the current file
 nnoremap <F9> :!%:p<CR>
 
+" Search for currently selected text from visual mode
+vnoremap / "vy/<c-r>v
+
