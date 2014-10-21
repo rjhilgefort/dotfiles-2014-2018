@@ -1,3 +1,11 @@
+# Try some of these
+# https://github.com/jonas/tig/blob/master/doc/tigrc.5.adoc
+# https://github.com/jtheoof/dotfiles/blob/master/.tigrc
+###############################################################################
+
+# mouse mode
+set mouse = true
+
 # refresh settings
 # set refresh-mode = periodic
 # set refresh-interval = 10
