@@ -6,11 +6,11 @@
 set showtabline=2
 
 " Vi tab navigation
-nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabnext<CR>
-nnoremap tk  :tabprev<CR>
-nnoremap tl  :tablast<CR>
-nnoremap tt  :tabedit<Space>
-nnoremap tn  :tabnew<CR>
-nnoremap tm  :tabm<Space>
-nnoremap td  :tabclose<CR>
+nnoremap <Leader>th :tabfirst<CR>
+nnoremap <Leader>tj :tabnext<CR>
+nnoremap <Leader>tk :tabprev<CR>
+nnoremap <Leader>tl :tablast<CR>
+nnoremap <Leader>tt :tabedit<Space>
+nnoremap <Leader>tn :tabnew<CR>
+nnoremap <Leader>tm :tabm<Space>
+nnoremap <Leader>td :tabclose<CR>
