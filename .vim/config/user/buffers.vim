@@ -2,12 +2,24 @@
 " user/buffers.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" " Vi tab navigation
-" nnoremap th  :tabfirst<CR>
-" nnoremap tj  :tabnext<CR>
-" nnoremap tk  :tabprev<CR>
-" nnoremap tl  :tablast<CR>
-" nnoremap tt  :tabedit<Space>
-" nnoremap tn  :tabnew<CR>
-" nnoremap tm  :tabm<Space>
-" nnoremap td  :tabclose<CR>
+" List buffers
+nnoremap <Leader>bb :buffers<CR>
+
+" Buffer navigation
+nnoremap <Leader>bh :bfirst<CR>
+nnoremap <Leader>bj :bnext<CR>
+nnoremap <Leader>bk :bprevious<CR>
+nnoremap <Leader>bl :blast<CR>
+
+" Buffer split and navigate
+nnoremap <Leader>bsh :sbfirst<CR>
+nnoremap <Leader>bsj :sbnext<CR>
+nnoremap <Leader>bsk :sbprevious<CR>
+nnoremap <Leader>bsl :sblast<CR>
+
+" Unload current buffer
+nnoremap <Leader>bd :bd<CR>
+
+" Unload all buffers
+nnoremap <Leader>bdd :1,1000bd<CR>
+
