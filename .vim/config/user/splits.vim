@@ -15,15 +15,19 @@ nnoremap <silent> <Leader>srh :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 nnoremap <silent> <Leader>srl :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
 nnoremap <silent> <Leader>srk :exe "resize " . (winheight(0) * 5/4)<CR>
 nnoremap <silent> <Leader>srj :exe "resize " . (winheight(0) * 4/5)<CR>
+" nnoremap <silent> <Leader>srh <C-W><
+" nnoremap <silent> <Leader>srl <C-W>>
+" nnoremap <silent> <Leader>srk <C-W>+
+" nnoremap <silent> <Leader>srj <C-W>-
 
 " Window splitting
-nnoremap <Leader>swh :topleft  vnew<CR>
-nnoremap <Leader>swl :botright vnew<CR>
-nnoremap <Leader>swk :topleft  new<CR>
-nnoremap <Leader>swj :botright new<CR>
+nnoremap <silent> <Leader>swh :topleft  vnew<CR>
+nnoremap <silent> <Leader>swl :botright vnew<CR>
+nnoremap <silent> <Leader>swk :topleft  new<CR>
+nnoremap <silent> <Leader>swj :botright new<CR>
 " Buffer splitting
-nnoremap <Leader>sh :leftabove  vnew<CR>
-nnoremap <Leader>sl :rightbelow vnew<CR>
-nnoremap <Leader>sk :leftabove  new<CR>
-nnoremap <Leader>sj :rightbelow new<CR>
+nnoremap <silent> <Leader>sh :leftabove  vnew<CR>
+nnoremap <silent> <Leader>sl :rightbelow vnew<CR>
+nnoremap <silent> <Leader>sk :leftabove  new<CR>
+nnoremap <silent> <Leader>sj :rightbelow new<CR>
 
