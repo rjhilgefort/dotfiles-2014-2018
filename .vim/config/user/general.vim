@@ -142,3 +142,6 @@ nnoremap <F9> :!%:p<CR>
 " Search for currently selected text from visual mode
 vnoremap / "vy/<c-r>v
 
+" Repeat previous command
+nnoremap <Leader>. @:
+
