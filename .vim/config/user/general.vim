@@ -145,3 +145,9 @@ vnoremap / "vy/<c-r>v
 " Repeat previous command
 nnoremap <Leader>. @:
 
+" Add spacing
+nmap <Leader>h i<Space><Esc>l
+nmap <Leader>j ]<Leader>
+nmap <Leader>k [<Leader>
+nmap <Leader>l i<Space><Esc>
+
