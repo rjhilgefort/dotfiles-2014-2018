@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " xolox/vim-sessions
-" https://github.com/xolox/vim-session 
+" https://github.com/xolox/vim-session
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:session_command_aliases = 1
@@ -10,7 +10,7 @@ let g:session_persist_colors = 0
 
 " Autoload sessions when entering vim?
 " 'prompt', 'yes', 'no'
-let g:session_autoload = 'no'
+let g:session_autoload = 'yes'
 
 " Autosave sessions when exiting vim?
 " 'prompt', 'yes', 'no'
