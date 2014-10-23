@@ -151,3 +151,7 @@ nmap <Leader>j ]<Leader>
 nmap <Leader>k [<Leader>
 nmap <Leader>l i<Space><Esc>
 
+" Use Q for formatting the current paragraph (or selection)
+vmap Q gq
+nmap Q gqap
+
