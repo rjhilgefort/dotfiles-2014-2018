@@ -155,3 +155,7 @@ nmap <Leader>l i<Space><Esc>
 vmap Q gq
 nmap Q gqap
 
+" Semicolon is much easier to use for commands (and not used much otherwise)
+nnoremap ; :
+nnoremap : ;
+
