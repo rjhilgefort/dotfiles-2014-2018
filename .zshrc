@@ -62,6 +62,8 @@ alias reload="exec $SHELL -l"
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
 
+alias cl="clear"
+
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
