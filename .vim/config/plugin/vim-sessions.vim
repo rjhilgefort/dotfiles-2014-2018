@@ -10,7 +10,7 @@ let g:session_persist_colors = 0
 
 " Autoload sessions when entering vim?
 " 'prompt', 'yes', 'no'
-let g:session_autoload = 'prompt'
+let g:session_autoload = 'no'
 
 " Autosave sessions when exiting vim?
 " 'prompt', 'yes', 'no'
