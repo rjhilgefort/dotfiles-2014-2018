@@ -81,6 +81,9 @@ set nostartofline
 " Show the cursor position
 set ruler
 
+" Set rulers
+set colorcolumn=80,120
+
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 
@@ -114,9 +117,6 @@ if has("autocmd")
 	" autocmd BufNewFile,BufRead *.hbs setfiletype html syntax=html
 
 endif
-
-" Set rulers
-set colorcolumn=80,120
 
 " Disable arrow keys
 let arrowKeyWarn = "You no like hjkl?"
