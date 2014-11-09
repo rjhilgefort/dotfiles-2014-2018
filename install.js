@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-require('shelljs');
 
 // Declare common vars
-var source, dest;
+var shell = require('shelljs'),
+	_ = require('lodash'),
+	source, dest;
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -13,8 +14,8 @@ if (false) {
 	source = __dirname + '/.src/base16-vim/colors/';
 	dest = __dirname + '/.vim/colors/';
 
-	ls(source).forEach(function(scheme) {
-		ln('-sf', source + scheme, dest + scheme);
+	shell.ls(source).forEach(function(scheme) {
+		shell.ln('-sf', source + scheme, dest + scheme);
 	});
 }
 
@@ -27,21 +28,20 @@ dest = __dirname + '/.zprezto/modules/prompt/functions/';
 
 /*
 // TODO: This would be ideal, but we'll just hardcode the installs for now
-ls(source).forEach(function(repo) {
+shell.ls(source).forEach(function(repo) {
 	repo = source + repo;
-
 });
 */
 
 // pure
-ln('-sf', source + 'pure/pure.zsh', dest + 'prompt_pure_setup');
+shell.ln('-sf', source + 'pure/pure.zsh', dest + 'prompt_pure_setup');
 
 
 ///////////////////////////////////////////////////////////////////////////////
 // Link items at root of dotfiles project
 ///////////////////////////////////////////////////////////////////////////////
 
-cd(__dirname);
+shell.cd(__dirname);
 
 var blacklist = [
 	".git",
@@ -51,9 +51,9 @@ var blacklist = [
 	"install.js"
 ];
 
-ls('-A').forEach(function(toLink) {
-	if (!~blacklist.indexOf(toLink)) {
-		ln('-sf', toLink, env['HOME'] + "/" + toLink);
+shell.ls('-A').forEach(function(toLink) {
+	if (!_.contains(blacklist, toLink)) {
+		shell.ln('-sf', toLink, env['HOME'] + "/" + toLink);
 	}
 });
 

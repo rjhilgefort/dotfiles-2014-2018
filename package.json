@@ -13,6 +13,7 @@
   "author": "@rjhilgefort",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^2.4.1",
     "shelljs": "^0.3.0"
   }
 }
