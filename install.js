@@ -53,7 +53,7 @@ var blacklist = [
 
 shell.ls('-A').forEach(function(toLink) {
 	if (!_.contains(blacklist, toLink)) {
-		shell.ln('-sf', toLink, env['HOME'] + "/" + toLink);
+		shell.ln('-sf', toLink, shell.env['HOME'] + "/" + toLink);
 	}
 });
 
