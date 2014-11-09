@@ -50,7 +50,9 @@ var blacklist = [
 	".gitignore",
 	".gitmodules",
 	"TODO.md",
-	"install.js"
+	"install.js",
+	"node_modules",
+	"package.json"
 ];
 
 shell.ls('-A').forEach(function(toLink) {
