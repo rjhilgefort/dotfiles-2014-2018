@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-require('shelljs/global');
+require('shelljs');
 
 // Declare common vars
 var source, dest;
