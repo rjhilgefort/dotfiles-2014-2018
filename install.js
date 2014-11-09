@@ -5,6 +5,8 @@ var shell = require('shelljs'),
 	_ = require('lodash'),
 	source, dest;
 
+// Make sure submodules are installed
+shell.exec('git submodule update --init --recursive');
 
 ///////////////////////////////////////////////////////////////////////////////
 // Link base16-vim schemes to .vim dir
