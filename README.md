@@ -1,4 +1,12 @@
 @rjhilgefort dotfiles
-=====================
+---------------------
 
-My configuration files. Still a WIP in terms of being usefuly for someone else. Checkback later.
+My configuration files.
+
+# Environment Dependencies
+
+- git
+- node
+- npm
+- zsh
+- tig
