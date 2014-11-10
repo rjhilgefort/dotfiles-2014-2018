@@ -50,7 +50,7 @@
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 
-	# Pull and Push (experimental (not safe to use in all cases))
+	# Pull and Push
 	sync = !"git pull; git push"
 
 	# Stash helpers
