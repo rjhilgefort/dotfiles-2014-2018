@@ -47,6 +47,7 @@ cask install torbrowser 2> /dev/null
 ###############################################################################
 cask install java 2> /dev/null
 cask install silverlight 2> /dev/null
+cask install xquartz 2> /dev/null
 
 ###############################################################################
 # Maybe/Suggested/Archive
