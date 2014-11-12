@@ -18,8 +18,7 @@ nnoremap <Leader>bsk :sbprevious<CR>
 nnoremap <Leader>bsl :sblast<CR>
 
 " Unload current buffer
-nnoremap <Leader>bd :bd<CR>
+nnoremap <Leader>bd :Bclose<CR>
 
-" Unload all buffers
-nnoremap <Leader>bdd :1,1000bd<CR>
-
+" Unload all buffers and reset NERDTree
+nnoremap <Leader>bdd :1,1000bd<CR> :NERDTreeToggle<CR>
