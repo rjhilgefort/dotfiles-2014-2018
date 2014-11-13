@@ -7,8 +7,8 @@ set splitbelow
 set splitright
 
 " " Min and Max size
-set winheight=30
-set winminheight=5
+" set winheight=30
+" set winminheight=5
 
 " Reset all split resizing
 nnoremap <silent> <Leader>srr <C-W>=
