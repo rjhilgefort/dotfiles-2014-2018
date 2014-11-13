@@ -10,4 +10,4 @@ map k 4k
 set follow_new_tab=0
 
 " Disable Vrome in some sites, multiple URLs can be separated with ','
-set disablesites=mail.google.com, newsblur.com, localhost, set disablesites=mail.google.com, newsblur.com, localhost, jsbin.com, emberjs.jsbin.com
+set disablesites=mail.google.com, newsblur.com, localhost, jsbin.com, emberjs.jsbin.com
