@@ -62,9 +62,9 @@
 		NeoBundle 'scrooloose/syntastic'
 		NeoBundle 'mileszs/ack.vim'
 		NeoBundle 'rking/ag.vim'
-		NeoBundle 'kien/ctrlp.vim'
+		" NeoBundle 'kien/ctrlp.vim'
 		" Unite
-			" NeoBundle 'Shougo/unite.vim'
+			NeoBundle 'Shougo/unite.vim'
 			" NeoBundle 'Shougo/neomru.vim'
 			" NeoBundle 'Shougo/unite-outline'
 			" NeoBundle 'thinca/vim-unite-history'
