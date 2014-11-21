@@ -7,6 +7,10 @@
 " Show hidden files
 let g:ctrlp_show_hidden = 1
 
+" Show search on top of VIM
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+
 " Always start in regexp search mode
 " let g:ctrlp_regexp = 1
 
@@ -24,3 +28,4 @@ if executable('ag')
 	\ ' --ignore ".git"' .
 	\ ' -g ""'
 endif
+
