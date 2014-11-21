@@ -4,4 +4,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:strip_whitespace_on_save = 1
-let g:better_whitespace_filetypes_blacklist = []
+let g:better_whitespace_filetypes_blacklist = ['unite']

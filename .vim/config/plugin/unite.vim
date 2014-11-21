@@ -4,9 +4,7 @@
 
 let g:unite_source_history_yank_enable = 1
 let g:unite_enable_start_insert = 1
-" let g:unite_split_rule = "botright"
-" let g:unite_force_overwrite_statusline = 0
-let g:unite_winheight = 10
+let g:unite_winheight = 25
 
 " ack > grep
 if executable('ack')
@@ -41,14 +39,14 @@ endfunction
 
 " General config
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-" call unite#custom#source('buffer,file,file_rec,file_rec/async', 'sorters', ['sorter_rank', 'sorter_length'])
+call unite#custom#source('buffer,file,file_rec,file_rec/async', 'sorters', ['sorter_selcta'])
 " call unite#custom#source('file_rec/async', 'ignore_globs', split(&wildignore, ','))
-" call unite#custom#source('file_rec/async', 'converters', [])
-" call unite#custom#source('file_rec/async', 'max_candidates', 24)
+call unite#custom#source('file_rec/async', 'converters', [])
+call unite#custom#source('file_rec/async', 'max_candidates', 24)
 
 " prettier output
-" call unite#custom#source('buffer', 'converters', ['converter_file_directory'])
+call unite#custom#source('buffer', 'converters', ['converter_file_directory'])
 
-nmap <C-p> <Leader>uf
 nnoremap <Leader>uf :Unite file_rec/async:!<CR>
+nmap <C-p> <Leader>uf
 
