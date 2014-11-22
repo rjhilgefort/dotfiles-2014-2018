@@ -65,9 +65,9 @@
 		" NeoBundle 'kien/ctrlp.vim'
 		" Unite
 			NeoBundle 'Shougo/unite.vim'
-			" NeoBundle 'Shougo/neomru.vim'
-			" NeoBundle 'Shougo/unite-outline'
-			" NeoBundle 'thinca/vim-unite-history'
+			NeoBundle 'Shougo/neomru.vim'
+			NeoBundle 'Shougo/unite-outline'
+			NeoBundle 'thinca/vim-unite-history'
 		NeoBundle 'airblade/vim-gitgutter'
 		NeoBundle 'Shougo/vimshell.vim'
 		NeoBundle 'christoomey/vim-tmux-navigator'
