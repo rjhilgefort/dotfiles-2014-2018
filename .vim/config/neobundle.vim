@@ -97,6 +97,7 @@
 		NeoBundle 'terryma/vim-multiple-cursors'
 		NeoBundle 'junegunn/vim-easy-align'
 		NeoBundle 'rhlobo/vim-super-retab'
+		NeoBundle 'tpope/vim-abolish'
 
 	" Other
 	"""""""
