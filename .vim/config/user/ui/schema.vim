@@ -1,3 +1,7 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" user/ui/schema.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 set guifont=Source\ Code\ Pro\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
