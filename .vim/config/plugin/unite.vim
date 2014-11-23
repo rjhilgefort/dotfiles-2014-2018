@@ -60,9 +60,10 @@ call unite#custom#profile('default', 'context', {
 \ })
 
 " Feature Settings
-call unite#custom#profile('files', 'context', { 'auto_preview': 0 })
-call unite#custom#profile('buffer', 'context', { 'auto_preview': 0 })
-call unite#custom#profile('file_mru', 'context', { 'auto_preview': 0 })
+call unite#custom#profile('files', 'context', {})
+call unite#custom#profile('flat', 'context', {})
+call unite#custom#profile('file_mru', 'context', {})
+call unite#custom#profile('buffer', 'context', {})
 call unite#custom#profile('outline', 'context', { 'auto_preview': 1 })
 call unite#custom#profile('grep', 'context', { 'start_insert': 0 })
 
@@ -80,13 +81,14 @@ function! s:uniteFeatureBind(feature, bind, ...)
 	execute 'nnoremap <Leader>u' . a:bind . ' :Unite -buffer-name=' . a:feature . ' -toggle ' . l:featureCommand . '<CR>'
 endfunction
 
-call s:uniteFeatureBind("files", "f", "file_rec/async:!")
-call s:uniteFeatureBind("buffer", "b")
-call s:uniteFeatureBind("file_mru", "r")
-call s:uniteFeatureBind("outline", "o")
-call s:uniteFeatureBind("grep", "g", "grep:.")
+call s:uniteFeatureBind('files', 'p', 'file_rec/async:!')
+call s:uniteFeatureBind('flat', 'f', 'file directory')
+call s:uniteFeatureBind('file_mru', 'r')
+call s:uniteFeatureBind('buffer', 'b')
+call s:uniteFeatureBind('outline', 'o')
+call s:uniteFeatureBind('grep', 'g', 'grep:.')
 
 " Shortcuts for file searching
-nmap <Leader>uu <Leader>uf
-nmap <C-p> <Leader>uf
+nmap <Leader>uu <Leader>up
+nmap <C-p> <Leader>up
 
