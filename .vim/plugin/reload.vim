@@ -1,10 +1,11 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" user/reload.vim
+" plugin/reload.vim
+" @author rjhilgefort@gmail.com
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Reload .vimrc and redraw ui
 if !exists("*ReloadConfig")
-	function! ReloadConfig()
+	function! s:ReloadConfig()
 		" silent !clear
 		source $MYVIMRC
 		redraw!
@@ -12,9 +13,8 @@ if !exists("*ReloadConfig")
 		checktime
 		echo "Locked and (Re)loaded!"
 	endfunction
+
 	" :ReloadConfig
-	command! ReloadConfig call ReloadConfig()
+	command! ReloadConfig call <SID>ReloadConfig()
 endif
 
-" Setup mapping
-noremap <Leader>r :ReloadConfig<CR>
