@@ -64,8 +64,14 @@ call unite#custom#profile('files', 'context', {})
 call unite#custom#profile('flat', 'context', {})
 call unite#custom#profile('file_mru', 'context', {})
 call unite#custom#profile('buffer', 'context', {})
-call unite#custom#profile('outline', 'context', { 'auto_preview': 1 })
 call unite#custom#profile('grep', 'context', { 'start_insert': 0 })
+call unite#custom#profile('outline', 'context', { 'auto_preview': 1 })
+call unite#custom#profile('change', 'context', { 'auto_preview': 1 })
+call unite#custom#profile('line', 'context', {})
+call unite#custom#profile('yank', 'context', {})
+call unite#custom#profile('command', 'context', {})
+call unite#custom#profile('mapping', 'context', {})
+
 
 """
 " Create a unite feature bind
@@ -75,20 +81,26 @@ call unite#custom#profile('grep', 'context', { 'start_insert': 0 })
 " @param a:1: Override Unite feature bind command
 "
 " EX: nnoremap <Leader>ub :Unite -buffer-name=buffer -toggle buffer<CR>
+"""
 function! s:uniteFeatureBind(feature, bind, ...)
 	let l:featureCommand = (a:0 >= 1) ? a:1 : a:feature
 
 	execute 'nnoremap <Leader>u' . a:bind . ' :Unite -buffer-name=' . a:feature . ' -toggle ' . l:featureCommand . '<CR>'
 endfunction
 
-call s:uniteFeatureBind('files', 'p', 'file_rec/async:!')
-call s:uniteFeatureBind('flat', 'f', 'file directory')
+call s:uniteFeatureBind('files',    'p', 'file_rec/async:!')
+call s:uniteFeatureBind('flat',     'f', 'file directory directory/new file/new')
 call s:uniteFeatureBind('file_mru', 'r')
-call s:uniteFeatureBind('buffer', 'b')
-call s:uniteFeatureBind('outline', 'o')
-call s:uniteFeatureBind('grep', 'g', 'grep:.')
+call s:uniteFeatureBind('buffer',   'b')
+call s:uniteFeatureBind('grep',     'g', 'grep:.')
+call s:uniteFeatureBind('outline',  'o')
+call s:uniteFeatureBind('change',   'u')
+call s:uniteFeatureBind('line',     'l')
+call s:uniteFeatureBind('yank',     'y', 'history/yank')
+call s:uniteFeatureBind('command',  ';', 'history/command')
+call s:uniteFeatureBind('mapping',  'm')
 
-" Shortcuts for file searching
-nmap <Leader>uu <Leader>up
+" Shortcuts
+" nmap <Leader>uu <Leader>up
 nmap <C-p> <Leader>up
 
