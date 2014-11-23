@@ -1,16 +1,16 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" user/general.vim
+" user/settings.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Spell checking
 :setlocal spell spelllang=en_us
 set complete+=kspell
 
+" Timeout delay for mappings
+set timeout timeoutlen=500 ttimeoutlen=50
+
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
-
-" background buffers
-" :set hidden
 
 " Enhance command-line completion
 set wildmenu
@@ -25,21 +25,11 @@ set backspace=indent,eol,start
 set ttyfast
 
 " Add the g flag to search/replace by default
-" set gdefault
+set gdefault
 
 " Use UTF-8 without BOM
 set encoding=utf-8 nobomb
 set termencoding=utf-8
-
-" Change leader
-let mapleader = "\<Space>"
-
-" Easier saving, and quiting
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>wq :wq<CR>
-nnoremap <Leader>wa :bufdo w<CR>
-nnoremap <Leader>wqa :bufdo wq<CR>
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
@@ -103,9 +93,6 @@ set scrolloff=3
 set linebreak
 set nowrap
 
-" Save a file as root (,W)
-noremap <Leader>W :w !sudo tee % > /dev/null<CR>
-
 " Automatic commands
 if has("autocmd")
 
@@ -118,44 +105,5 @@ if has("autocmd")
 
 endif
 
-" Disable arrow keys
-let arrowKeyWarn = "You no like hjkl?"
-noremap <up> :echo arrowKeyWarn<CR>
-noremap <down> :echo arrowKeyWarn<CR>
-noremap <left> :echo arrowKeyWarn<CR>
-noremap <right> :echo arrowKeyWarn<CR>
-inoremap <up> :echo arrowKeyWarn<CR>
-inoremap <down> :echo arrowKeyWarn<CR>
-inoremap <left> :echo arrowKeyWarn<CR>
-inoremap <right> :echo arrowKeyWarn<CR>
-
-" <Esc> key alternative
-set timeout timeoutlen=500 ttimeoutlen=50
-inoremap jk <Esc>
-xnoremap ;; <Esc>
-
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/node_modules/*,*/\.git/*
-
-" Execute the current file
-nnoremap <F9> :!%:p<CR>
-
-" Search for currently selected text from visual mode
-vnoremap / "vy/<c-r>v
-
-" Repeat previous command
-nnoremap <Leader>. @:
-
-" Add spacing
-nmap <Leader>h i<Space><Esc>l
-nmap <Leader>j ]<Leader>
-nmap <Leader>k [<Leader>
-nmap <Leader>l i<Space><Esc>
-
-" Use Q for formatting the current paragraph (or selection)
-vmap Q gq
-nmap Q gqap
-
-" Semicolon is much easier to use for commands (and not used much otherwise)
-nnoremap ; :
-" nnoremap : ;
 
