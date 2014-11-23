@@ -23,5 +23,3 @@ endfunction
 " :ToggleWrap
 command! ToggleWrap call <SID>ToggleWrap()
 
-" Go ahead and setup expected mapping
-noremap cow :ToggleWrap<CR>
