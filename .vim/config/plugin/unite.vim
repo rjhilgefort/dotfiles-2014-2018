@@ -17,10 +17,6 @@ if executable('ag')
 	let g:unite_source_rec_async_command = 'ag --follow --nocolor --nogroup --hidden --ignore ".git" -g ""'
 endif
 
-" Profile
-let g:unite_source_history_yank_enable = 1
-let g:unite_matcher_fuzzy_max_input_length = 32
-
 " Custom mappings for the unite buffer
 function! s:uniteSettings()
 	" Play nice with supertab
@@ -35,42 +31,40 @@ function! s:uniteSettings()
 endfunction
 autocmd FileType unite call s:uniteSettings()
 
+" Profile
+let g:unite_source_history_yank_enable = 1 " 0
+let g:unite_matcher_fuzzy_max_input_length = 32 " 20
+let g:unite_converter_file_directory_width = 85 " 45
+
 " General config
-" call unite#filters#matcher_default#use(['matcher_glob'])
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#custom#source('buffer,file,file_rec,file_rec/async', 'sorters', ['sorter_selecta', 'sorter_rank'])
-call unite#custom#source('file_rec/async', 'ignore_globs', split(&wildignore, ','))
-call unite#custom#source('file_rec/async', 'converters', [])
-call unite#custom#source('file_rec/async', 'max_candidates', 24)
-
-" Prettier output
-call unite#custom#source('buffer', 'converters', ['converter_file_directory'])
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call unite#custom#source('buffer,file,file_rec,file_rec/async', 'matchers',       ['converter_relative_abbr', 'matcher_fuzzy'])
+call unite#custom#source('buffer,file,file_rec,file_rec/async', 'sorters',        ['sorter_selecta', 'sorter_rank'])
+call unite#custom#source('buffer,file,file_rec,file_rec/async', 'converters',     ['converter_file_directory'])
+call unite#custom#source('buffer,file,file_rec,file_rec/async', 'ignore_globs',   split(&wildignore, ','))
+call unite#custom#source('buffer,file,file_rec,file_rec/async', 'max_candidates', 24)
 
 " Default settings
 call unite#custom#profile('default', 'context', {
-	\ 'winheight': 25,
+	\ 'split': 1,
+	\ 'winheight': 50,
 	\ 'start_insert': 1,
 	\ 'auto_preview': 0,
 	\ 'vertical_preview': 1,
 \ })
 
 " Feature Settings
-call unite#custom#profile('files', 'context', {})
-call unite#custom#profile('flat', 'context', {})
+call unite#custom#profile('files',    'context', { 'unique': 1 })
+call unite#custom#profile('flat',     'context', {})
 call unite#custom#profile('file_mru', 'context', {})
-call unite#custom#profile('buffer', 'context', {})
-call unite#custom#profile('grep', 'context', { 'start_insert': 0 })
-call unite#custom#profile('outline', 'context', { 'auto_preview': 1 })
-call unite#custom#profile('change', 'context', { 'auto_preview': 1 })
-call unite#custom#profile('line', 'context', {})
-call unite#custom#profile('yank', 'context', {})
-call unite#custom#profile('command', 'context', {})
-call unite#custom#profile('mapping', 'context', {})
+call unite#custom#profile('buffer',   'context', { 'start_insert': 0, 'auto_preview': 1 })
+call unite#custom#profile('grep',     'context', { 'start_insert': 0 })
+call unite#custom#profile('outline',  'context', { 'auto_preview': 1 })
+call unite#custom#profile('change',   'context', { 'auto_preview': 1 })
+call unite#custom#profile('line',     'context', {})
+call unite#custom#profile('yank',     'context', {})
+call unite#custom#profile('command',  'context', {})
+call unite#custom#profile('mapping',  'context', {})
 
 
 """
