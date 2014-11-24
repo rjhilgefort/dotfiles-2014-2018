@@ -38,11 +38,11 @@ let g:unite_converter_file_directory_width = 85 " 45
 
 " General config
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#custom#source('buffer,file,file_rec,file_rec/async', 'matchers',       ['converter_relative_abbr', 'matcher_fuzzy'])
-call unite#custom#source('buffer,file,file_rec,file_rec/async', 'sorters',        ['sorter_selecta', 'sorter_rank'])
-call unite#custom#source('buffer,file,file_rec,file_rec/async', 'converters',     ['converter_file_directory'])
-call unite#custom#source('buffer,file,file_rec,file_rec/async', 'ignore_globs',   split(&wildignore, ','))
-call unite#custom#source('buffer,file,file_rec,file_rec/async', 'max_candidates', 24)
+call unite#custom#source('buffer,file_mru,file_rec,file_rec/async', 'matchers',       ['converter_relative_abbr', 'matcher_fuzzy'])
+call unite#custom#source('buffer,file_mru,file_rec,file_rec/async', 'sorters',        ['sorter_selecta', 'sorter_rank'])
+call unite#custom#source('buffer,file_mru,file_rec,file_rec/async', 'converters',     ['converter_file_directory'])
+call unite#custom#source('buffer,file_mru,file_rec,file_rec/async', 'ignore_globs',   split(&wildignore, ','))
+call unite#custom#source('buffer,file_mru,file_rec,file_rec/async', 'max_candidates', 24)
 
 " Default settings
 call unite#custom#profile('default', 'context', {
@@ -61,7 +61,7 @@ call unite#custom#profile('buffer',   'context', { 'start_insert': 0, 'auto_prev
 call unite#custom#profile('grep',     'context', { 'start_insert': 0 })
 call unite#custom#profile('outline',  'context', { 'auto_preview': 1 })
 call unite#custom#profile('change',   'context', { 'auto_preview': 1 })
-call unite#custom#profile('line',     'context', {})
+call unite#custom#profile('line',     'context', { 'auto_preview': 1 })
 call unite#custom#profile('yank',     'context', {})
 call unite#custom#profile('command',  'context', {})
 call unite#custom#profile('mapping',  'context', {})
@@ -80,6 +80,7 @@ function! s:uniteFeatureBind(feature, bind, ...)
 	let l:featureCommand = (a:0 >= 1) ? a:1 : a:feature
 
 	execute 'nnoremap <Leader>u' . a:bind . ' :Unite -buffer-name=' . a:feature . ' -toggle ' . l:featureCommand . '<CR>'
+	execute 'nnoremap <Leader>u' . a:bind . 'r :UniteResume ' . a:feature . '<CR>'
 endfunction
 
 call s:uniteFeatureBind('files',    'p', 'file_rec/async:!')
@@ -88,13 +89,15 @@ call s:uniteFeatureBind('file_mru', 'r')
 call s:uniteFeatureBind('buffer',   'b')
 call s:uniteFeatureBind('grep',     'g', 'grep:.')
 call s:uniteFeatureBind('outline',  'o')
-call s:uniteFeatureBind('change',   'u')
+call s:uniteFeatureBind('change',   'c')
 call s:uniteFeatureBind('line',     'l')
 call s:uniteFeatureBind('yank',     'y', 'history/yank')
 call s:uniteFeatureBind('command',  ';', 'history/command')
 call s:uniteFeatureBind('mapping',  'm')
 
+" Resume previous action buffer
+nmap <Leader>uu :UniteResume --no-split<CR>
+
 " Shortcuts
-" nmap <Leader>uu <Leader>up
 nmap <C-p> <Leader>up
 
