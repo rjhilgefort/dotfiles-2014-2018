@@ -96,7 +96,7 @@ call s:uniteFeatureBind('command',  ';', 'history/command')
 call s:uniteFeatureBind('mapping',  'm')
 
 " Resume previous action buffer
-nmap <Leader>uu :UniteResume -buffer-namee=resume -toggle<CR>
+nmap <Leader>uu :UniteResume -buffer-name=resume -toggle<CR>
 
 " Shortcuts
 nmap <C-p> <Leader>up
