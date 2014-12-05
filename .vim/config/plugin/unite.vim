@@ -57,7 +57,7 @@ call unite#custom#profile('default', 'context', {
 call unite#custom#profile('files',    'context', { 'winheight': 50, 'unique': 1 })
 call unite#custom#profile('flat',     'context', { 'winheight': 50 })
 call unite#custom#profile('file_mru', 'context', { 'winheight': 50 })
-call unite#custom#profile('buffer',   'context', { 'start_insert': 0, 'auto_preview': 1 })
+call unite#custom#profile('buffer',   'context', { 'winheight': 50, 'start_insert': 0, 'auto_preview': 1 })
 call unite#custom#profile('grep',     'context', { 'start_insert': 0 })
 call unite#custom#profile('outline',  'context', { 'auto_preview': 1 })
 call unite#custom#profile('change',   'context', { 'auto_preview': 1 })
