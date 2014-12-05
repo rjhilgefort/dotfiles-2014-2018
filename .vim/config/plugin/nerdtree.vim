@@ -13,3 +13,4 @@ let NERDTreeShowHidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 noremap <C-b><C-k> :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
