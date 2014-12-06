@@ -26,6 +26,7 @@ cask install firefox-esr-us 2> /dev/null
 cask install vlc 2> /dev/null
 cask install onepassword 2> /dev/null
 # cask install istat-menus4 2> /dev/null
+cask install sonos 2> /dev/null
 
 ###############################################################################
 # Nice To Have
