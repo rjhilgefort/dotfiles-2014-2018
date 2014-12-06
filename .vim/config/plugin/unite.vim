@@ -47,17 +47,17 @@ call unite#custom#source('buffer,file_mru,file_rec,file_rec/async', 'max_candida
 " Default settings
 call unite#custom#profile('default', 'context', {
 	\ 'split': 1,
-	\ 'winheight': 24,
+	\ 'winheight': 50,
 	\ 'start_insert': 1,
 	\ 'auto_preview': 0,
 	\ 'vertical_preview': 1,
 \ })
 
 " Feature Settings
-call unite#custom#profile('files',    'context', { 'winheight': 50, 'unique': 1 })
-call unite#custom#profile('flat',     'context', { 'winheight': 50 })
-call unite#custom#profile('file_mru', 'context', { 'winheight': 50 })
-call unite#custom#profile('buffer',   'context', { 'winheight': 50, 'start_insert': 0, 'auto_preview': 1 })
+call unite#custom#profile('files',    'context', { 'unique': 1 })
+call unite#custom#profile('flat',     'context', {})
+call unite#custom#profile('file_mru', 'context', {})
+call unite#custom#profile('buffer',   'context', { 'start_insert': 0, 'auto_preview': 1 })
 call unite#custom#profile('grep',     'context', { 'start_insert': 0 })
 call unite#custom#profile('outline',  'context', { 'auto_preview': 1 })
 call unite#custom#profile('change',   'context', { 'auto_preview': 1 })
