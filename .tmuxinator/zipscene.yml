@@ -16,21 +16,21 @@ windows:
         - runner:
           - cd ~/zipscene/wildcat/
           - grunt serve -B zcafe -D gma
-  - zsapi:
-      layout: even-horizontal
-      panes:
-        - editor:
-          - cd ~/zipscene/zs-api
-          - git checkout master
-          - git pull
-          - vim -c "NERDTreeToggle"
-        - runner:
-          - cd ~/zipscene/zs-api
-          - git checkout master
-          - git pull
-          - npm install
-          # Maybe do `mongod` here, but it's run on OS startup
-          - node app.js
+  # - zsapi:
+  #     layout: even-horizontal
+  #     panes:
+  #       - editor:
+  #         - cd ~/zipscene/zs-api
+  #         - git checkout master
+  #         - git pull
+  #         - vim -c "NERDTreeToggle"
+  #       - runner:
+  #         - cd ~/zipscene/zs-api
+  #         - git checkout master
+  #         - git pull
+  #         - npm install
+  #         # Maybe do `mongod` here, but it's run on OS startup
+  #         - node app.js
   - dotfiles:
       layout: even-horizontal
       panes:
