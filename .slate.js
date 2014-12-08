@@ -50,7 +50,7 @@ slate.bindAll({
 			j: $.focus('iTerm2'),
 			k: $.focus('Google Chrome'),
 			l: [$.focus('Messages'),
-				$.focus('Hipchat')],
+				$.focus('HipChat')],
 			';': $.focus('Dash'),
 			// h: // TODO: Focus previous
 
