@@ -16,8 +16,11 @@ noremap <Leader>r :ReloadConfig<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>wq :wq<CR>
-nnoremap <Leader>wa :bufdo w<CR>
-nnoremap <Leader>wqa :bufdo wq<CR>
+nnoremap <Leader>wa :wa<CR>
+nnoremap <Leader>wqa :wqa<CR>
+
+" nnoremap <Leader>wa :bufdo w<CR>
+" nnoremap <Leader>wqa :bufdo wq<CR>
 
 " Save a file as root (,W)
 noremap <Leader>W :w !sudo tee % > /dev/null<CR>
