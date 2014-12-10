@@ -10,7 +10,8 @@ if !exists("*ReloadConfig")
 		source $MYVIMRC
 		redraw!
 		AirlineRefresh
-		checktime
+		bufdo e
+		" checktime
 		echo "Locked and (Re)loaded!"
 	endfunction
 
