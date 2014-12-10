@@ -63,3 +63,7 @@ nnoremap ; :
 
 " Easier than <C-r>
 nnoremap U :redo<CR>
+
+" Delete current file
+nnoremap <C-Del> :!rm "%"<CR>
+
