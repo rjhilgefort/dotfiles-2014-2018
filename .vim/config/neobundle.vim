@@ -40,7 +40,7 @@
 		NeoBundle 'cakebaker/scss-syntax.vim'
 		NeoBundle 'nono/vim-handlebars'
 		NeoBundle 'Chiel92/vim-autoformat'
-		NeoBundle 'suan/vim-instant-markdown'
+		" NeoBundle 'suan/vim-instant-markdown'
 
 	" Completion
 	""""""""""""
