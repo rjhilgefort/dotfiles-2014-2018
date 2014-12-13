@@ -26,15 +26,15 @@ nnoremap <Leader>wqa :wqa<CR>
 noremap <Leader>W :w !sudo tee % > /dev/null<CR>
 
 " Disable arrow keys
-let arrowKeyWarn = "You no like hjkl?"
+let arrowKeyWarn = "You no like hjkl navigation? STOP USING THE CURSOR KEYS!"
 noremap <up> :echo arrowKeyWarn<CR>
 noremap <down> :echo arrowKeyWarn<CR>
 noremap <left> :echo arrowKeyWarn<CR>
 noremap <right> :echo arrowKeyWarn<CR>
-inoremap <up> :echo arrowKeyWarn<CR>
-inoremap <down> :echo arrowKeyWarn<CR>
-inoremap <left> :echo arrowKeyWarn<CR>
-inoremap <right> :echo arrowKeyWarn<CR>
+inoremap <up> <Nop>
+inoremap <down> <Nop>
+inoremap <left> <Nop>
+inoremap <right> <Nop>
 
 " Setup expected mapping
 noremap cow :ToggleWrap<CR>

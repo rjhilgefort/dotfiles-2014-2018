@@ -14,7 +14,7 @@ set complete+=kspell
 set clipboard=unnamed
 
 " Allow cursor keys in insert mode
-" set esckeys
+set esckeys
 
 " Optimize for fast terminal connections
 set ttyfast
