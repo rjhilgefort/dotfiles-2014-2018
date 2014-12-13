@@ -11,11 +11,11 @@ let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_smartsign_us = 0
 
 " Use uppercase target labels and type as a lower case
-" let g:EasyMotion_use_upper = 1
-" let g:EasyMotion_keys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ;'
+let g:EasyMotion_use_upper = 1
 
 " Prefer the home row
 let g:EasyMotion_keys = 'JKL;ASDFBCEGHIMNOPQRTUVWXYZ'
+" let g:EasyMotion_keys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ;'
 
 let g:EasyMotion_enter_jump_first = 1
 
