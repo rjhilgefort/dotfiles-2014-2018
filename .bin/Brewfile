@@ -82,6 +82,7 @@ install android-sdk
 install ant
 
 # Other useful binaries
+# install gcc
 # install bfg
 # install exiv2
 # install foremost
