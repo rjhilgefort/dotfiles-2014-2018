@@ -33,7 +33,7 @@
 	""""""""""
 		NeoBundle 'tpope/vim-surround'
 		NeoBundle 'pangloss/vim-javascript'
-		NeoBundle 'tpope/vim-markdown'
+		" NeoBundle 'tpope/vim-markdown'
 		NeoBundle 'groenewege/vim-less'
 		NeoBundle 'othree/html5.vim'
 		NeoBundle 'elzr/vim-json'
