@@ -49,10 +49,10 @@ vnoremap / "vy/<c-r>v
 nnoremap <Leader>. @:
 
 " Add spacing
-nmap <Leader>h i<Space><Esc>l
-nmap <Leader>j ]<Leader>
-nmap <Leader>k [<Leader>
-nmap <Leader>l i<Space><Esc>
+nmap <Leader><Leader>h i<Space><Esc>l
+nmap <Leader><Leader>j ]<Leader>
+nmap <Leader><Leader>k [<Leader>
+nmap <Leader><Leader>l i<Space><Esc>
 
 " Use Q for formatting the current paragraph (or selection)
 vmap Q gq
