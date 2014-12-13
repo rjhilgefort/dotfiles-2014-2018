@@ -67,3 +67,7 @@ nnoremap U :redo<CR>
 " Delete current file
 nnoremap <C-Del> :!rm "%"<CR>
 
+" Buffer reloading
+nmap <Leader>e :e<CR>
+" nmap <Leader>ea :bufdo e<CR>
+nmap <Leader>ea :checktime<CR>
