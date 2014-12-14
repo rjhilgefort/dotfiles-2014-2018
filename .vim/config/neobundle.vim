@@ -33,14 +33,14 @@
 	""""""""""
 		NeoBundle 'tpope/vim-surround'
 		NeoBundle 'pangloss/vim-javascript'
-		NeoBundle 'tpope/vim-markdown'
+		" NeoBundle 'tpope/vim-markdown'
 		NeoBundle 'groenewege/vim-less'
 		NeoBundle 'othree/html5.vim'
 		NeoBundle 'elzr/vim-json'
 		NeoBundle 'cakebaker/scss-syntax.vim'
 		NeoBundle 'nono/vim-handlebars'
 		NeoBundle 'Chiel92/vim-autoformat'
-		NeoBundle 'suan/vim-instant-markdown'
+		" NeoBundle 'suan/vim-instant-markdown'
 
 	" Completion
 	""""""""""""
@@ -84,6 +84,7 @@
 		NeoBundle 'sjl/gundo.vim'
 		NeoBundle 'myusuf3/numbers.vim'
 		NeoBundle 'bling/vim-bufferline'
+		NeoBundle 'blueyed/vim-diminactive'
 
 	" Commands
 	""""""""""

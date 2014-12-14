@@ -26,15 +26,15 @@ nnoremap <Leader>wqa :wqa<CR>
 noremap <Leader>W :w !sudo tee % > /dev/null<CR>
 
 " Disable arrow keys
-let arrowKeyWarn = "You no like hjkl?"
+let arrowKeyWarn = "You no like hjkl navigation? STOP USING THE CURSOR KEYS!"
 noremap <up> :echo arrowKeyWarn<CR>
 noremap <down> :echo arrowKeyWarn<CR>
 noremap <left> :echo arrowKeyWarn<CR>
 noremap <right> :echo arrowKeyWarn<CR>
-inoremap <up> :echo arrowKeyWarn<CR>
-inoremap <down> :echo arrowKeyWarn<CR>
-inoremap <left> :echo arrowKeyWarn<CR>
-inoremap <right> :echo arrowKeyWarn<CR>
+inoremap <up> <Nop>
+inoremap <down> <Nop>
+inoremap <left> <Nop>
+inoremap <right> <Nop>
 
 " Setup expected mapping
 noremap cow :ToggleWrap<CR>
@@ -49,10 +49,10 @@ vnoremap / "vy/<c-r>v
 nnoremap <Leader>. @:
 
 " Add spacing
-nmap <Leader>h i<Space><Esc>l
-nmap <Leader>j ]<Leader>
-nmap <Leader>k [<Leader>
-nmap <Leader>l i<Space><Esc>
+nmap <Leader><Leader>h i<Space><Esc>l
+nmap <Leader><Leader>j ]<Leader>
+nmap <Leader><Leader>k [<Leader>
+nmap <Leader><Leader>l i<Space><Esc>
 
 " Use Q for formatting the current paragraph (or selection)
 vmap Q gq
@@ -67,3 +67,7 @@ nnoremap U :redo<CR>
 " Delete current file
 nnoremap <C-Del> :!rm "%"<CR>
 
+" Buffer reloading
+nmap <Leader>e :e<CR>
+" nmap <Leader>ea :bufdo e<CR>
+nmap <Leader>ea :checktime<CR>
