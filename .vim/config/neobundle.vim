@@ -84,7 +84,7 @@
 		NeoBundle 'sjl/gundo.vim'
 		NeoBundle 'myusuf3/numbers.vim'
 		NeoBundle 'bling/vim-bufferline'
-		NeoBundle 'blueyed/vim-diminactive'
+		" NeoBundle 'blueyed/vim-diminactive'
 
 	" Commands
 	""""""""""
