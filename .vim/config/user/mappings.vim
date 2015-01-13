@@ -71,3 +71,7 @@ nnoremap <C-Del> :!rm "%"<CR>
 nmap <Leader>e :e<CR>
 " nmap <Leader>ea :bufdo e<CR>
 nmap <Leader>ea :checktime<CR>
+
+" Select all, copy all
+nmap <Leader>va ggvG
+nmap <Leader>ya ggvGy
