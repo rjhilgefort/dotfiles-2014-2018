@@ -73,5 +73,5 @@ nmap <Leader>e :e<CR>
 nmap <Leader>ea :checktime<CR>
 
 " Select all, copy all
-nmap <Leader>va ggvG
-nmap <Leader>ya ggvGy
+nmap <Leader>va ggVG
+nmap <Leader>ya ggVGy
