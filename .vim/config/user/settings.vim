@@ -78,6 +78,10 @@ set scrolloff=3
 set linebreak
 set nowrap
 
+" Line numbers
+set norelativenumber
+set nonumber
+
 " Automatic commands
 if has("autocmd")
 
