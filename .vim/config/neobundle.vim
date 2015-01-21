@@ -49,6 +49,7 @@
 		NeoBundle 'honza/vim-snippets'
 		NeoBundle 'mustache/vim-mustache-handlebars'
 		NeoBundle 'heavenshell/vim-jsdoc'
+		NeoBundle 'SirVer/ultisnips'
 
 	" Code Display
 	""""""""""""""
@@ -80,7 +81,6 @@
 		NeoBundle 'scrooloose/nerdtree'
 		NeoBundle 'jistr/vim-nerdtree-tabs'
 		NeoBundle 'bling/vim-airline'
-		" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 		NeoBundle 'sjl/gundo.vim'
 		" NeoBundle 'myusuf3/numbers.vim'
 		NeoBundle 'bling/vim-bufferline'
@@ -99,6 +99,7 @@
 		NeoBundle 'junegunn/vim-easy-align'
 		NeoBundle 'rhlobo/vim-super-retab'
 		NeoBundle 'tpope/vim-abolish'
+		NeoBundle 'tommcdo/vim-exchange'
 
 	" Other
 	"""""""
