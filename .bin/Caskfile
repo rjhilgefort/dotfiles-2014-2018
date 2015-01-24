@@ -42,6 +42,7 @@ cask install virtualbox 2> /dev/null
 cask install colloquy 2> /dev/null
 cask install imagealpha 2> /dev/null
 cask install torbrowser 2> /dev/null
+cask install liteicon 2> /dev/null
 
 ###############################################################################
 # Utility
