@@ -21,12 +21,13 @@ cask install atom 2> /dev/null
 cask install airmail-beta 2> /dev/null
 cask install evernote 2> /dev/null
 cask install spotify 2> /dev/null
-# cask install spotify-notifications 2> /dev/null
 cask install firefox-esr-us 2> /dev/null
 cask install vlc 2> /dev/null
 cask install onepassword 2> /dev/null
 # cask install istat-menus4 2> /dev/null
 cask install sonos 2> /dev/null
+# cask install clear 2> /dev/null
+cask install hipchat 2> /dev/null
 
 ###############################################################################
 # Nice To Have

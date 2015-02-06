@@ -72,6 +72,7 @@ install zlib
 install gdb --with-brewed-python
 install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 install mutt
+install irssi
 
 install homebrew/dupes/grep
 install homebrew/dupes/screen
