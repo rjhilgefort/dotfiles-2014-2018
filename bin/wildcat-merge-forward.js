@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+
+// TODO:
+// - Move to a proper "project" and define a package.json. No more globals
+// - Use 'semver' to handle semantic version sorting after getting branches
+
+
 // Declare common vars
 var shell, _, branches, setupBranch, mergeFrom, silent, output;
 
