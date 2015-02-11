@@ -56,15 +56,13 @@ if (branches.code !== 0) {
 }
 
 // Parse branches
-branches = branches.output;
-branches = branches.split('\n');
-_.forEach(branches, function(branch, i) {
-	branch = branch.trim();
-	branch = branch.replace('remotes/origin/', '');
-	branches[i] = branch;
-});
-// Parse out empty strings and anything else that happens to be falsy
-branches = _.compact(branches);
+branches = _(branches.output.split('\n'))
+	.chain()
+	.map(function(branch) {
+		return branch.trim().replace('remotes/origin/', '');
+	})
+	.compact()
+	.value();
 
 // Merge all the found branches
 _.forEach(branches, function(branch, i) {
