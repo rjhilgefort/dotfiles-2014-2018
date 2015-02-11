@@ -117,7 +117,7 @@ slate.bindAll({
 
 
 		// Throw to monitor
-		'`': ['throw 0 resize', 'throw 1 resize'],
+		'`': ['throw 0 resize', 'throw 1 resize', 'throw 2 resize'],
 		'1': $('toss', '0', 'resize'),
 		'2': $('toss', '1', 'resize'),
 
