@@ -9,6 +9,7 @@ set termencoding=utf-8
 " Spell checking
 :setlocal spell spelllang=en_us
 set complete+=kspell
+set nospell
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
