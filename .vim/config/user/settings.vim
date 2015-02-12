@@ -57,9 +57,6 @@ set mouse=a
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 
-" Set rulers
-set colorcolumn=80,120
-
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 
@@ -69,19 +66,8 @@ set showmode
 " Show the (partial) command as it’s being typed
 set showcmd
 
-" Show the filename in the window titlebar
-set title
-
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
-
-" No wordwrap
-set linebreak
-set nowrap
-
-" Line numbers
-set norelativenumber
-set nonumber
 
 " Automatic commands
 if has("autocmd")
