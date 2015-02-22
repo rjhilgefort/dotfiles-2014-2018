@@ -96,7 +96,8 @@ alias appsoninternet='sudo lsof -P -i -n | cut -f 1 -d " " | uniq'
 alias listopenports='sudo lsof -i -P | grep -i "listen"'
 
 # mount the drobster
-alias mountdrobo="mount -t smbfs //rjhilgefort@10.0.1.2/Home ~/Drobo"
+alias mount-drobo="mount -t afp afp://rjhilgefort@192.168.200.44/Home ~/Drobo"
+# alias mountdrobo="mount -t smbfs //rjhilgefort@192.168.200.44/Home ~/Drobo"
 
 # list all git submodules in the current directory
 alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
