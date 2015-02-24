@@ -100,6 +100,8 @@
 		NeoBundle 'rhlobo/vim-super-retab'
 		NeoBundle 'tpope/vim-abolish'
 		NeoBundle 'tommcdo/vim-exchange'
+		NeoBundle 'einars/js-beautify'
+		NeoBundle 'maksimr/vim-jsbeautify'
 
 	" Other
 	"""""""
