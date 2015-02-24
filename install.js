@@ -36,7 +36,7 @@ shell.ls(source).forEach(function(repo) {
 */
 
 // pure
-shell.ln('-sf', source + 'pure/pure.zsh', dest + 'prompt_pure_setup');
+// shell.ln('-sf', source + 'pure/pure.zsh', dest + 'prompt_pure_setup');
 
 
 ///////////////////////////////////////////////////////////////////////////////
