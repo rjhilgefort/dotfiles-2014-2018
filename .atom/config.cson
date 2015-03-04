@@ -1,39 +1,41 @@
-'global':
-  'exception-reporting':
-    'userId': 'd51e27c2-19ee-e044-dcfe-6cc5174383b7'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': 'f725ce6db1cf0f7a124a271653f2250f407f4822'
-  'editor':
-    'fontFamily': 'Source Code Pro for Powerline'
-    'tabLength': 4
-    'showInvisibles': true
-    'softTabs': false
-  'core':
-    'themes': [
-      'atom-dark-ui'
-      'tomorrow-night-eighties-syntax'
+"*":
+  "exception-reporting":
+    userId: "d51e27c2-19ee-e044-dcfe-6cc5174383b7"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "f725ce6db1cf0f7a124a271653f2250f407f4822"
+  editor:
+    fontFamily: "Source Code Pro for Powerline"
+    tabLength: 4
+    showInvisibles: true
+    softTabs: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "tomorrow-night-eighties-syntax"
     ]
-    'projectHome': '/Users/rjhilgefort/Projects'
-    'destroyEmptyPanes': false
-  'jsformat': 'format_on_save'
-  'docblockr':
-    'extra_tags_go_after': true
-    'extra_tags': [
-      '@since v${1:0.0.0}'
+    projectHome: "/Users/rjhilgefort/Projects"
+    destroyEmptyPanes: false
+  jsformat: "format_on_save"
+  docblockr:
+    extra_tags_go_after: true
+    extra_tags: [
+      "@since v${1:0.0.0}"
     ]
-    'auto_add_method_tag': true
-    'indentation_spaces_same_para': 4
-  'highlight-column':
-    'opacity': 0.15
-    'enableHighlight': false
-  'git-blame':
-    'useCustomUrlTemplateIfStandardRemotesFail': true
-    'customCommitUrlTemplateString': 'https://git.zipscene.com/<%- project %>/<%- repo %>/commit/<%- revision %>'
-'exception-reporting':
-  'userId': 'b6e8a666-89a5-18ea-7d0b-751d8dda5641'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': 'f2ee9de1e7e3cdb38936debc30fe190d20261d88'
+    auto_add_method_tag: true
+    indentation_spaces_same_para: 4
+  "highlight-column":
+    opacity: 0.15
+    enableHighlight: false
+  "git-blame":
+    useCustomUrlTemplateIfStandardRemotesFail: true
+    customCommitUrlTemplateString: "https://git.zipscene.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+  "autocomplete-plus": {}
+  linter: {}
+"exception-reporting":
+  userId: "b6e8a666-89a5-18ea-7d0b-751d8dda5641"
+welcome:
+  showOnStartup: false
+metrics:
+  userId: "f2ee9de1e7e3cdb38936debc30fe190d20261d88"
