@@ -49,7 +49,7 @@ shell.cd(shell.env.HOME + '/Projects/zipscene/wildcat');
 shell.exec('git fetch');
 
 // Get branches
-branches = shell.exec('git branches | ag "remotes.*release"', silent);
+branches = shell.exec('git branches | ag "remotes\/origin\/release\/"', silent);
 if (branches.code !== 0) {
 	shell.echo("No branches found to merge to/with");
 	shell.exit(1);
