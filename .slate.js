@@ -59,7 +59,7 @@ slate.bindAll({
 			i: [$.focus('Airmail'),
 				$.focus('Sunrise')],
 			o: $.focus('Finder'),
-			y: [$.focus('Reminders'),
+			y: [$.focus('Clear'),
 				$.focus('Notes')],
 		},
 
