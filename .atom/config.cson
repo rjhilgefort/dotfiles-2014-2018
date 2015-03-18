@@ -10,6 +10,7 @@
     tabLength: 4
     showInvisibles: true
     softTabs: false
+    fontSize: 14
   core:
     themes: [
       "atom-dark-ui"
