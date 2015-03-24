@@ -102,6 +102,8 @@
 		NeoBundle 'tommcdo/vim-exchange'
 		NeoBundle 'einars/js-beautify'
 		NeoBundle 'maksimr/vim-jsbeautify'
+		NeoBundle 'dsawardekar/portkey'
+		NeoBundle 'dsawardekar/ember.vim'
 
 	" Other
 	"""""""
