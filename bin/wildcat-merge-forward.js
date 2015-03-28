@@ -4,8 +4,6 @@
 // TODO:
 // - Move to a proper "project" and define a package.json. No more globals
 // - Use 'semver' to handle semantic version sorting after getting branches
-// - Take path as an argument so this can be applied to any git repo you might have.
-// 		Also be flexible enough for others to use (without editing)
 
 
 // Declare common vars
@@ -42,8 +40,6 @@ silent = { silent: true };
 ///////////////////////////////////////////////////////////////////////////////
 // Start Script
 ///////////////////////////////////////////////////////////////////////////////
-
-shell.cd(shell.env.HOME + '/Projects/zipscene/wildcat');
 
 // Update remotes
 shell.exec('git fetch');
