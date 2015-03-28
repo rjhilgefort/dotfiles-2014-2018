@@ -37,3 +37,6 @@
 [submodule ".src/powerline"]
 	path = .src/powerline
 	url = https://github.com/Lokaltog/powerline.git
+[submodule ".src/git-merge-forward"]
+	path = .src/git-merge-forward
+	url = git@github.com:rjhilgefort/git-merge-forward.git
