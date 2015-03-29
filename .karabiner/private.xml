@@ -1,13 +1,25 @@
 <?xml version="1.0"?>
 <root>
 	<item>
-		<name>F19 to F19</name>
-		<appendix>(F19 to control. F19 only, send escape)</appendix>
-		<identifier>private.f192f19_escape</identifier>
+		<name>F19 to Control/Escape</name>
+		<appendix>(F19 to control when combo-ed, escape by itself)</appendix>
+		<identifier>private.f19_control_escape</identifier>
 		<autogen>
 			--KeyOverlaidModifier--
 			KeyCode::F19,
 			KeyCode::CONTROL_L,
+			KeyCode::ESCAPE
+		</autogen>
+	</item>
+	<item>
+		<name>F18 to Hyper/Escape</name>
+		<appendix>(F18 to Hyper when combo-ed, escape by itself)</appendix>
+		<identifier>private.f18_hyper_escape</identifier>
+		<autogen>
+			--KeyOverlaidModifier--
+			KeyCode::F18,
+			KeyCode::COMMAND_L,
+			ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L,
 			KeyCode::ESCAPE
 		</autogen>
 	</item>
