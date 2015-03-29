@@ -6,8 +6,7 @@
 let mapleader = "\<Space>"
 
 " <Esc> key alternative
-inoremap jk <Esc>
-xnoremap ;; <Esc>
+imap jk <Esc>
 
 " Setup mapping
 noremap <Leader>r :ReloadConfig<CR>

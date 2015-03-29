@@ -9,5 +9,5 @@ let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 " Upon hitting escape to change modes, send successive move-left and move-right
 " commands to immediately redraw the cursor
-inoremap <special> <Esc> <Esc>hl
+inoremap <special> <Esc> <Esc>hll
 
