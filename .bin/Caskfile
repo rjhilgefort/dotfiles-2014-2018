@@ -28,6 +28,8 @@ cask install onepassword 2> /dev/null
 cask install sonos 2> /dev/null
 # cask install clear 2> /dev/null
 cask install hipchat 2> /dev/null
+cask install seil 2> /dev/null
+cask install karabiner 2> /dev/null
 
 ###############################################################################
 # Nice To Have
