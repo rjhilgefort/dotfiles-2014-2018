@@ -1789,15 +1789,15 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>634 280 665 358 0 0 1440 878 </string>
+	<string>951 422 663 282 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>304 398 796 475 0 0 1440 877 </string>
+	<string>1792 961 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 499 620 392 0 0 1920 1058 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-1341 474 592 584 -1440 180 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 2557 1417 0 0 2560 1417 </string>
+	<string>0 0 1914 1057 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2347,11 +2347,11 @@
 			<key>Name</key>
 			<string>base16-eighties</string>
 			<key>Non Ascii Font</key>
-			<string>SauceCodePowerline-Light 15</string>
+			<string>SauceCodePowerline-Light 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SauceCodePowerline-Light 15</string>
+			<string>SauceCodePowerline-Light 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -4763,7 +4763,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-12-14T16:15:05Z</date>
+	<date>2015-03-29T01:45:56Z</date>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>ShowBookmarkName</key>
