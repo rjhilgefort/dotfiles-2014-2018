@@ -6,6 +6,8 @@ root: ~/
 windows:
   - wildcat-ide:
       - cd ~/zipscene/wildcat/
+      - git checkout master
+      - git pull
       - vim -c "NERDTreeToggle"
   - wildcat-term:
       layout: even-horizontal
@@ -15,7 +17,7 @@ windows:
           - clear
         - runner:
           - cd ~/zipscene/wildcat/
-          - grunt serve -B zcafe -D gma
+          - grunt serve -B aloha-newks -D qa -E prod
   # - zsapi:
   #     layout: even-horizontal
   #     panes:
@@ -36,6 +38,7 @@ windows:
       panes:
         - editor:
           - cd ~/Projects/dotfiles
+          - git checkout master
           - git pull
           - vim -c "NERDTreeToggle"
         - tig:
