@@ -1,15 +1,6 @@
-[submodule ".src/reslate"]
-	path = .src/reslate
-	url = https://github.com/lunixbochs/reslate.git
-[submodule ".zprezto"]
-	path = .zprezto
-	url = https://github.com/rjhilgefort/prezto.git
 [submodule ".src/terminal-piperita"]
 	path = .src/terminal-piperita
 	url = https://github.com/jacobtomlinson/terminal-piperita.git
-[submodule ".vim/bundle/neobundle.vim"]
-	path = .vim/bundle/neobundle.vim
-	url = https://github.com/Shougo/neobundle.vim
 [submodule ".src/base16-iterm2"]
 	path = .src/base16-iterm2
 	url = https://github.com/chriskempson/base16-iterm2.git
@@ -40,6 +31,12 @@
 [submodule ".src/git-merge-forward"]
 	path = .src/git-merge-forward
 	url = git@github.com:rjhilgefort/git-merge-forward.git
+[submodule ".src/reslate"]
+	path = .src/reslate
+	url = https://github.com/lunixbochs/reslate.git
+[submodule ".zprezto"]
+	path = .zprezto
+	url = https://github.com/rjhilgefort/prezto.git
 [submodule ".hammerspoon"]
 	path = .hammerspoon
 	url = git@github.com:rjhilgefort/.hammerspoon.git
