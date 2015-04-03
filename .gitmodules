@@ -40,3 +40,6 @@
 [submodule ".hammerspoon"]
 	path = .hammerspoon
 	url = git@github.com:rjhilgefort/.hammerspoon.git
+[submodule ".vim"]
+	path = .vim
+	url = git@github.com:rjhilgefort/.vim.git
