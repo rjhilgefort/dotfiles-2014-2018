@@ -82,6 +82,9 @@ install homebrew/php/php55 --with-gmp
 install android-sdk
 install ant
 
+# Lua
+install luarocks
+
 # Other useful binaries
 # install gcc
 # install bfg
