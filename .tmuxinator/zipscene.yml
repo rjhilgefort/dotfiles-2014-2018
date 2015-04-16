@@ -17,7 +17,16 @@ windows:
           - clear
         - runner:
           - cd ~/zipscene/wildcat/
-          - grunt serve -B aloha-newks -D qa -E prod
+          - clear
+  - wildcat-ro:
+      layout: even-horizontal
+      panes:
+        - ide:
+          - cd ~/zipscene/_readonly/wildcat/
+          - clear
+        - term:
+          - cd ~/zipscene/_readonly/wildcat/
+          - clear
   # - zsapi:
   #     layout: even-horizontal
   #     panes:
