@@ -131,3 +131,11 @@ alias ssh-zs-qa-tunnel="ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:270
 # ssh tunnel on localhost:27019 to do-personal for mongo
 alias ssh-do-personal-tunnel="ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N"
 
+# taskwarrior
+taskDone() { task $1 done }
+alias t="task"
+alias tl="task list"
+alias ta="task add"
+alias td=taskDone
+alias tn="task next"
+
