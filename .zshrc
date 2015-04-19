@@ -84,10 +84,10 @@ alias desktop-hide="defaults write com.apple.finder CreateDesktop -bool false &&
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 # Lock the screen (when going AFK)
-alias afk-lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias afk-lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 # Put up screensaver (when going AFK)
-alias afk-screen="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine &> /dev/null"
-alias afk="afk-screen"
+alias afk-screen='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine &> /dev/null'
+alias afk='afk-screen'
 
 # see what apps are currently using the network
 alias appsoninternet='sudo lsof -P -i -n | cut -f 1 -d " " | uniq'
@@ -103,9 +103,9 @@ alias mount-drobo="mount -t afp afp://rjhilgefort@192.168.200.44/Home ~/Drobo"
 alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
 
 # Mac dock mods - change the behavior of the dock
-alias dock-reset="defaults delete com.apple.dock autohide-delay && killall Dock" # Back to normal
-alias dock-meh="defaults write com.apple.dock autohide-delay -float 2 && killall Dock" # 2 seconds
-alias dock-fuckoff="defaults write com.apple.dock autohide-delay -float 1000 && killall Dock" # 1000 seconds
+alias dock-reset='defaults delete com.apple.dock autohide-delay && killall Dock' # Back to normal
+alias dock-meh='defaults write com.apple.dock autohide-delay -float 2 && killall Dock' # 2 seconds
+alias dock-fuckoff='defaults write com.apple.dock autohide-delay -float 1000 && killall Dock' # 1000 seconds
 
 # control volume
 alias stfu="osascript -e 'set volume output muted true'"
@@ -127,15 +127,15 @@ alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
 alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
 
 # ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
-alias ssh-zs-qa-tunnel="ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N"
+alias ssh-zs-qa-tunnel='ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 # ssh tunnel on localhost:27019 to do-personal for mongo
-alias ssh-do-personal-tunnel="ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N"
+alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
 # taskwarrior
 taskDone() { task $1 done }
-alias t="task"
-alias tl="task list"
-alias ta="task add"
+alias t='vim -c "TW"'
+alias tl='task list'
+alias ta='task add'
 alias td=taskDone
-alias tn="task next"
+alias tn='task next'
 
