@@ -24,3 +24,8 @@ node_modules
 .atom/packages
 .atom/storage
 .atom/.apm
+
+
+# TODO don't ignore all of alfred
+# alfred
+.alfred/*
