@@ -29,3 +29,11 @@ include /usr/local/Cellar/task/2.4.2/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/local/Cellar/task/2.4.2/share/doc/task/rc/solarized-light-256.theme
 #include /usr/local/Cellar/task/2.4.2/share/doc/task/rc/no-color.theme
 
+
+# inthe.am setup
+taskd.certificate=~/private.certificate.pem
+taskd.key=~/private.key.pem
+taskd.ca=~/ca.cert.pem
+taskd.server=taskwarrior.inthe.am:53589
+taskd.credentials=inthe_am/rjhilgefort/1dbafff5-4d18-4284-a855-36d1f1f0b2c0
+taskd.trust=ignore hostname
