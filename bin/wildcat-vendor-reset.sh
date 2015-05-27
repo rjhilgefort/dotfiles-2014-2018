@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm -rf vendor node_modules
+rm -rf node_modules bower_components plugman
 npm install
-# git reset --hard
+
