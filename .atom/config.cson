@@ -11,7 +11,8 @@
     showInvisibles: true
     softTabs: false
     fontSize: 14
-    invisibles: {}
+    invisibles:
+      {}
   core:
     themes: [
       "atom-dark-ui"
@@ -36,11 +37,13 @@
   "git-blame":
     useCustomUrlTemplateIfStandardRemotesFail: true
     customCommitUrlTemplateString: "https://git.zipscene.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
-  "autocomplete-plus": {}
-  linter: {}
-"exception-reporting":
-  userId: "b6e8a666-89a5-18ea-7d0b-751d8dda5641"
-welcome:
-  showOnStartup: false
+  "autocomplete-plus":
+    {}
+  linter:
+    {}
 metrics:
   userId: "f2ee9de1e7e3cdb38936debc30fe190d20261d88"
+welcome:
+  showOnStartup: false
+"exception-reporting":
+  userId: "b6e8a666-89a5-18ea-7d0b-751d8dda5641"
