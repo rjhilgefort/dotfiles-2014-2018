@@ -141,4 +141,5 @@ alias tn='task next'
 
 # git
 alias git-merge-done='git add -A && git commit --no-edit && git sync'
+alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git sync'
 
