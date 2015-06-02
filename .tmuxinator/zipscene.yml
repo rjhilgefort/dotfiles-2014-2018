@@ -6,8 +6,6 @@ root: ~/
 windows:
   - wildcat-ide:
       - cd ~/zipscene/wildcat/
-      - git checkout master
-      - git pull
       - vim -c "NERDTreeToggle"
   - wildcat-term:
       layout: even-horizontal
@@ -32,8 +30,6 @@ windows:
   #     panes:
   #       - editor:
   #         - cd ~/zipscene/zs-api
-  #         - git checkout master
-  #         - git pull
   #         - vim -c "NERDTreeToggle"
   #       - runner:
   #         - cd ~/zipscene/zs-api
@@ -47,11 +43,8 @@ windows:
       panes:
         - editor:
           - cd ~/Projects/dotfiles
-          - git checkout master
-          - git pull
           - vim -c "NERDTreeToggle"
         - tig:
           - cd ~/Projects/dotfiles
-          - git pull
           - tig status
 
