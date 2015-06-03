@@ -5,7 +5,7 @@
 
 # Make sure we’re using the latest Homebrew, Upgrade any already-installed formulae
 brew update
-brew upgrade
+brew upgrade --all
 
 # MOAR PACKAGES!
 brew tap homebrew/dupes
@@ -20,16 +20,16 @@ brew install coreutils
 brew install moreutils
 brew install binutils
 brew install diffutils
-brew install ed --default-names
-brew install findutils --default-names
+brew install ed --with-default-names
+brew install findutils --with-default-names
 brew install gawk
-brew install guile --default-names
-brew install gnu-indent --default-names
-brew install gnu-sed --default-names
-brew install gnu-tar --default-names
-brew install gnu-which --default-names
-brew install gnutls --default-names
-brew install grep --default-names
+brew install guile --with-default-names
+brew install gnu-indent --with-default-names
+brew install gnu-sed --with-default-names
+brew install gnu-tar --with-default-names
+brew install gnu-which --with-default-names
+brew install gnutls --with-default-names
+brew install grep --with-default-names
 brew install gzip
 brew install watch
 brew install wdiff --with-gettext
