@@ -1,112 +1,114 @@
+#!/bin/sh
+
 # Install command-line tools using Homebrew
 # Usage: `brew bundle [.bin/]Brewfile`
 
 # Make sure we’re using the latest Homebrew, Upgrade any already-installed formulae
-update
-upgrade
+brew update
+brew upgrade
 
 # MOAR PACKAGES!
-tap homebrew/dupes
-tap homebrew/versions
+brew tap homebrew/dupes
+brew tap homebrew/versions
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
+brew install coreutils
 
 # GNU Command Line Tools
 # Note: --default-name ignores the 'g' prefix (which fixes conflict)
-install moreutils
-install binutils
-install diffutils
-install ed --default-names
-install findutils --default-names
-install gawk
-install guile --default-names
-install gnu-indent --default-names
-install gnu-sed --default-names
-install gnu-tar --default-names
-install gnu-which --default-names
-install gnutls --default-names
-install grep --default-names
-install gzip
-install watch
-install wdiff --with-gettext
-install wget --enable-iri
+brew install moreutils
+brew install binutils
+brew install diffutils
+brew install ed --default-names
+brew install findutils --default-names
+brew install gawk
+brew install guile --default-names
+brew install gnu-indent --default-names
+brew install gnu-sed --default-names
+brew install gnu-tar --default-names
+brew install gnu-which --default-names
+brew install gnutls --default-names
+brew install grep --default-names
+brew install gzip
+brew install watch
+brew install wdiff --with-gettext
+brew install wget --enable-iri
 
 # Updated OSX tools
-install bash # Don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`
-install bash-completion
-install emacs
-install gpatch
-install m4
-install make
-install nano
+brew install bash # Don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`
+brew install bash-completion
+brew install emacs
+brew install gpatch
+brew install m4
+brew install make
+brew install nano
 
 # Install more recent versions of some OS X tools
-install file-formula
-install git
-install less
-install openssh --with-brewed-openssl
-install perl518 # must run "brew tap homebrew/versions" first!
-install python --with-brewed-openssl
-install rsync
-install svn
-install unzip
-install vim --with-python --with-ruby --with-perl --override-system-vi
-install macvim --custom-system-icons --override-system-vim
+brew install file-formula
+brew install git
+brew install less
+brew install openssh --with-brewed-openssl
+brew install perl518 # must run "brew tap homebrew/versions" first!
+brew install python --with-brewed-openssl
+brew install rsync
+brew install svn
+brew install unzip
+brew install vim --with-python --with-ruby --with-perl --override-system-vi
+brew install macvim --custom-system-icons --override-system-vim
 
 # General Utilities
-install node
-install zsh
-install mongodb
-install mongoose
-install redis
-install tmux
-install reattach-to-user-namespace
-install tig
-install ack
-install ag
-install fasd
-install git-extras
-install zlib
-install gdb --with-brewed-python
-install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
-install mutt
-install irssi
+brew install node
+brew install zsh
+brew install mongodb
+brew install mongoose
+brew install redis
+brew install tmux
+brew install reattach-to-user-namespace
+brew install tig
+brew install ack
+brew install ag
+brew install fasd
+brew install git-extras
+brew install zlib
+brew install gdb --with-brewed-python
+brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
+brew install mutt
+brew install irssi
 
-install homebrew/dupes/grep
-install homebrew/dupes/screen
-install homebrew/php/php55 --with-gmp
+brew install homebrew/dupes/grep
+brew install homebrew/dupes/screen
+brew install homebrew/php/php55 --with-gmp
 
 # Android
-install android-sdk
-install ant
+brew install android-sdk
+brew install ant
 
 # Lua
-install luarocks
+brew install luarocks
 
 # Other useful binaries
-# install gcc
-# install bfg
-# install exiv2
-# install foremost
-# install hashpump
-install imagemagick --with-webp
-# install lynx
-# install nmap
-# install p7zip
-# install pigz
-# install pv
-# install rename
-# install rhino
-# install sqlmap
-# install tree
-# install ucspi-tcp # `tcpserver` et al.
-# install webkit2png
-# install xpdf
-# install zopfli
+# brew install gcc
+# brew install bfg
+# brew install exiv2
+# brew install foremost
+# brew install hashpump
+brew install imagemagick --with-webp
+# brew install lynx
+# brew install nmap
+# brew install p7zip
+# brew install pigz
+# brew install pv
+# brew install rename
+# brew install rhino
+# brew install sqlmap
+# brew install tree
+# brew install ucspi-tcp # `tcpserver` et al.
+# brew install webkit2png
+# brew install xpdf
+# brew install zopfli
 
-# install homebrew/versions/lua52
+# brew install homebrew/versions/lua52
 
 # Remove outdated versions from the cellar
-cleanup
+brew cleanup

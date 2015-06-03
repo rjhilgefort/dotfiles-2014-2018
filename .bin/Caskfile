@@ -1,68 +1,70 @@
+#!/bin/sh
+
 # Install Native Apps
 # Usage: `brew bundle [.bin/]Caskfile`
 
 # Setup
-install caskroom/cask/brew-cask
-tap caskroom/versions
+brew install brew caskroom/brew cask/brew-brew cask
+brew tap brew caskroom/versions
 
 ###############################################################################
 # Core
 ###############################################################################
-cask install dropbox 2> /dev/null
-cask install google-chrome 2> /dev/null
-cask install alfred 2> /dev/null
-cask install bartender 2> /dev/null
-cask install iterm2 2> /dev/null
-cask install iterm2-nightly 2> /dev/null
-cask install slate 2> /dev/null
-cask install dash 2> /dev/null
-cask install sublime-text3 2> /dev/null
-cask install atom 2> /dev/null
-cask install airmail-beta 2> /dev/null
-cask install evernote 2> /dev/null
-cask install spotify 2> /dev/null
-cask install firefox 2> /dev/null
-cask install vlc 2> /dev/null
-cask install 1password 2> /dev/null
-# cask install istat-menus4 2> /dev/null
-cask install sonos 2> /dev/null
-# cask install clear 2> /dev/null
-cask install hipchat 2> /dev/null
-cask install seil 2> /dev/null
-cask install karabiner 2> /dev/null
-cask install hammerspoon 2> /dev/null
-cask install skype 2> /dev/null
+brew cask install dropbox 2> /dev/null
+brew cask install google-chrome 2> /dev/null
+brew cask install alfred 2> /dev/null
+brew cask install bartender 2> /dev/null
+brew cask install iterm2 2> /dev/null
+brew cask install iterm2-nightly 2> /dev/null
+brew cask install slate 2> /dev/null
+brew cask install dash 2> /dev/null
+brew cask install sublime-text3 2> /dev/null
+brew cask install atom 2> /dev/null
+brew cask install airmail-beta 2> /dev/null
+brew cask install evernote 2> /dev/null
+brew cask install spotify 2> /dev/null
+brew cask install firefox 2> /dev/null
+brew cask install vlc 2> /dev/null
+brew cask install 1password 2> /dev/null
+# brew cask install istat-menus4 2> /dev/null
+brew cask install sonos 2> /dev/null
+# brew cask install clear 2> /dev/null
+brew cask install hipchat 2> /dev/null
+brew cask install seil 2> /dev/null
+brew cask install karabiner 2> /dev/null
+brew cask install hammerspoon 2> /dev/null
+brew cask install skype 2> /dev/null
 
 ###############################################################################
 # Nice To Have
 ###############################################################################
-cask install ksdiff 2> /dev/null
-cask install google-drive 2> /dev/null
-cask install adobe-reader 2> /dev/null
-cask install flash 2> /dev/null
-cask install robomongo 2> /dev/null
-cask install steam 2> /dev/null
-cask install origin 2> /dev/null
-cask install virtualbox 2> /dev/null
-cask install colloquy 2> /dev/null
-cask install imagealpha 2> /dev/null
-cask install torbrowser 2> /dev/null
-cask install liteicon 2> /dev/null
-cask install boxer 2> /dev/null
+brew cask install ksdiff 2> /dev/null
+brew cask install google-drive 2> /dev/null
+brew cask install adobe-reader 2> /dev/null
+brew cask install flash 2> /dev/null
+brew cask install robomongo 2> /dev/null
+brew cask install steam 2> /dev/null
+brew cask install origin 2> /dev/null
+brew cask install virtualbox 2> /dev/null
+brew cask install colloquy 2> /dev/null
+brew cask install imagealpha 2> /dev/null
+brew cask install torbrowser 2> /dev/null
+brew cask install liteicon 2> /dev/null
+brew cask install boxer 2> /dev/null
 
 ###############################################################################
 # Utility
 ###############################################################################
-cask install java 2> /dev/null
-cask install silverlight 2> /dev/null
-cask install xquartz 2> /dev/null
+brew cask install java 2> /dev/null
+brew cask install silverlight 2> /dev/null
+brew cask install xquartz 2> /dev/null
 
 ###############################################################################
 # Maybe/Suggested/Archive
 ###############################################################################
-# cask install imageoptim 2> /dev/null
-# cask install macvim 2> /dev/null
-# cask install miro-video-converter 2> /dev/null
-# cask install the-unarchiver 2> /dev/null
-# cask install transmission 2> /dev/null
+# brew cask install imageoptim 2> /dev/null
+# brew cask install macvim 2> /dev/null
+# brew cask install miro-video-converter 2> /dev/null
+# brew cask install the-unarchiver 2> /dev/null
+# brew cask install transmission 2> /dev/null
 
