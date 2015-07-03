@@ -143,3 +143,5 @@ alias tn='task next'
 alias git-merge-done='git add -A && git commit --no-edit && git sync'
 alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git sync'
 
+
+source /Users/rjhilgefort/.iterm2_shell_integration.zsh
