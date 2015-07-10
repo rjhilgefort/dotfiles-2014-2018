@@ -62,5 +62,9 @@ shell.ls('-A').forEach(function(toLink) {
 });
 
 
+// Make sure we're using zsh
+shell.exec('chsh -s /bin/zsh');
+
+
 // TODO:
 // ln -s .karibener/private.xml ~/Library/Application\ Support/Karabiner/private.xml
