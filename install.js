@@ -62,9 +62,8 @@ shell.ls('-A').forEach(function(toLink) {
 });
 
 
+// Link Karabiner config xml
+shell.ln('-sf', shell.env.HOME + "/.karabiner/private.xml", shell.env.HOME + "/Library/Application\ Support/Karabiner/private.xml");
+
 // Make sure we're using zsh
 shell.exec('chsh -s /bin/zsh');
-
-
-// TODO:
-// ln -s .karibener/private.xml ~/Library/Application\ Support/Karabiner/private.xml
