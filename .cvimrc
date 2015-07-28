@@ -1,13 +1,16 @@
 set nosmoothscroll
 
+" General settings
 let mapleader = ","
 let barposition = "bottom"
 let highlight = "#ffff00"
 let typelinkhintsdelay = 0
 let hintcharacters = "fsawerjkiop"
 
+" Match my vim settings here for muscle memory
 map ; :
 
+" Scrolling
 map <C-u> scrollPageUp
 map <M-k> scrollPageUp
 unmap u
@@ -19,11 +22,13 @@ map <C-j> scrollPageDown
 map <C-f> scrollFullPageDown
 map <C-b> scrollFullPageUp
 
+" Tabs
 map <C-h> previousTab
 map <C-l> nextTab
 map D closeTab
 map u lastClosedTab
 
+" Inputs
 map i goToInput
 map a goToInput
 
@@ -44,4 +49,10 @@ let completionengines = ["google", "amazon"]
 let searchalias g = 'google'
 let searchalias a = 'amazon'
 
-let blacklists = ["chrome://*","https://mail.google.com/*","https://www.google.com/calendar/*","https://issues.zipscene.com/*"]
+let blacklists = [
+    'chrome://*',
+    'https://mail.google.com/*',
+    'https://www.google.com/calendar/*',
+    'https://issues.zipscene.com/*',
+    'http://www.newsblur.com/*'
+]
