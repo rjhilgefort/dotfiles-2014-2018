@@ -20,17 +20,7 @@ slate.configAll({
 	defaultToCurrentScreen: true,
 	nudgePercentOf: 'screenSize',
 	resizePercentOf: 'screenSize',
-	undoOps: [
-		'active-snapshot',
-		'chain',
-		'grid',
-		'layout',
-		'move',
-		'resize',
-		'sequence',
-		'shell',
-		'push'
-	]
+	undoOps: ['active-snapshot', 'chain', 'grid', 'layout', 'move', 'resize', 'sequence', 'shell', 'push']
 });
 
 
@@ -40,92 +30,117 @@ slate.configAll({
 // Bindings
 slate.bindAll({
 
-	hyper: {
+	'hyper': {
 
 		// Direct focus to App
 		// 's' because it's easy to hit with hyper.
 		// All the below keys are right handed (and should stay that way)
-		shift: {
+		'shift': {
 			// Primary, most common
-			j: $.focus('iTerm2'),
-			k: $.focus('Google Chrome'),
-			l: [$.focus('Messages'),
-				$.focus('HipChat')],
+			'j': $.focus('iTerm2'),
+			'k': $.focus('Google Chrome'),
+			'l': [$.focus('Slack'), $.focus('Goofy'), $.focus('HipChat'), $.focus('Messages')],
 			';': $.focus('Dash'),
-			// h: // TODO: Focus previous
+			// 'h': // TODO: Focus previous
 
 			// Secondary, second most common
-			u: $.focus('Spotify'),
-			i: [$.focus('Airmail'),
-				$.focus('Sunrise')],
-			o: $.focus('Finder'),
-			y: [$.focus('Clear'),
-				$.focus('Notes')],
+			'y': [$.focus('Airmail'), $.focus('Sunrise Calendar')],
+			'u': [$.focus('Wunderlist')],
+			'i': [$.focus('Spotify'), $.focus('Sonos')],
+			'o': $.focus('Finder')
 		},
 
 
 		// Bars
-		h: [$('barResize', 'left', 2),
+		'h': [
+			$('barResize', 'left', 2),
 			$('barResize', 'left', 1.5),
 			$('barResize', 'left', 3)/*,
-			$('center',    'left', 3, 3)*/],
+			$('center',    'left', 3, 3)*/
+		],
 
-		j: [$('barResize', 'bottom', 2),
-			$('barResize', 'bottom', 2)/*,
-			$('center',    'bottom', 3, 3)*/],
+		'j': [
+			$('barResize', 'bottom', 2),
+			$('barResize', 'bottom', 1.5),
+			$('barResize', 'bottom', 3)
+		],
 
-		k: [$('barResize', 'top', 2),
-			$('barResize', 'top', 2)/*,
-			$('center',    'top', 3, 3)*/],
+		'k': [
+			$('barResize', 'top', 2),
+			$('barResize', 'top', 1.5),
+			$('barResize', 'top', 3)
+		],
 
-		l: [$('barResize', 'right', 2),
+		'l': [
+			$('barResize', 'right', 2),
 			$('barResize', 'right', 1.5),
 			$('barResize', 'right', 3)/*,
-			$('center',    'right', 3, 3)*/],
+			$('center',    'right', 3, 3)*/
+		],
 
 		// Corners
-		y: [$('corner', 'top-left'),
+		'y': [
+			$('corner', 'top-left'),
 			$('corner', 'top-left', 1.5),
 			$('corner', 'top-left', 3, 2),
-			$('corner', 'top-left', 3, 3)],
+			$('corner', 'top-left', 3, 3)
+		],
 
-		i: [$('corner', 'top-right'),
+		'i': [
+			$('corner', 'top-right'),
 			$('corner', 'top-right', 1.5),
 			$('corner', 'top-right', 3, 2),
-			$('corner', 'top-right', 3, 3)],
+			$('corner', 'top-right', 3, 3)
+		],
 
-		b: [$('corner', 'bottom-left'),
+		'b': [
+			$('corner', 'bottom-left'),
 			$('corner', 'bottom-left', 1.5),
 			$('corner', 'bottom-left', 3, 2),
-			$('corner', 'bottom-left', 3, 3)],
+			$('corner', 'bottom-left', 3, 3)
+		],
 
-		m: [$('corner', 'bottom-right'),
+		'm': [
+			$('corner', 'bottom-right'),
 			$('corner', 'bottom-right', 1.5),
 			$('corner', 'bottom-right', 3, 2),
-			$('corner', 'bottom-right', 3, 3)],
+			$('corner', 'bottom-right', 3, 3)
+		],
 
 
 		// Centers
-		u: [$('center', 'top'),
-			$('center', 'top', 3, 3)],
-		n: [$('center', 'bottom'),
-			$('center', 'bottom', 3, 3)],
+		'u': [
+			$('center', 'top'),
+			$('center', 'top', 3, 3)
+		],
+
+		'n': [
+			$('center', 'bottom'),
+			$('center', 'bottom', 3, 3)
+		],
 
 		// Maximize
-		'return': [$('barResize', 'top', 1),
-					$('center', 'center', 1.25, 1.25)],
+		'return': [
+			$('barResize', 'top', 1),
+			$('center', 'center', 1.25, 1.25)
+		],
 
 
 		// Throw to monitor
-		'`': ['throw 0 resize', 'throw 1 resize', 'throw 2 resize'],
+		'`': [
+			'throw 0 resize',
+			'throw 1 resize',
+			'throw 2 resize'
+		],
 		'1': $('toss', '0', 'resize'),
 		'2': $('toss', '1', 'resize'),
+		'3': $('toss', '2', 'resize'),
 
 
 		// Utility functions
-		f1: 'relaunch',
-		z: 'undo',
-		// tab: 'hint',
+		'f1': 'relaunch',
+		'z': 'undo',
+		// 'tab': 'hint',
 
 	},
 
