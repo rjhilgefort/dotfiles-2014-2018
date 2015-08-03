@@ -12,6 +12,6 @@ rm -rf tmp
 
 rm -rf cache # Usually not desired to clear this, but it is a candidate
 
-git reset --hard
+# git reset --hard
 
 npm install
