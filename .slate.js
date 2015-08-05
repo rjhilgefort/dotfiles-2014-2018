@@ -138,7 +138,7 @@ slate.bindAll({
 
 
 		// Utility functions
-		'f1': 'relaunch',
+		'f2': 'relaunch',
 		'z': 'undo',
 		// 'tab': 'hint',
 
