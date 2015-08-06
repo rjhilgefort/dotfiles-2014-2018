@@ -59,18 +59,23 @@ slate.bindAll({
 			$('center',    'left', 3, 3)*/
 		],
 
+		/*
+		 * For vertical monitory youtube:
+		 * - With chrome bookmark bar:    j-2.787 k-1.385
+		 * - Without chrome bookmark bar: j-2.8875 k-1.3875
+		 */
 		'j': [
 			$('barResize', 'bottom', 2),
 			// $('barResize', 'bottom', 1.5),
 			// $('barResize', 'bottom', 3),
-			$('barResize', 'bottom', 2.787) // Aids vertical monitor youtube setup
+			$('barResize', 'bottom', 2.8875)
 		],
 
 		'k': [
 			$('barResize', 'top', 2),
 			// $('barResize', 'top', 1.5),
 			// $('barResize', 'top', 3),
-			$('barResize', 'top', 1.385) // Aids vertical monitor youtube setup
+			$('barResize', 'top', 1.3875)
 		],
 
 		'l': [
