@@ -61,14 +61,16 @@ slate.bindAll({
 
 		'j': [
 			$('barResize', 'bottom', 2),
-			$('barResize', 'bottom', 1.5),
-			$('barResize', 'bottom', 3)
+			// $('barResize', 'bottom', 1.5),
+			// $('barResize', 'bottom', 3),
+			$('barResize', 'bottom', 2.787) // Aids vertical monitor youtube setup
 		],
 
 		'k': [
 			$('barResize', 'top', 2),
-			$('barResize', 'top', 1.5),
-			$('barResize', 'top', 3)
+			// $('barResize', 'top', 1.5),
+			// $('barResize', 'top', 3),
+			$('barResize', 'top', 1.385) // Aids vertical monitor youtube setup
 		],
 
 		'l': [
@@ -128,9 +130,9 @@ slate.bindAll({
 
 		// Throw to monitor
 		'`': [
-			'throw 0 resize',
-			'throw 1 resize',
-			'throw 2 resize'
+			$('toss', '0', 'resize'),
+			$('toss', '1', 'resize'),
+			$('toss', '2', 'resize')
 		],
 		'1': $('toss', '0', 'resize'),
 		'2': $('toss', '1', 'resize'),
