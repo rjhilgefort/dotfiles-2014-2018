@@ -16,5 +16,6 @@
 		- pygments.rb
 		- redcarpet
 		- git-up
+		- bropages
 	- Other install script
 		- pip install --user git+git://github.com/Lokaltog/powerline
