@@ -41,7 +41,8 @@ slate.bindAll({
 			'k': $.focus('Google Chrome'),
 			'l': [$.focus('Slack'), $.focus('Goofy'), $.focus('HipChat'), $.focus('Messages')],
 			';': $.focus('Dash'),
-			// 'h': // TODO: Focus previous
+			'h': $.focus('Hearthstone'),
+			// TODO: Have 'h' focus previous
 
 			// Secondary, second most common
 			'y': [$.focus('Airmail'), $.focus('Sunrise Calendar')],
