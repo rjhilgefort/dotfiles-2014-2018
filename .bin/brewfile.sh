@@ -10,6 +10,7 @@ brew upgrade --all
 # MOAR PACKAGES!
 brew tap homebrew/dupes
 brew tap homebrew/versions
+brew tap railwaycat/emacsmacport
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -43,6 +44,7 @@ brew install gpatch
 brew install m4
 brew install make
 brew install nano
+brew install emacs-mac --with-spacemacs-icon
 
 # Install more recent versions of some OS X tools
 brew install file-formula
