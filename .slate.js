@@ -37,7 +37,7 @@ slate.bindAll({
 		// All the below keys are right handed (and should stay that way)
 		'shift': {
 			// Primary, most common
-			'j': $.focus('iTerm2'),
+			'j': $.focus('Emacs'),
 			'k': $.focus('Google Chrome'),
 			'l': [$.focus('Slack'), $.focus('Goofy'), $.focus('HipChat'), $.focus('Messages')],
 			';': $.focus('Dash'),
