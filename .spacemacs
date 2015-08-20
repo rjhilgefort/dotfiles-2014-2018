@@ -32,6 +32,9 @@
      syntax-checking
      version-control
      themes-megapack
+     javascript
+     html
+     colors
      )
 
    ;; List of additional packages that will be installed without being
