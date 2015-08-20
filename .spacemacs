@@ -61,6 +61,10 @@
    ;; holy-mode default
    dotspacemacs-editing-style 'vim
 
+   ;; Configure "jk"
+   evil-escape-key-sequence "jk"
+   evil-escape-delay 0.1
+
    ;; If non nil output loading progress in `*Messages*' buffer.
    dotspacemacs-verbose-loading nil
    dotspacemacs-startup-banner 'official
