@@ -196,11 +196,11 @@
 )
 
 (defun dotspacemacs/config ()
-  "Configuration function. This function is called at the very end of Spacemacs initialization after layers configuration."
+  "Configuration function. This function is called at the very end of Spacemacs
+  initialization after layers configuration."
 
-  ;; Don't truncate lines... There has to be a better way
-  ;; http://emacs.stackexchange.com/questions/3747/how-to-disable-line-wrapping-in-spacemacs
-  (add-hook 'hack-local-variables-hook (lambda () (setq truncate-lines t)))
+  (spacemacs/toggle-fill-column-indicator-on)
+  (spacemacs/toggle-truncate-lines-off)
 
   ;; Cleanup whitespace on save
   (defun cleanup-buffer-boring ()
