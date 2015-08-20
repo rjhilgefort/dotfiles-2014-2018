@@ -197,6 +197,12 @@
 
 (defun dotspacemacs/config ()
   "Configuration function. This function is called at the very end of Spacemacs initialization after layers configuration."
+
+  ;; Cleanup whitespace on save
+  (defun cleanup-buffer-boring ()
+    (interactive)
+    (delete-trailing-whitespace))
+  (add-hook 'before-save-hook 'cleanup-buffer-boring)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
