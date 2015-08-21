@@ -77,13 +77,13 @@
     ;; Press <SPC> T n to cycle to the next theme in the list (works great
     ;; with 2 themes variants, one dark and one light)
     dotspacemacs-themes '(sanityinc-tomorrow-eighties
-                            spacemacs-dark
-                            spacemacs-light
-                            solarized-dark
-                            solarized-light
-                            leuven
-                            monokai
-                            zenburn)
+                          spacemacs-dark
+                          spacemacs-light
+                          solarized-dark
+                          solarized-light
+                          leuven
+                          monokai
+                          zenburn)
 
     ;; If non nil the cursor color matches the state color.
     dotspacemacs-colorize-cursor-according-to-state t
@@ -199,7 +199,10 @@
   "Configuration function. This function is called at the very end of Spacemacs
   initialization after layers configuration."
 
+  ;; Rulers (defaults to 80) (TODO: Multiple rulers)
   (spacemacs/toggle-fill-column-indicator-on)
+
+  ;; Turn off word wrap
   (spacemacs/toggle-truncate-lines-off)
 
   ;; Cleanup whitespace on save
