@@ -221,16 +221,16 @@
 		fill-column 80
 
 		;; Tabs, tab stop
-		;; indent-tabs-mode t
-		;; whitespace-indent-tabs-mode t
-		;; default-tab-width 4
-		;; tab-width 4
+		indent-tabs-mode nil
+		whitespace-indent-tabs-mode nil
+		default-tab-width 4
+		tab-width 4
 
 		;; javascript config
-		;; js-indent-level 4
-		;; js2-basic-offset 4
-		;; js2-strict-inconsistent-return-warning nil
-		;; js2-mode-hide-comments t
+		js-indent-level 4
+		js2-basic-offset 4
+		js2-strict-inconsistent-return-warning nil
+		js2-mode-hide-comments t
 		)
 	)
 
