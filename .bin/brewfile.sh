@@ -78,6 +78,8 @@ brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 brew install mutt
 brew install irssi
 brew install task
+brew install tern
+brew install editorconfig
 
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
