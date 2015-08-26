@@ -41,7 +41,7 @@
 	 ;; wrapped in a layer. If you need some configuration for these
 	 ;; packages then consider to create a layer, you can also put the
 	 ;; configuration in `dotspacemacs/config'.
-	 dotspacemacs-additional-packages '()
+	 dotspacemacs-additional-packages '(editorconfig)
 
 	 ;; A list of packages and/or extensions that will not be install and loaded.
 	 dotspacemacs-excluded-packages '()
@@ -221,15 +221,17 @@
 		fill-column 80
 
 		;; Tabs, tab stop
-		indent-tabs-mode t
-		whitespace-indent-tabs-mode t
-		default-tab-width 4
-		tab-width 4
+		;; indent-tabs-mode t
+		;; whitespace-indent-tabs-mode t
+		;; default-tab-width 4
+		;; tab-width 4
 
 		;; javascript config
-		js-indent-level 4
-		js2-basic-offset 4
-		js2-strict-inconsistent-return-warning nil)
+		;; js-indent-level 4
+		;; js2-basic-offset 4
+		;; js2-strict-inconsistent-return-warning nil
+		;; js2-mode-hide-comments t
+		)
 	)
 
 
