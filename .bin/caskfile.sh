@@ -68,4 +68,3 @@ brew cask install xquartz 2> /dev/null
 # brew cask install miro-video-converter 2> /dev/null
 # brew cask install the-unarchiver 2> /dev/null
 # brew cask install transmission 2> /dev/null
-

@@ -20,28 +20,33 @@
 		 ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
 		 ;; <M-m f e R> (Emacs style) to install them.
 		 ;; ----------------------------------------------------------------
-		 auto-completion
+		 (auto-completion :variables
+                          auto-completion-enable-company-help-tooltip t)
 		 better-defaults
 		 emacs-lisp
 		 git
+		 github
 		 markdown
 		 org
 		 (shell :variables
-						shell-default-height 30
-						shell-default-position 'bottom)
+                shell-default-height 30
+                shell-default-position 'bottom)
 		 syntax-checking
 		 version-control
 		 themes-megapack
 		 javascript
 		 html
+		 lua
 		 colors
+		 editorconfig
+		 tmux
 		 )
 
 	 ;; List of additional packages that will be installed without being
 	 ;; wrapped in a layer. If you need some configuration for these
 	 ;; packages then consider to create a layer, you can also put the
 	 ;; configuration in `dotspacemacs/config'.
-	 dotspacemacs-additional-packages '(editorconfig)
+	 dotspacemacs-additional-packages '()
 
 	 ;; A list of packages and/or extensions that will not be install and loaded.
 	 dotspacemacs-excluded-packages '()
