@@ -241,6 +241,7 @@
 	(unbind-key "C-r" evil-normal-state-map)
 	(bind-key "U" 'redo evil-normal-state-map)
 
+	;; Better window splitting
 	(bind-key "SPC w h" 'split-window-right			  evil-normal-state-local-map)
 	(bind-key "SPC w j" 'split-window-below-and-focus evil-normal-state-local-map)
 	(bind-key "SPC w k" 'split-window-below			  evil-normal-state-local-map)
@@ -249,8 +250,6 @@
 	;; Tmux familiarity
 	(unbind-key "C-f")
 	)
-
-
 
 ;; (define-key evil-normal-state-map (kbd "C-f h") 'evil-window-left)
 ;; (global-unset-key (kbd "C-f"))
