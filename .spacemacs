@@ -192,6 +192,8 @@
 		;; Not used for now.
 		dotspacemacs-default-package-repository nil
 
+		;; Use system clipboard for yank
+		select-enable-clipboard t
 		)
 
 	;; Fix issue with prezto on OSX
@@ -214,9 +216,6 @@
 	(setq-default
 		;; Follow symlinks when opening files
 		vc-follow-symlinks t
-
-		;; Use system clipboard for yank
-		select-enable-clipboard t
 
 		;; Word wrap
 		truncate-partial-width-windows nil
