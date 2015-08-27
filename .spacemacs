@@ -68,7 +68,7 @@
 
 		;; Configure "jk"
 		evil-escape-key-sequence "jk"
-		evil-escape-delay 0.1
+		evil-escape-delay 0.2
 
 		;; If non nil output loading progress in `*Messages*' buffer.
 		dotspacemacs-verbose-loading nil
@@ -96,7 +96,7 @@
 		;; Default font. `powerline-scale' allows to quickly tweak the mode-line
 		;; size to make separators look not too crappy.
 		dotspacemacs-default-font '("Source Code Pro"
-									:size 15
+									:size 13
 									:weight normal
 									:width normal
 									:powerline-scale 1.2)
