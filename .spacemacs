@@ -236,6 +236,18 @@
 		js2-strict-inconsistent-return-warning nil
 		js2-mode-hide-comments t
 		)
+
+	;; Remap redo
+	(unbind-key "C-r" evil-normal-state-map)
+	(bind-key "U" 'redo evil-normal-state-map)
+
+	(bind-key "SPC w h" 'split-window-right			  evil-normal-state-local-map)
+	(bind-key "SPC w j" 'split-window-below-and-focus evil-normal-state-local-map)
+	(bind-key "SPC w k" 'split-window-below			  evil-normal-state-local-map)
+	(bind-key "SPC w l" 'split-window-right-and-focus evil-normal-state-local-map)
+
+	;; Tmux familiarity
+	(unbind-key "C-f")
 	)
 
 
