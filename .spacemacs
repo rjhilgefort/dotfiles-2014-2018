@@ -251,5 +251,13 @@
 	)
 
 
+
+;; (define-key evil-normal-state-map (kbd "C-f h") 'evil-window-left)
+;; (global-unset-key (kbd "C-f"))
+
+;; (bind-key "C-f l" 'evil-window-right)
+;; (unbind-key "C-r" 'evil-normal-state-minor-mode)
+
+
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
