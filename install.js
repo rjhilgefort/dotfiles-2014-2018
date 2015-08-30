@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
-// Declare common vars
 var shell = require('shelljs'),
-	_ = require('lodash'),
-	source, dest;
+	_ = require('lodash');
+
+var source, dest;
+
 
 // Make sure submodules are installed
-shell.exec('git submodule update --init --recursive');
+// shell.exec('git submodule update --init --recursive');
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // Link base16-vim schemes to .vim dir
@@ -16,7 +18,7 @@ if (false) {
 	source = __dirname + '/.src/base16-vim/colors/';
 	dest = __dirname + '/.vim/colors/';
 
-	shell.ls(source).forEach(function(scheme) {
+	_.forEach(shell.ls(source), function(scheme) {
 		shell.ln('-sf', source + scheme, dest + scheme);
 	});
 }
@@ -45,25 +47,40 @@ shell.ls(source).forEach(function(repo) {
 
 shell.cd(__dirname);
 
-var blacklist = [
-	".git",
-	".gitignore",
-	".gitmodules",
-	"TODO.md",
-	"install.js",
-	"node_modules",
-	"package.json"
+var projectFiles = [
+	'.git', '.gitignore', '.gitmodules', 'TODO.md',
+	'install.js', 'node_modules', 'package.json'
 ];
 
-shell.ls('-A').forEach(function(toLink) {
-	if (!_.contains(blacklist, toLink)) {
-		shell.ln('-sf', toLink, shell.env.HOME + "/" + toLink);
-	}
+var special = ['.karabiner', '.spacemacs'];
+
+var blacklist = _.union(projectFiles, special);
+
+_.forEach(shell.ls('-A'), function(toLink) {
+	// skip iteration if in blacklist
+	if (_.contains(blacklist, toLink)) return true;
+
+	shell.ln('-sf', toLink, shell.env.HOME + "/" + toLink);
 });
 
 
+///////////////////////////////////////////////////////////////////////////////
+// Handle special configuration items
+///////////////////////////////////////////////////////////////////////////////
+
+shell.cd(__dirname);
+
 // Link Karabiner config xml
-shell.ln('-sf', shell.env.HOME + "/.karabiner/private.xml", shell.env.HOME + "/Library/Application\ Support/Karabiner/private.xml");
+shell.ln('-sf', ".karabiner/private.xml", shell.env.HOME + "/Library/Application\ Support/Karabiner/private.xml");
+
+// Link spacemacs
+shell.ln('-sf', ".spacemacs/.spacemacs", shell.env.HOME + "/.spacemacs");
+shell.ln('-sf', ".spacemacs/rjhilgefort", shell.env.HOME + "/.emacs.d/private/rjhilgefort");
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Other commands that need to be run
+///////////////////////////////////////////////////////////////////////////////
 
 // Make sure we're using zsh
 shell.exec('chsh -s /bin/zsh');
