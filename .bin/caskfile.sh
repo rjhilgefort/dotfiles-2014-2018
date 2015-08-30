@@ -35,6 +35,7 @@ brew cask install karabiner 2> /dev/null
 brew cask install hammerspoon 2> /dev/null
 brew cask install skype 2> /dev/null
 brew cask install disk-inventory-x 2> /dev/null
+brew cask install drobo-dashboard 2> /dev/null
 
 ###############################################################################
 # Nice To Have
