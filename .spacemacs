@@ -192,6 +192,10 @@
 
         ;; Use system clipboard for yank
         select-enable-clipboard t
+
+        ;; Supresses warning(s)
+        ;; https://github.com/syl20bnr/spacemacs/issues/192
+        ad-redefinition-action 'accept
         )
 
     ;; Fix issue with prezto on OSX
