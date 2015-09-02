@@ -63,6 +63,7 @@ alias reload="exec $SHELL -l"
 alias c="tr -d '\n' | pbcopy"
 
 alias cl="clear"
+alias em="emacs"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
