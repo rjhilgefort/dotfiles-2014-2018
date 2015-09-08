@@ -53,6 +53,7 @@ brew cask install imagealpha 2> /dev/null
 brew cask install torbrowser 2> /dev/null
 brew cask install liteicon 2> /dev/null
 brew cask install boxer 2> /dev/null
+brew cask install pandoc 2> /dev/null
 
 ###############################################################################
 # Utility

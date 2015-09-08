@@ -80,6 +80,7 @@ brew install irssi
 brew install task
 brew install tern
 brew install editorconfig
+brew install pandoc
 
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
