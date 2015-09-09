@@ -4,7 +4,7 @@
 ###############################################################################
 
 # mouse mode
-set mouse = true
+# set mouse = true
 
 # refresh settings
 # set refresh-mode = periodic
