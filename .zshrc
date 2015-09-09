@@ -144,7 +144,7 @@ alias tn='task next'
 alias t='tig status'
 alias tig='tig status'
 
-# tig
+# ranger
 alias r='ranger'
 
 # git

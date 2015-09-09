@@ -12,7 +12,8 @@
 	lg = !"git lg1"
 
 	# View the current working tree status using the short format
-	s = status -s
+	# s = status -s
+	s = !"git sync"
 	st = status -s
 
 	# Show the diff between the latest commit and the current state
@@ -196,4 +197,3 @@
 	pushInsteadOf = "git://git.zipscene.com/"
 [url "git://git.zipscene.com/"]
 	insteadOf = "zipscene:"
-
