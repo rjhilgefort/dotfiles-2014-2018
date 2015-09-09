@@ -149,3 +149,5 @@ alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter f
 
 # automated iterm2 injected script
 source ~/.iterm2_shell_integration.zsh
+
+fpath=(/usr/local/share/zsh-completions $fpath)

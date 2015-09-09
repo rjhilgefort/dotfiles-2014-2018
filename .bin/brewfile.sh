@@ -81,6 +81,7 @@ brew install task
 brew install tern
 brew install editorconfig
 brew install pandoc
+brew install zsh-completions
 
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
