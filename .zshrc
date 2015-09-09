@@ -142,6 +142,10 @@ alias tn='task next'
 
 # tig
 alias t='tig status'
+alias tig='tig status'
+
+# tig
+alias r='ranger'
 
 # git
 alias git-merge-done='git add -A && git commit --no-edit && git sync'
