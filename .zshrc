@@ -134,15 +134,24 @@ alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019
 
 # taskwarrior
 taskDone() { task $1 done }
-alias t='vim -c "TW"'
+# alias t='vim -c "TW"'
 alias tl='task list'
 alias ta='task add'
 alias td=taskDone
 alias tn='task next'
 
+# tig
+alias t='tig status'
+alias tig='tig status'
+
+# ranger
+alias r='ranger'
+
 # git
 alias git-merge-done='git add -A && git commit --no-edit && git sync'
 alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git sync'
 
+# automated iterm2 injected script
+source ~/.iterm2_shell_integration.zsh
 
-source /Users/rjhilgefort/.iterm2_shell_integration.zsh
+fpath=(/usr/local/share/zsh-completions $fpath)
