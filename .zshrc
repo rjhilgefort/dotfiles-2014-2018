@@ -134,11 +134,14 @@ alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019
 
 # taskwarrior
 taskDone() { task $1 done }
-alias t='vim -c "TW"'
+# alias t='vim -c "TW"'
 alias tl='task list'
 alias ta='task add'
 alias td=taskDone
 alias tn='task next'
+
+# tig
+alias t='tig status'
 
 # git
 alias git-merge-done='git add -A && git commit --no-edit && git sync'
