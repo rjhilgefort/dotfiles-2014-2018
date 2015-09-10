@@ -1,10 +1,28 @@
 #!/usr/bin/env node
 
 var shell = require('shelljs'),
-	_ = require('lodash');
+    program = require('commander'),
+    _ = require('lodash'),
+    colors = require('colors'),
+    inquirer = require('inquirer');
 
-var source, dest;
+var source, dest, projectFiles, special, blacklist, existingLink;
 
+program
+    .version('0.0.1')
+    .usage("[options]")
+    .parse(process.argv);
+
+existingLink = {
+    type: 'list',
+    name: 'existingLink',
+    message: "A non-linked file/directory already exists at the following, what would you like to do?",
+    choices: [
+        "Skip it, I'll deal with it later",
+        "Move existing to `__<name>` and write new link.",
+        "Overwrite it, I give zero f**ks about what's already there."
+    ]
+}
 
 // Make sure submodules are installed
 // shell.exec('git submodule update --init --recursive');
@@ -47,20 +65,34 @@ shell.ls(source).forEach(function(repo) {
 
 shell.cd(__dirname);
 
-var projectFiles = [
+projectFiles = [
 	'.git', '.gitignore', '.gitmodules', 'TODO.md',
 	'install.js', 'node_modules', 'package.json'
 ];
-
-var special = ['.karabiner', '.spacemacs'];
-
-var blacklist = _.union(projectFiles, special);
+special = ['.karabiner', '.spacemacs'];
+blacklist = _.union(projectFiles, special);
 
 _.forEach(shell.ls('-A'), function(toLink) {
+    var newHome = shell.env.HOME + "/" + toLink,
+        eachExistingLink;
+
 	// skip iteration if in blacklist
 	if (_.contains(blacklist, toLink)) return true;
 
-	shell.ln('-sf', toLink, shell.env.HOME + "/" + toLink);
+    // Go ahead and link if nothing exists at `newHome`
+    if (!shell.test('-e', newHome)) {
+        shell.ln('-sf', toLink, newHome);
+        return true;
+    }
+
+    // Handle existing `newHome` locations
+    eachExistingLink = _.clone(existingLink);
+    eachExistingLink.message += (" " + newHome).red;
+
+    inquirer.prompt(eachExistingLink, function(response) {
+        shell.echo(response);
+        shell.exit(1);
+    });
 });
 
 
@@ -71,7 +103,10 @@ _.forEach(shell.ls('-A'), function(toLink) {
 shell.cd(__dirname);
 
 // Link Karabiner config xml
-shell.ln('-sf', ".karabiner/private.xml", shell.env.HOME + "/Library/Application\ Support/Karabiner/private.xml");
+karabinerDir = shell.env.HOME + "/Library/Application\ Support/Karabiner";
+if (shell.test('-d', karabinerDir)) {
+	shell.ln('-sf', ".karabiner/private.xml", karabinerDir + "/private.xml");
+}
 
 // Link spacemacs
 shell.ln('-sf', ".spacemacs/.spacemacs", shell.env.HOME + "/.spacemacs");
