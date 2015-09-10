@@ -29,12 +29,12 @@ if (!_.contains(['overwrite', 'move', 'skip'], program.existing)) {
 ///////////////////////////////////////////////////////////////////////////////
 
 if (false) {
-	source = __dirname + '/.src/base16-vim/colors/';
-	dest = __dirname + '/.vim/colors/';
+    source = __dirname + '/.src/base16-vim/colors/';
+    dest = __dirname + '/.vim/colors/';
 
-	_.forEach(shell.ls(source), function(scheme) {
-		shell.ln('-sf', source + scheme, dest + scheme);
-	});
+    _.forEach(shell.ls(source), function(scheme) {
+        shell.ln('-sf', source + scheme, dest + scheme);
+    });
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -47,7 +47,7 @@ dest = __dirname + '/.zprezto/modules/prompt/functions/';
 /*
 // TODO: This would be ideal, but we'll just hardcode the installs for now
 shell.ls(source).forEach(function(repo) {
-	repo = source + repo;
+    repo = source + repo;
 });
 */
 
@@ -62,8 +62,8 @@ shell.ls(source).forEach(function(repo) {
 shell.cd(__dirname);
 
 projectFiles = [
-	'.git', '.gitignore', '.gitmodules', 'TODO.md',
-	'install.js', 'node_modules', 'package.json'
+    '.git', '.gitignore', '.gitmodules', 'TODO.md',
+    'install.js', 'node_modules', 'package.json'
 ];
 special = ['.karabiner', '.spacemacs'];
 blacklist = _.union(projectFiles, special);
@@ -78,7 +78,7 @@ _.forEach(shell.ls('-A'), function(toLink) {
     };
 
     // Skip iteration if in blacklist
-	if (_.contains(blacklist, toLink)) return true;
+    if (_.contains(blacklist, toLink)) return true;
 
     // Go ahead and link if nothing exists at `newHome`
     if (shell.test('-f', newHome) || shell.test('-L', newHome)) {
@@ -90,7 +90,7 @@ _.forEach(shell.ls('-A'), function(toLink) {
     switch (program.existing) {
 
         case 'overwrite':
-            shell.rm('-rf', newHome)
+            shell.rm('-rf', newHome);
             ln();
             break;
 
@@ -116,7 +116,7 @@ shell.cd(__dirname);
 // Link Karabiner config xml
 karabinerDir = shell.env.HOME + "/Library/Application\ Support/Karabiner";
 if (shell.test('-d', karabinerDir)) {
-	shell.ln('-sf', ".karabiner/private.xml", karabinerDir + "/private.xml");
+    shell.ln('-sf', ".karabiner/private.xml", karabinerDir + "/private.xml");
 }
 
 // Link spacemacs
