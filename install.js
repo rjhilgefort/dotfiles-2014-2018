@@ -76,6 +76,7 @@ shell.ln('-sf', ".karabiner/private.xml", shell.env.HOME + "/Library/Application
 // Link spacemacs
 shell.ln('-sf', ".spacemacs/.spacemacs", shell.env.HOME + "/.spacemacs");
 shell.ln('-sf', ".spacemacs/rjhilgefort", shell.env.HOME + "/.emacs.d/private/rjhilgefort");
+shell.ln('-sf', ".spacemacs/rjhilgefort/.mc-lists.el", shell.env.HOME + "/.emacs.d/.mc-lists.el");
 
 
 ///////////////////////////////////////////////////////////////////////////////
