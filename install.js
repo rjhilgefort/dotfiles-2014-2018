@@ -6,23 +6,19 @@ var shell = require('shelljs'),
     colors = require('colors'),
     inquirer = require('inquirer');
 
-var source, dest, projectFiles, special, blacklist, existingLink;
+var source, dest, projectFiles, special, blacklist;
 
 program
     .version('0.0.1')
     .usage("[options]")
+    .option("-e, --existing [move]", "Handle existing directories as overwrite/[move]/skip", 'move')
     .parse(process.argv);
 
-existingLink = {
-    type: 'list',
-    name: 'existingLink',
-    message: "A non-linked file/directory already exists at the following, what would you like to do?",
-    choices: [
-        "Skip it, I'll deal with it later",
-        "Move existing to `__<name>` and write new link.",
-        "Overwrite it, I give zero f**ks about what's already there."
-    ]
+// Handle options
+if (!_.contains(['overwrite', 'move', 'skip'], program.existing)) {
+    program.existing = 'move';
 }
+
 
 // Make sure submodules are installed
 // shell.exec('git submodule update --init --recursive');
@@ -73,26 +69,41 @@ special = ['.karabiner', '.spacemacs'];
 blacklist = _.union(projectFiles, special);
 
 _.forEach(shell.ls('-A'), function(toLink) {
-    var newHome = shell.env.HOME + "/" + toLink,
-        eachExistingLink;
+    var newHome = shell.env.HOME + "/" + toLink;
+    var ln = function() {
+        shell.ln('-sf', toLink, newHome);
+    };
+    var existingStatus = function(status) {
+        shell.echo("Existing target found, '" + status + "' applied to: " + newHome);
+    };
 
-	// skip iteration if in blacklist
+    // Skip iteration if in blacklist
 	if (_.contains(blacklist, toLink)) return true;
 
     // Go ahead and link if nothing exists at `newHome`
-    if (!shell.test('-e', newHome)) {
-        shell.ln('-sf', toLink, newHome);
+    if (shell.test('-f', newHome) || shell.test('-L', newHome)) {
+        ln();
         return true;
     }
 
-    // Handle existing `newHome` locations
-    eachExistingLink = _.clone(existingLink);
-    eachExistingLink.message += (" " + newHome).red;
+    // Handle existing `newHome` directories
+    switch (program.existing) {
 
-    inquirer.prompt(eachExistingLink, function(response) {
-        shell.echo(response);
-        shell.exit(1);
-    });
+        case 'overwrite':
+            shell.rm('-rf', newHome)
+            ln();
+            break;
+
+        case 'move':
+            shell.mv('-f', newHome, newHome + "__");
+            ln();
+            break;
+
+        case 'skip':
+            break;
+
+    }
+    existingStatus(program.existing);
 });
 
 
