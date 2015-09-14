@@ -49,4 +49,4 @@ let completionengines = ["google", "amazon"]
 let searchalias g = 'google'
 let searchalias a = 'amazon'
 
-let blacklists = ['chrome://*', 'https://mail.google.com/*', 'https://www.google.com/calendar/*', 'https://issues.zipscene.com/*', 'http://www.newsblur.com/*']
+let blacklists = ['chrome://*', 'https://mail.google.com/*', 'https://www.google.com/calendar/*', 'https://issues.zipscene.com/*', 'http://www.newsblur.com/*', "http://www.trello.com/*"]
