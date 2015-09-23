@@ -35,7 +35,7 @@
 	co = checkout
 
 	# go = checkout -B
-	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+	go = "!f() { git checkout -b \"$1\" 2> /dev/null && git push origin -u \"$1\" || git checkout \"$1\"; }; f"
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l --sort=v:refname
