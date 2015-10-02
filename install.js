@@ -124,6 +124,12 @@ shell.ln('-sf', ".spacemacs/.spacemacs", shell.env.HOME + "/.spacemacs");
 shell.ln('-sf', ".spacemacs/rjhilgefort", shell.env.HOME + "/.emacs.d/private/rjhilgefort");
 shell.ln('-sf', ".spacemacs/rjhilgefort/.mc-lists.el", shell.env.HOME + "/.emacs.d/.mc-lists.el");
 
+// Link adobe scripts if installed
+photoshopDir = "/Applications/Adobe Photoshop CS6/Presets/Scripts";
+if (shell.test('-d', photoshopDir)) {
+    // TODO: loop over this directory and link all
+    shell.ln('-sf', ".adobe_photoshop/BatchCropAndStriaghten.jsx", photoshopDir + "/BatchCropAndStriaghten.jsx");
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Other commands that need to be run
