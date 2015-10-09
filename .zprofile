@@ -57,6 +57,11 @@ path=(
 # Add android
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
+# lolcommits
+export LOLCOMMITS_ANIMATE=3
+export LOLCOMMITS_DELAY=1
+# export LOLCOMMITS_DEVICE=
+
 ################################################################################
 # Less
 ################################################################################
