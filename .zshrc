@@ -66,6 +66,7 @@ alias cl="clear"
 
 # Emacs
 alias em="emacs"
+alias ed="emacs --daemon"
 alias ec="emacsclient -c"
 alias e="ec"
 

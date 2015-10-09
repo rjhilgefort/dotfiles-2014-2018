@@ -18,8 +18,11 @@ if [[ -n $SSH_CONNECTION ]]; then
   export VISUAL='vim'
   export PAGER='less'
 else
-  export EDITOR='vim'
-  export VISUAL='vim'
+  export EDITOR='emacs'
+  export VISUAL='emacs'
+  # TODO: emacs as client/daemon
+  # export EDITOR='emacsclient -t'
+  # export VISUAL='emacsclient -c -a emacs'
   export PAGER='less'
 fi
 
@@ -81,4 +84,3 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
-
