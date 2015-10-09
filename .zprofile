@@ -18,8 +18,8 @@ if [[ -n $SSH_CONNECTION ]]; then
   export VISUAL='vim'
   export PAGER='less'
 else
-  export EDITOR='emacs'
-  export VISUAL='emacs'
+  export EDITOR='vim'
+  export VISUAL='vim'
   # TODO: emacs as client/daemon
   # export EDITOR='emacsclient -t'
   # export VISUAL='emacsclient -c -a emacs'
