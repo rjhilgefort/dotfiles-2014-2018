@@ -121,6 +121,7 @@ alias pumpitup="osascript -e 'set volume 7'"
 alias j='fasd_cd -d'
 alias jj='fasd_cd -d -i'
 alias jvim='fasd -f -e vim'
+alias jem='fasd -f -e emacs'
 alias jopen='fasd -f -e open'
 alias jcat='fasd -f -e cat'
 alias jless='fasd -f -e less'
