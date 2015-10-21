@@ -31,3 +31,5 @@ node_modules
 
 # .config
 .config/configstore/update-notifier-bower.yml
+.config/configstore/insight-bower.json
+.config/ranger/bookmarks
