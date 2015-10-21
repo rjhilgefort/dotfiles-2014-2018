@@ -1,6 +1,8 @@
 #!/bin/bash
 
 ###############################################################################
+# REF: http://martinbrochhaus.com/pair.html
+#
 # Script Interface:
 #     $1 username
 #     $2 password
