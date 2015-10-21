@@ -84,6 +84,8 @@ brew install pandoc
 brew install zsh-completions
 brew install ranger
 brew install w3m
+brew install markdown
+brew install wemux
 
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
