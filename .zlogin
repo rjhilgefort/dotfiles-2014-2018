@@ -15,3 +15,5 @@ if (( $+commands[fortune] )); then
   print
 fi
 
+# fix tmux status line (thanks to vim-airline)
+tmux-fix-status-line
