@@ -59,7 +59,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # lolcommits
 export LOLCOMMITS_ANIMATE=2
-export LOLCOMMITS_DELAY=0
+export LOLCOMMITS_DELAY=1
 # export LOLCOMMITS_DEVICE=
 
 ################################################################################
