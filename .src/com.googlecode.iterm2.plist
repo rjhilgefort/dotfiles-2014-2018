@@ -1788,7 +1788,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>415</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -1802,13 +1802,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>951 422 663 282 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>672 421 606 456 0 0 1440 877 </string>
+	<string>-768 371 606 456 -1440 -50 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 499 620 392 0 0 1920 1058 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-1341 474 592 584 -1440 180 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 2554 1417 0 0 2560 1417 </string>
+	<string>0 0 2274 1027 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -5537,13 +5537,17 @@
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
 	<key>NoSyncLastTipTime</key>
-	<real>464553682.67607802</real>
+	<real>464903906.22209901</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncSuppressAnnyoingBellOffer</key>
 	<true/>
+	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
+	<real>465276255.699646</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>0000</string>
@@ -5573,6 +5577,7 @@
 		<string>0023</string>
 		<string>0024</string>
 		<string>0025</string>
+		<string>0026</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -5624,7 +5629,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-09-17T16:54:07Z</date>
+	<date>2015-10-21T07:21:51Z</date>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>ShowBookmarkName</key>
@@ -5672,6 +5677,8 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20150906-nightly</string>
+	<string>2.9.20151006-nightly</string>
+	<key>kCommandHistoryHasEverBeenUsed</key>
+	<true/>
 </dict>
 </plist>
