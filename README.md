@@ -10,6 +10,7 @@ My configuration files.
 - npm
 - zsh
 - tig
+- tmux#2.1
 
 # Install
 
