@@ -1,0 +1,25 @@
+# ~/.tmuxinator/pulse.yml
+
+name: pulse
+root: ~/zipscene/pulse
+
+windows:
+  - pulse-ide:
+      - emacs
+  - pulse-term:
+      layout: even-horizontal
+      panes:
+        - term:
+          - clear
+        - runner:
+          - clear
+  - dotfiles:
+      layout: even-horizontal
+      panes:
+        - editor:
+          - cd ~/Projects/dotfiles
+          - emacs
+        - tig:
+          - cd ~/Projects/dotfiles
+          - tig status
+
