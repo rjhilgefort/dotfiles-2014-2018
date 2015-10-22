@@ -154,7 +154,7 @@ alias t='tig status'
 alias r='ranger'
 
 # git
-alias git-merge-done='git add -A && git commit --no-edit && git sync'
+alias git-merge-complete='git add -A && git commit --no-edit && git sync'
 alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git sync'
 
 # automated iterm2 injected script
