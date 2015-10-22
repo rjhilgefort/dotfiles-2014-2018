@@ -160,6 +160,9 @@ alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter f
 # fix tmux line
 alias tmux-fix-status-line='vim ~/dotfiles -c "q"'
 
+# wemux
+alias wemux-ao='ssh pairprog@192.168.178.102'
+
 # automated iterm2 injected script
 source ~/.iterm2_shell_integration.zsh
 
