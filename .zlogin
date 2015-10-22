@@ -15,5 +15,11 @@ if (( $+commands[fortune] )); then
   print
 fi
 
-# fix tmux status line (thanks to vim-airline)
+# Start wemux (tmux) on boot
+wemux start > /dev/null
+
+# Fix tmux status line (thanks to vim-airline)
 tmux-fix-status-line
+
+# Clean prompt to start
+clear
