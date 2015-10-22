@@ -1808,7 +1808,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-1341 474 592 584 -1440 180 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 2274 1027 0 0 1680 1027 </string>
+	<string>0 0 1674 1027 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2530,7 +2530,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1.0088832378387451</real>
+			<real>1.0095679593373497</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -5030,7 +5030,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.89999997615814209</real>
+			<real>0.92680838165513002</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -5351,7 +5351,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SauceCodePowerline-Light 14</string>
+			<string>SauceCodePowerline-Light 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -5523,7 +5523,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1.0088832378387451</real>
+			<real>1.0278026655495887</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
