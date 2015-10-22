@@ -158,7 +158,7 @@ alias git-merge-complete='git add -A && git commit --no-edit && git sync'
 alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git sync'
 
 # fix tmux line
-alias tmux-fix-status-line='vim ~/dotfiles -c "q"'
+alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
 
 # wemux
 alias wemux-ao='ssh pairprog@192.168.178.102'
