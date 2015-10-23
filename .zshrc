@@ -167,3 +167,6 @@ alias wemux-ao='ssh pairprog@192.168.178.102'
 source ~/.iterm2_shell_integration.zsh
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
