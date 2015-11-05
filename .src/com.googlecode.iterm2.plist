@@ -1802,13 +1802,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>951 422 663 282 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>-768 371 606 456 -1440 -50 1440 877 </string>
+	<string>672 421 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 499 620 392 0 0 1920 1058 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-1341 474 592 584 -1440 180 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1674 1027 0 0 1680 1027 </string>
+	<string>0 0 2274 1417 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1965,7 +1965,7 @@
 			<key>Automatically Log</key>
 			<false/>
 			<key>BM Growl</key>
-			<true/>
+			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -4903,7 +4903,7 @@
 			<key>Automatically Log</key>
 			<false/>
 			<key>BM Growl</key>
-			<true/>
+			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -5532,6 +5532,8 @@
 			<string>/Users/rjhilgefort</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -5629,7 +5631,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-10-21T07:21:51Z</date>
+	<date>2015-10-27T22:27:44Z</date>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>ShowBookmarkName</key>
@@ -5677,7 +5679,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20151006-nightly</string>
+	<string>2.9.20151023-nightly</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 </dict>
