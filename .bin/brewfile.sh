@@ -86,6 +86,7 @@ brew install ranger
 brew install w3m
 brew install markdown
 brew install wemux
+brew install trash
 
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
