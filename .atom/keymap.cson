@@ -42,8 +42,8 @@
 # Remap escape for vim
 '.editor.vim-mode:not(.command-mode)':
   'j k': 'vim-mode:activate-command-mode'
-'.editor.vim-mode.insert-mode':
-  'j': 'insert-incomplete-keybinding'
+#'.editor.vim-mode.insert-mode':
+#  'j': 'insert-incomplete-keybinding'
 
 # Autocomplete Plus
 '.autocomplete-plus input.hidden-input':
