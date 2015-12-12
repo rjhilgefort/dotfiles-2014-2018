@@ -1,4 +1,10 @@
 search cz
 search image
 open_with vim
+delete
 
+copy
+paste 
+
+rename 
+rename favicon.png
