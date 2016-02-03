@@ -4,27 +4,29 @@ name: zipscene
 root: ~/
 
 windows:
-  - wildcat-ide:
-      - cd ~/zipscene/wildcat/
-      - vim -c "NERDTreeToggle"
-  - wildcat-term:
-      layout: even-horizontal
-      panes:
-        - term:
-          - cd ~/zipscene/wildcat/
-          - clear
-        - runner:
-          - cd ~/zipscene/wildcat/
-          - clear
-  - wildcat-ro:
-      layout: even-horizontal
-      panes:
-        - ide:
-          - cd ~/zipscene/_readonly/wildcat/
-          - clear
-        - term:
-          - cd ~/zipscene/_readonly/wildcat/
-          - clear
+  # ###########################################################################
+  # - wildcat-ide:
+  #     - cd ~/zipscene/wildcat/
+  #     - vim -c "NERDTreeToggle"
+  # - wildcat-term:
+  #     layout: even-horizontal
+  #     panes:
+  #       - term:
+  #         - cd ~/zipscene/wildcat/
+  #         - clear
+  #       - runner:
+  #         - cd ~/zipscene/wildcat/
+  #         - clear
+  # - wildcat-ro:
+  #     layout: even-horizontal
+  #     panes:
+  #       - ide:
+  #         - cd ~/zipscene/_readonly/wildcat/
+  #         - clear
+  #       - term:
+  #         - cd ~/zipscene/_readonly/wildcat/
+  #         - clear
+  # ###########################################################################
   # - zsapi:
   #     layout: even-horizontal
   #     panes:
@@ -43,7 +45,7 @@ windows:
       panes:
         - editor:
           - cd ~/Projects/dotfiles
-          - vim -c "NERDTreeToggle"
+          - em
         - tig:
           - cd ~/Projects/dotfiles
           - tig status
