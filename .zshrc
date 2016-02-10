@@ -155,8 +155,8 @@ alias t='tig status'
 alias r='ranger'
 
 # git
-alias git-merge-complete='git add -A && git commit --no-edit && git sync'
-alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git sync'
+alias git-merge-complete='git add -A && git commit --no-edit && git pp'
+alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git pp'
 
 # fix tmux line
 alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
