@@ -30,6 +30,7 @@ node_modules
 .alfred/*
 
 # .config
+.config/configstore/update-notifier-bower.json
 .config/configstore/update-notifier-bower.yml
 .config/configstore/insight-bower.json
 .config/ranger/bookmarks
