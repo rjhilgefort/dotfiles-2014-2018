@@ -7,8 +7,30 @@ paste
 rename 
 rename favicon.png
 open_with
-
 delete
 search lodash
 search source
 search 6mab
+tab_new 
+tab_open 1
+tab_open 2
+tab_close 
+move_parent 
+move core.js ../core.js
+move ../core.js
+touch backend.js
+touch frontend.js
+mkdir frameworks
+touch node.js
+touch ember.js
+find 
+mkdir projects
+touch wildcat.js
+touch pulse.js
+touch dmp.js
+touch .editorconfig
+
+set show_hidden_files true
+set show_hidden true
+set show_hidden false
+rename pulse-client.js
