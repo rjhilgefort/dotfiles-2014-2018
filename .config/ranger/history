@@ -25,7 +25,6 @@ touch ember.js
 find 
 mkdir projects
 touch wildcat.js
-touch pulse.js
 touch dmp.js
 touch .editorconfig
 set show_hidden_files true
@@ -35,3 +34,5 @@ rename pulse-client.js
 set show_hidden true
 open_with 
 open_with vim
+touch pulse.js
+touch pulse-api.js

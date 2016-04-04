@@ -164,6 +164,10 @@ alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
 # wemux
 alias wemux-ao='ssh pairprog@192.168.178.102'
 
+# npmrc
+alias npm-rjh='ln -sf ~/.npmrc-rjh ~/.npmrc'
+alias npm-zs='ln -sf ~/.npmrc-zs ~/.npmrc'
+
 # automated iterm2 injected script
 source ~/.iterm2_shell_integration.zsh
 
