@@ -1,0 +1,3 @@
+registry=https://npm.zipscene.com/
+always-auth=true
+ca=null
