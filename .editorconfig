@@ -1,21 +1,26 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
 root = true
 
-[**.js]
-path = ~/.vim/bundle/js-beautify/js/lib/beautify.js
-bin = node
-indent_style = tabs
-indent_size = 4
+[*]
+end_of_line = lf
+charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+indent_style = space
+indent_size = 2
 
-[**.css]
-path = ~/.vim/bundle/js-beautify/js/lib/beautify-css.js
-indent_style = tabs
-indent_size = 4
+[*.js]
+bin = node
 
-[**.html]
-path = ~/.vim/bundle/js-beautify/js/lib/beautify-html.js
-max_char = 80
+[*.css]
+
+[*.{html,hbs}]
+max_char = 120
 brace_style = expand
-indent_style = tabs
-indent_size = 4
+insert_final_newline = false
+
+[*.{diff,md}]
+trim_trailing_whitespace = false
