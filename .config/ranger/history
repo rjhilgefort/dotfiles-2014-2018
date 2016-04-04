@@ -1,6 +1,5 @@
 search cz
 search image
-open_with vim
 copy
 paste 
 
@@ -29,8 +28,10 @@ touch wildcat.js
 touch pulse.js
 touch dmp.js
 touch .editorconfig
-
 set show_hidden_files true
-set show_hidden true
 set show_hidden false
 rename pulse-client.js
+
+set show_hidden true
+open_with 
+open_with vim
