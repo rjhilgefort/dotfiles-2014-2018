@@ -1,3 +1,6 @@
+init.author.name=Rob Hilgefort
+init.author.email=rob.hilgefort@zipscene.com
 registry=https://npm.zipscene.com/
-always-auth=true
+always-auth=false
 ca=null
+//npm.zipscene.com/:_authToken="mKrP8CBwSNXocsxdowdH4vvzOFpzCTB5bjVukbgjaFU="
