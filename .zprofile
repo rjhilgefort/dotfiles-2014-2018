@@ -46,16 +46,17 @@ typeset -gU cdpath fpath mailpath path
 #   $cdpath
 # )
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export DMP_ROOT=/Users/rjhilgefort/Dropbox/Projects/zipscene/dmp
+
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
   /usr/local/lib/luarocks/bin
+  /Users/rjhilgefort/Dropbox/Projects/zipscene/utilscripts/bin
   $HOME/bin
   $path
 )
-
-# Add android
-export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # lolcommits (derp)
 # export LOLCOMMITS_ANIMATE=2
