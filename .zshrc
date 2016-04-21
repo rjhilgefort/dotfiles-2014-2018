@@ -133,7 +133,7 @@ alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
 alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
 alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
 alias ssh-zs-stage='ssh rhilgefort@50.17.140.74'
-
+alias ssh-dmp-stage='ssh rhilgefort@dmp-stage-b-01.zipscene.com'
 # ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
 alias ssh-zs-qa-tunnel='ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 # ssh tunnel on localhost:27019 to do-personal for mongo
