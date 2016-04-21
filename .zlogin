@@ -16,10 +16,11 @@ if (( $+commands[fortune] )); then
 fi
 
 # Start wemux (tmux) on boot
-wemux start > /dev/null
+# NOTE: If turning this on, turn off tmux autostart in ~/.zpreztorc
+# wemux start > /dev/null
 
 # Fix tmux status line (thanks to vim-airline)
-tmux-fix-status-line
+# tmux-fix-status-line
 
 # Clean prompt to start
 clear
