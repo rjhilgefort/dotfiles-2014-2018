@@ -31,8 +31,8 @@ set show_hidden_files true
 set show_hidden false
 rename pulse-client.js
 
-set show_hidden true
 open_with 
 open_with vim
 touch pulse.js
 touch pulse-api.js
+set show_hidden true
