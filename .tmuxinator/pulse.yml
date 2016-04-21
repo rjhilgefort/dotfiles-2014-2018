@@ -4,22 +4,9 @@ name: pulse
 root: ~/zipscene/pulse
 
 windows:
-  - pulse-ide:
-      - emacs
-  - pulse-term:
+  - pulse:
       layout: even-horizontal
       panes:
-        - term:
-          - clear
-        - runner:
-          - clear
-  - dotfiles:
-      layout: even-horizontal
-      panes:
-        - editor:
-          - cd ~/Projects/dotfiles
-          - emacs
-        - tig:
-          - cd ~/Projects/dotfiles
-          - tig status
+        - emacs: emacs
+        - runner: clear
 

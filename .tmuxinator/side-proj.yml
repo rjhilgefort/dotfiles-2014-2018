@@ -1,0 +1,14 @@
+# ~/.tmuxinator/side-proj.yml
+
+name: side-proj
+root: ~/
+
+windows:
+  - editor: emacs
+  - term:
+      layout: tiled
+      panes:
+        - clear
+        - clear
+        - clear
+        - clear

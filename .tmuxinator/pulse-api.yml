@@ -1,0 +1,36 @@
+# ~/.tmuxinator/pulse-api.yml
+
+name: pulse-api
+root: ~/
+
+pre:
+  - launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb30.plist
+  - launchctl load ~/Library/LaunchAgents/homebrew.mxcl.elasticsearch17.plist
+  - launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+  - launchctl load ~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
+  - rabbitmq-server > /tmp/rabbit-mq-server.log 2>&1 &
+
+pre_window: nvm use 0.10
+
+windows:
+  - emacs:
+    - emacs
+  - env-deps:
+      layout: tiled
+      panes:
+        - zs-dmp-api:
+          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-api
+          - npm run start
+        - zs-dmp-worker:
+          - sleep 20
+          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-worker
+          - npm run start
+        - pulse-api:
+          - sleep 40
+          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/zs-pulse-api
+          - npm run start
+        - pulse:
+          - sleep 60
+          - nvm use 5
+          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/pulse
+          - ember serve
