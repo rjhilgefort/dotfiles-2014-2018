@@ -4,6 +4,12 @@
 # Config, Scripts
 ###############################################################################
 
+# Added to support terminal in emacs, applies universally
+# http://stackoverflow.com/questions/8918910/weird-character-zsh-in-emacs-terminal
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color
+
 # Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -133,7 +139,7 @@ alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
 alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
 alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
 alias ssh-zs-stage='ssh rhilgefort@50.17.140.74'
-alias ssh-dmp-stage='ssh rhilgefort@dmp-stage-b-01.zipscene.com'
+alias ssh-zs-dmp-stage='ssh rhilgefort@dmp-stage-b-01.zipscene.com'
 # ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
 alias ssh-zs-qa-tunnel='ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 # ssh tunnel on localhost:27019 to do-personal for mongo
@@ -175,3 +181,4 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm use 0.12

@@ -10,27 +10,28 @@ pre:
   - launchctl load ~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
   - rabbitmq-server > /tmp/rabbit-mq-server.log 2>&1 &
 
-pre_window: nvm use 0.10
+pre_window: nvm use 0.12
 
 windows:
   - emacs:
     - emacs
   - env-deps:
-      layout: tiled
+      layout: main-vertical
+      # layout: tiled
       panes:
-        - zs-dmp-api:
-          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-api
-          - npm run start
-        - zs-dmp-worker:
-          - sleep 20
-          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-worker
-          - npm run start
+        # - zs-dmp-api:
+        #   - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-api
+        #   - npm run start
+        # - zs-dmp-worker:
+        #   - sleep 20
+        #   - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-worker
+        #   - npm run start
         - pulse-api:
-          - sleep 40
+          # - sleep 40
           - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/zs-pulse-api
           - npm run start
         - pulse:
-          - sleep 60
+          # - sleep 60
           - nvm use 5
           - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/pulse
           - ember serve
