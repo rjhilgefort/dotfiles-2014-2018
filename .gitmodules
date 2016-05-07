@@ -49,3 +49,6 @@
 [submodule ".spacemacs"]
 	path = .spacemacs
 	url = git@github.com:rjhilgefort/.spacemacs.git
+[submodule ".ergodox"]
+	path = .ergodox
+	url = git@github.com:rjhilgefort/.ergodox
