@@ -181,4 +181,4 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm use 0.12
+nvm use system
