@@ -58,8 +58,8 @@ slate.bindAll({
     'h': [
       $('barResize', 'left', 2),
       $('barResize', 'left', 1.5),
-      $('barResize', 'left', 3)/*,
-      $('center',    'left', 3, 3)*/
+      $('barResize', 'left', 3)
+      // $('center',    'left', 3, 3)
     ],
 
     /*
@@ -69,23 +69,23 @@ slate.bindAll({
      */
     'j': [
       $('barResize', 'bottom', 2),
-      // $('barResize', 'bottom', 1.5),
-      // $('barResize', 'bottom', 3),
-      $('barResize', 'bottom', 2.8875)
+      $('barResize', 'bottom', 1.5),
+      $('barResize', 'bottom', 3)
+      // $('barResize', 'bottom', 2.8875)
     ],
 
     'k': [
       $('barResize', 'top', 2),
-      // $('barResize', 'top', 1.5),
-      // $('barResize', 'top', 3),
-      $('barResize', 'top', 1.3875)
+      $('barResize', 'top', 1.5),
+      $('barResize', 'top', 3)
+      // $('barResize', 'top', 1.3875)
     ],
 
     'l': [
       $('barResize', 'right', 2),
       $('barResize', 'right', 1.5),
-      $('barResize', 'right', 3)/*,
-      $('center',    'right', 3, 3)*/
+      $('barResize', 'right', 3)
+      // $('center',    'right', 3, 3)
     ],
 
     // Corners
@@ -117,7 +117,6 @@ slate.bindAll({
       $('corner', 'bottom-right', 3, 3)
     ],
 
-
     // Centers
     'u': [
       $('center', 'top'),
@@ -135,14 +134,12 @@ slate.bindAll({
       $('center', 'center', 1.25, 1.25)
     ],
 
-
     // Throw to monitor
     '`': tossChain,
     'w': tossChain,
     '1': $('toss', '0', 'resize'),
     '2': $('toss', '1', 'resize'),
     '3': $('toss', '2', 'resize'),
-
 
     // Utility functions
     'f2': 'relaunch',
