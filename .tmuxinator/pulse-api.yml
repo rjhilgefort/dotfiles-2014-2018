@@ -32,6 +32,5 @@ windows:
           - npm run start
         - pulse:
           # - sleep 60
-          - nvm use 5
           - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/pulse
           - ember serve
