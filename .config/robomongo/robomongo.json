@@ -68,6 +68,30 @@
    "sshUserPassword" : "",
    "sslEnabled" : false,
    "sslPemKeyFile" : ""
+  },
+  {
+   "connectionName" : "zs-dmp-stage.zipscene.com",
+   "credentials" : [
+    {
+     "databaseName" : "admin",
+     "enabled" : false,
+     "userName" : "",
+     "userPassword" : ""
+    }
+   ],
+   "defaultDatabase" : "",
+   "serverHost" : "localhost",
+   "serverPort" : 27020,
+   "sshAuthMethod" : 0,
+   "sshHost" : "",
+   "sshPassphrase" : "",
+   "sshPort" : 22,
+   "sshPrivateKey" : "",
+   "sshPublicKey" : "",
+   "sshUserName" : "",
+   "sshUserPassword" : "",
+   "sslEnabled" : false,
+   "sslPemKeyFile" : ""
   }
  ],
  "disableConnectionShortcuts" : false,

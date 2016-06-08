@@ -18,6 +18,21 @@
    "defaultDatabase" : "",
    "serverHost" : "localhost",
    "serverPort" : 27017
+  },
+  {
+   "connectionName" : "zs-dmp-stage",
+   "credentials" : [
+    {
+     "databaseName" : "admin",
+     "enabled" : false,
+     "mechanism" : "SCRAM-SHA-1",
+     "userName" : "",
+     "userPassword" : ""
+    }
+   ],
+   "defaultDatabase" : "",
+   "serverHost" : "localhost",
+   "serverPort" : 27020
   }
  ],
  "disableConnectionShortcuts" : false,
