@@ -63,7 +63,8 @@ shell.cd(__dirname);
 
 projectFiles = [
 	'.git', '.gitignore', '.gitmodules', 'TODO.md', 'README.md',
-	'install.js', 'node_modules', 'package.json', 'npm-debug.log'
+	'install.js', 'node_modules', 'package.json', 'npm-debug.log',
+	'.DS_Store'
 ];
 special = ['.karabiner', '.spacemacs'];
 blacklist = _.union(projectFiles, special);
