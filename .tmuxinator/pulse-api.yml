@@ -20,17 +20,17 @@ windows:
       # layout: tiled
       panes:
         # - zs-dmp-api:
-        #   - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-api
+        #   - cd ~/Projects/zipscene/dmp/zs-dmp-api
         #   - npm run start
         # - zs-dmp-worker:
         #   - sleep 20
-        #   - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/dmp/zs-dmp-worker
+        #   - cd ~/Projects/zipscene/dmp/zs-dmp-worker
         #   - npm run start
         - pulse-api:
           # - sleep 40
-          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/zs-pulse-api
+          - cd ~/Projects/zipscene/zs-pulse-api
           - npm run start
         - pulse:
           # - sleep 60
-          - cd /Users/rjhilgefort/Dropbox/Projects/zipscene/pulse
+          - cd ~/Projects/zipscene/pulse
           - ember serve
