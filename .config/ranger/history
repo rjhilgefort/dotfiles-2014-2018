@@ -40,3 +40,4 @@ redraw_window
 delete
 mkdir storages
 touch pulse.js
+search analytic
