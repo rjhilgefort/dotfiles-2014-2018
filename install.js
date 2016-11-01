@@ -21,7 +21,7 @@ if (!_.contains(['overwrite', 'move', 'skip'], program.existing)) {
 
 
 // Make sure submodules are installed
-// shell.exec('git submodule update --init --recursive');
+shell.exec('git submodule update --init --recursive');
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -148,6 +148,8 @@ if (shell.test('-d', photoshopDir)) {
 ///////////////////////////////////////////////////////////////////////////////
 // Other commands that need to be run
 ///////////////////////////////////////////////////////////////////////////////
+
+// TODO: detect os and symlink either the mac or linux tmux file to `.tmux.conf.local`
 
 // Make sure we're using zsh
 shell.exec('chsh -s /bin/zsh');
