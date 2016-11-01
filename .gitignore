@@ -25,10 +25,6 @@ node_modules
 .atom/storage
 .atom/.apm
 
-# TODO don't ignore all of alfred
-# alfred
-.alfred/*
-
 # .config
 .config/configstore/update-notifier-bower.json
 .config/configstore/update-notifier-bower.yml
