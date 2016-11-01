@@ -1,10 +1,9 @@
 #!/bin/sh
 
-# Install Native Apps
-
 # Setup
 brew tap caskroom/cask
 brew tap caskroom/versions
+brew tap alehouse/homebrew-unofficial
 
 ###############################################################################
 # Core
@@ -12,6 +11,7 @@ brew tap caskroom/versions
 brew cask install google-chrome 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install alfred 2> /dev/null
+
 brew cask install bartender 2> /dev/null
 brew cask install iterm2-borderless 2> /dev/null
 brew cask install slate 2> /dev/null
