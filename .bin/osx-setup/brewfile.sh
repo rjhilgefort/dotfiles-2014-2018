@@ -82,8 +82,9 @@ brew install zsh-completions
 brew install ranger
 brew install w3m
 brew install markdown
-brew install wemux
 brew install trash
+brew install task
+
 
 # Install Emacs
 brew tap d12frosted/emacs-plus
@@ -123,6 +124,7 @@ brew install macvim --custom-system-icons --override-system-vim
 # brew install webkit2png
 # brew install xpdf
 # brew install zopfli
+# brew install wemux
 
 
 # Remove outdated versions from the cellar

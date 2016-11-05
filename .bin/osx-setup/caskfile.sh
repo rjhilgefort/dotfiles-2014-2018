@@ -29,13 +29,16 @@ brew cask install disk-inventory-x 2> /dev/null
 brew cask install google-drive 2> /dev/null
 brew cask install adobe-reader 2> /dev/null
 brew cask install liteicon 2> /dev/null
+brew cask install istat-menus 2> /dev/null
+brew cask install duet 2> /dev/null
+brew cask install obs 2> /dev/null
+brew cask install appcleaner 2> /dev/null
+brew cask install gitter 2> /dev/null
 
 # brew cask install sublime-text3 2> /dev/null
 # brew cask install atom 2> /dev/null
 # brew cask install drobo-dashboard 2> /dev/null
-# brew cask install istat-menus4 2> /dev/null
 # brew cask install hipchat 2> /dev/null
-# brew cask install seil 2> /dev/null
 
 ###############################################################################
 # Nice To Have
