@@ -16,9 +16,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Base16 Shell
-BASE16_SCHEME="eighties"
-BASE16_SHELL="$HOME/.src/base16-shell/base16-$BASE16_SCHEME.dark.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+#BASE16_SCHEME="eighties"
+#BASE16_SHELL="$HOME/.src/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+# [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
 # Setup zsh-autosuggestions
   # source ~/.src/zsh-autosuggestions/autosuggestions.zsh
@@ -147,17 +147,8 @@ alias ssh-zs-dmp-stage-tunnel='ssh -f rhilgefort@dmp-stage-b-01.zipscene.com -L 
 # ssh tunnel on localhost:27019 to do-personal for mongo
 alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
-# taskwarrior
-taskDone() { task $1 done }
-# alias t='vim -c "TW"'
-alias tl='task list'
-alias ta='task add'
-alias td=taskDone
-alias tn='task next'
-
 # tig
 alias t='tig status'
-# alias tig='tig status'
 
 # ranger
 alias r='ranger'
@@ -168,9 +159,6 @@ alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter f
 
 # fix tmux line
 alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
-
-# wemux
-alias wemux-ao='ssh pairprog@192.168.178.102'
 
 # npmrc
 alias npm-rjh='ln -sf ~/.npmrc-rjh ~/.npmrc'
