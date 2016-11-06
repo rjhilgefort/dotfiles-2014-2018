@@ -32,6 +32,7 @@ brew cask install liteicon 2> /dev/null
 brew cask install istat-menus 2> /dev/null
 brew cask install duet 2> /dev/null
 brew cask install obs 2> /dev/null
+brew cask install soundflower 2> /dev/null
 brew cask install appcleaner 2> /dev/null
 brew cask install gitter 2> /dev/null
 
@@ -54,6 +55,7 @@ brew cask install steam 2> /dev/null
 # brew cask install torbrowser 2> /dev/null
 # brew cask install boxer 2> /dev/null
 # brew cask install pandoc 2> /dev/null
+brew cask install track-o-bot 2> /dev/null
 
 ###############################################################################
 # Utility
