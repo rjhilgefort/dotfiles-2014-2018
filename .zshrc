@@ -71,6 +71,7 @@ alias c="tr -d '\n' | pbcopy"
 alias cl="clear"
 
 # Emacs
+alias emacs="emacs -nw"
 alias em="emacs"
 alias ed="emacs --daemon"
 alias ec="emacsclient -c"
@@ -171,4 +172,3 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm use 0.12
