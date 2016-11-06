@@ -83,8 +83,6 @@ brew install ranger
 brew install w3m
 brew install markdown
 brew install trash
-brew install task
-
 
 # Install Emacs
 brew tap d12frosted/emacs-plus
