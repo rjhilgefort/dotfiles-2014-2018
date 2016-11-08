@@ -75,7 +75,7 @@ brew install gdb --with-brewed-python
 brew install mutt
 brew install irssi
 brew install task
-brew install tern
+brew install homebrew/emacs/tern
 brew install editorconfig
 brew install pandoc
 brew install zsh-completions
