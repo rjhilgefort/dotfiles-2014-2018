@@ -49,3 +49,6 @@
 [submodule ".src/powerline-fonts"]
 	path = .src/powerline-fonts
 	url = git@github.com:powerline/fonts.git
+[submodule ".tmux"]
+	path = .tmux
+	url = git@github.com:rjhilgefort/.tmux.git
