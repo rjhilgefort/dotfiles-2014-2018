@@ -6,3 +6,4 @@ nvm use system
 
 npm install -g eslint
 npm install -g bower
+npm install -g gulp-cli

@@ -18,5 +18,8 @@ fi
 # Fix tmux status line (thanks to vim-airline)
 # tmux-fix-status-line
 
+# Specify node version to use
+nvm use lts/boron
+
 # Clean prompt to start
 clear
