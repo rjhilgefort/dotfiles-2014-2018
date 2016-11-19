@@ -52,3 +52,6 @@
 [submodule ".tmux"]
 	path = .tmux
 	url = git@github.com:rjhilgefort/.tmux.git
+[submodule ".hyper"]
+	path = .hyper
+	url = git@github.com:rjhilgefort/.hyper.git
