@@ -84,6 +84,11 @@ brew install w3m
 brew install markdown
 brew install trash
 
+# Ruby
+brew install rbenv
+rbenv init
+brew install ruby-build
+
 # Install Emacs
 brew tap d12frosted/emacs-plus
 brew install emacs-plus
