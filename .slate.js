@@ -136,7 +136,7 @@ slate.bindAll({
 
     // Throw to monitor
     '`': tossChain,
-    'w': tossChain,
+    'v': tossChain,
     '1': $('toss', '0', 'resize'),
     '2': $('toss', '1', 'resize'),
     '3': $('toss', '2', 'resize'),

@@ -99,6 +99,9 @@ brew install vim --with-python --with-ruby --with-perl --override-system-vi
 brew install macvim --custom-system-icons --override-system-vim
 # brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 
+# Ergodox
+brew install dfu-util
+
 # Android
 # brew install android-sdk
 # brew install ant
