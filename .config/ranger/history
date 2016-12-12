@@ -29,7 +29,6 @@ touch .editorconfig
 set show_hidden_files true
 set show_hidden false
 rename pulse-client.js
-
 open_with 
 open_with vim
 touch pulse-api.js
@@ -41,3 +40,5 @@ delete
 mkdir storages
 touch pulse.js
 search analytic
+search intra
+

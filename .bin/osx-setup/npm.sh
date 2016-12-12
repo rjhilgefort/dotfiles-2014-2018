@@ -4,6 +4,12 @@
 nvm install node
 nvm use system
 
+npm install -g shelljs
+
 npm install -g eslint
+
 npm install -g bower
 npm install -g gulp-cli
+npm install -g webpack
+
+npm install -g git-labelmaker
