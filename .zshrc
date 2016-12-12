@@ -15,6 +15,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# TODO: Bite the bullet and remove this, you're using other methods of styling your shell (iterm/hyper)
 # Base16 Shell
 #BASE16_SCHEME="eighties"
 #BASE16_SHELL="$HOME/.src/base16-shell/base16-$BASE16_SCHEME.dark.sh"
@@ -45,9 +46,19 @@ ulimit -n 2048
 # http://stackoverflow.com/questions/564648/zsh-tab-completion-for-cd
 zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
 
+# TODO: ... another zsh completion?
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 # tmuxinator completions
 # TODO: broken, tmux completions was called with "no arguments"
 # source ~/.bin/tmuxinator.zsh
+
+# automated iterm2 injected script
+source ~/.iterm2_shell_integration.zsh
+
+# NVM Setup
+export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ###############################################################################
 # Alias
@@ -59,16 +70,25 @@ cd() { builtin cd "$@"; l; }
 # not helpfull helpers
 alias starwars="telnet towel.blinkenlights.nl"
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
-
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
 
+# THE most common commands get a short alias
 alias cl="clear"
+alias b="brew"
+alias bc="brew cask"
+alias g="git"
+alias no="node"
+alias n="npm"
+alias nr="npm run"
+alias nrs="npm run start"
+alias nrl="npm run lint"
 
 # Emacs
 alias emacs="emacs -nw"
@@ -138,15 +158,17 @@ alias ssh-gd='ssh robhilgefort@97.74.249.1'
 alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
 alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
 alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
-alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
-alias ssh-zs-stage='ssh rhilgefort@50.17.140.74'
-alias ssh-zs-dmp-stage='ssh rhilgefort@dmp-stage-b-01.zipscene.com'
-# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
-alias ssh-zs-qa-tunnel='ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
-# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
-alias ssh-zs-dmp-stage-tunnel='ssh -f rhilgefort@dmp-stage-b-01.zipscene.com -L 27020:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 # ssh tunnel on localhost:27019 to do-personal for mongo
 alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
+
+# ZS ssh alias, left in for reference
+# alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
+# alias ssh-zs-stage='ssh rhilgefort@50.17.140.74'
+# alias ssh-zs-dmp-stage='ssh rhilgefort@dmp-stage-b-01.zipscene.com'
+# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
+# alias ssh-zs-qa-tunnel='ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
+# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
+# alias ssh-zs-dmp-stage-tunnel='ssh -f rhilgefort@dmp-stage-b-01.zipscene.com -L 27020:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
 # tig
 alias t='tig status'
@@ -164,11 +186,3 @@ alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
 # npmrc
 alias npm-rjh='ln -sf ~/.npmrc-rjh ~/.npmrc'
 alias npm-zs='ln -sf ~/.npmrc-zs ~/.npmrc'
-
-# automated iterm2 injected script
-source ~/.iterm2_shell_integration.zsh
-
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
