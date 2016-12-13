@@ -5,48 +5,68 @@ let mapleader = ","
 let barposition = "bottom"
 let highlight = "#ffff00"
 let typelinkhintsdelay = 0
-let hintcharacters = "fsawerjkiop"
+let hintcharacters = "jklfdsl;sa"
 
 " Match my vim settings here for muscle memory
 map ; :
 
 " Scrolling
 map <C-u> scrollPageUp
-map <M-k> scrollPageUp
-unmap u
-map <C-d> scrollPageDown
-map <M-j> scrollPageDown
-unmap d
 map <C-k> scrollPageUp
+map <C-b> scrollFullPageUp
+map <C-d> scrollPageDown
 map <C-j> scrollPageDown
 map <C-f> scrollFullPageDown
-map <C-b> scrollFullPageUp
 
-" Tabs
+" Tab Navigation
 map <C-h> previousTab
 map <C-l> nextTab
-map D closeTab
+unmap b
+unmap B
+map b :buffer<Space>
+
+" Tab Manipulation
+unmap u
 map u lastClosedTab
+unmap gR
+map R reloadTabUncached
+unmap d
+map d tabdetach
+map D tabattach
 
 " Inputs
 map i goToInput
 map a goToInput
 
-unmap gR
-map R reloadTabUncached
-
+" Toggle Cvim on page
 unmap <A-z>
 map <C-z> toggleCVim
 
+" Restart Chrome
 unmap zr
 map <C-r> :chrome://restart<CR>
-
-unmap b
-unmap B
-map b :buffer<Space>
 
 let completionengines = ["google", "amazon"]
 let searchalias g = 'google'
 let searchalias a = 'amazon'
 
-let blacklists = ["chrome://*","https://mail.google.com/*","https://www.google.com/calendar/*","https://issues.zipscene.com/*","http://www.newsblur.com/*","http://www.trello.com/*","https://trello.com/*","https://tickets.axs.com/*","https://input.club/*","http://www.keyboardtester.com/*","https://inbox.google.com/*"]
+let blacklists = ["chrome://*","https://mail.google.com/*","https://www.google.com/calendar/*","http://www.newsblur.com/*","*://trello.com/*","https://tickets.axs.com/*","https://input.club/*","http://www.keyboardtester.com/*","https://inbox.google.com/*"]
+
+" Github has some hotkeys we want to use instead of our own
+site '*://github.com/*' {
+  " TODO: Could do this, but I don't need the j/k navigation on github because I can jump with `f`
+  " "unmap j
+  " unmap <C-j>
+  " map <C-j> scrollDown
+  " unmap k
+  " unmap <C-k>
+  " map <C-k> scrollUp
+
+  unmap ?
+  unmap x
+  unmap o
+  unmap l
+  unmap m
+  unmap a
+  unmap r
+}
