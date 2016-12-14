@@ -55,7 +55,7 @@ let blacklists = ["chrome://*","https://mail.google.com/*","https://www.google.c
 " Github has some hotkeys we want to use instead of our own
 site '*://github.com/*' {
   " TODO: Could do this, but I don't need the j/k navigation on github because I can jump with `f`
-  " "unmap j
+  " unmap j
   " unmap <C-j>
   " map <C-j> scrollDown
   " unmap k

@@ -186,3 +186,5 @@ alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
 # npmrc
 alias npm-rjh='ln -sf ~/.npmrc-rjh ~/.npmrc'
 alias npm-zs='ln -sf ~/.npmrc-zs ~/.npmrc'
+
+source /usr/local/share/zsh/site-functions/_aws
