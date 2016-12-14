@@ -30,9 +30,9 @@ unmap u
 map u lastClosedTab
 unmap gR
 map R reloadTabUncached
-unmap d
-map d tabdetach
-map D tabattach
+map <C-d> :tabdetach<CR>
+map <C-s> :tabattach<Space>
+map <C-p> :togglepin<CR>
 
 " Inputs
 map i goToInput
