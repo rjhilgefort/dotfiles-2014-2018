@@ -3,6 +3,7 @@
 # Setup
 brew tap caskroom/cask
 brew tap caskroom/versions
+brew tap caskroom/fonts
 brew tap alehouse/homebrew-unofficial
 
 ###############################################################################
@@ -41,6 +42,7 @@ brew cask install robomongo 2> /dev/null
 brew cask install gitter 2> /dev/null
 # brew cask install sublime-text3 2> /dev/null
 # brew cask install atom 2> /dev/null
+brew cask install font-fira-code
 
 ###############################################################################
 # Gaming
