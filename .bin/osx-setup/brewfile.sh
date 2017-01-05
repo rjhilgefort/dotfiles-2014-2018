@@ -83,6 +83,7 @@ brew install ranger
 brew install w3m
 brew install markdown
 brew install trash
+brew install htop
 
 # Ruby
 brew install rbenv

@@ -12,4 +12,6 @@ npm install -g bower
 npm install -g gulp-cli
 npm install -g webpack
 
+npm install -g mocha
+
 npm install -g git-labelmaker

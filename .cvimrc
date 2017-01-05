@@ -1,4 +1,4 @@
-set nosmoothscroll
+set smoothscroll
 
 " General settings
 let mapleader = ","
