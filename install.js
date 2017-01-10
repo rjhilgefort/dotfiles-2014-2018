@@ -9,10 +9,6 @@ const chalk = require('chalk');
 
 const RE = require('./_lib/ramda-extras');
 
-// TODO:
-// - Add verbose option, and flag
-// - Refactor from a blacklist, to a whitelist
-
 program
   .version('0.0.2')
   .usage("[options]")
@@ -78,16 +74,15 @@ if (!program.silent) {
 ///////////////////////////////////////////////////////////////////////////////
 echoSection('Make sure submodules are installed');
 ///////////////////////////////////////////////////////////////////////////////
-
 (() => {
   if (!program.update) return S.echo('Skipping. Use `-u` flag to do so.');
   S.exec('git submodule update --init --recursive');
 })();
 
+
 ///////////////////////////////////////////////////////////////////////////////
 echoSection('Link base16-vim schemes to .vim dir');
 ///////////////////////////////////////////////////////////////////////////////
-
 (() => {
   return S.echo('Skipping. TODO: Decide what to do with this.');
 
@@ -104,7 +99,6 @@ echoSection('Link base16-vim schemes to .vim dir');
 echoSection('.prezto prompt installs');
 ///////////////////////////////////////////////////////////////////////////////
 // TODO: Loop over all prompts in `source` and link. Hardcode the installs for now...
-
 (() => {
   return S.echo('Skipping. TODO: Make sure this works...');
 
@@ -119,7 +113,6 @@ echoSection('.prezto prompt installs');
 ///////////////////////////////////////////////////////////////////////////////
 echoSection('Link items at root of dotfiles project');
 ///////////////////////////////////////////////////////////////////////////////
-
 (() => {
   let dest;
   let projectFiles = [
@@ -128,6 +121,7 @@ echoSection('Link items at root of dotfiles project');
     '.DS_Store', '_lib'
   ];
   let special = ['.spacemacs', '.adobe_photoshop'];
+  // TODO: Refactor from a blacklist, to a whitelist
   let blacklist = _.union(projectFiles, special);
 
   _.forEach(S.ls('-A', __dirname), (nodeName) => {
@@ -163,7 +157,6 @@ echoSection('Link items at root of dotfiles project');
 echoSection('Handle Special: Spacemacs');
 ///////////////////////////////////////////////////////////////////////////////
 // TODO: Make `ln` function that respects conflict directive (like in above loop)
-
 (() => {
   S.ln('-sf', `${__dirname}/.spacemacs/.spacemacs`,               `${S.env.HOME}/.spacemacs`);
   S.ln('-sf', `${__dirname}/.spacemacs/rjhilgefort`,              `${S.env.HOME}/.emacs.d/private/rjhilgefort`);
@@ -176,7 +169,6 @@ echoSection('Handle Special: Adobe Photoshop Scripts');
 ///////////////////////////////////////////////////////////////////////////////
 // TODO: Make method out of the special pattern
 // TODO: loop over dotfiles photoshop directory and link all
-
 (() => {
   const photoshopDir = "/Applications/Adobe Photoshop CS6/Presets/Scripts";
   const photoshopFile =  + `${photoshopDir}/BatchCropAndStriaghten.jsx`;
