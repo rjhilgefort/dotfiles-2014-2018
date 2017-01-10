@@ -4,7 +4,7 @@
   "description": "@rjhilgefort dotfiles",
   "main": "install.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "./install.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
     "inquirer": "^2.0.0",
     "lodash": "^4.17.2",
     "ramda": "^0.22.1",
-    "shelljs": "^0.7.5"
+    "shelljs": "^0.7.5",
+    "treis": "^2.3.16"
   }
 }
