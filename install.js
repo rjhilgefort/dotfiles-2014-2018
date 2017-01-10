@@ -140,7 +140,7 @@ S_ln = R.wrap(S_ln, (fn, source, dest) => {
     }
   }
 
-  S_ln(source, dest);
+  fn(source, dest);
 });
 
 
