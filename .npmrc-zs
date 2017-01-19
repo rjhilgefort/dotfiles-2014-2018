@@ -3,4 +3,3 @@ init.author.email=rob.hilgefort@zipscene.com
 registry=https://npm.zipscene.com/
 always-auth=true
 ca=null
-//npm.zipscene.com/:_authToken="HhXyD2+oCbyM3yAKqohAV0V1owGCgBXkunqH9agEObk="
