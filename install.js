@@ -95,7 +95,7 @@ const styleExistingAction = R.pipe(
     )
   )
 );
-const echoWithExistingActionPrefix = echo._withPrefix(styleExistingAction, R.__, chalk.yellow);
+const echoWithExistingActionPrefix = echo._withPrefix(styleExistingAction, R.__, chalk.yellow, R.__);
 const existingActionsEchoFunctions = R.pipe(
   R.indexBy(R.identity),
   R.map(echoWithExistingActionPrefix)
