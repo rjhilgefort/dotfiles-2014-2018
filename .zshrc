@@ -167,17 +167,10 @@ alias ssh-gd='ssh robhilgefort@97.74.249.1'
 alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
 alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
 alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
-# ssh tunnel on localhost:27019 to do-personal for mongo
-alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
-# ZS ssh alias, left in for reference
-# alias ssh-zs-qa='ssh rhilgefort@qa.zipscene.com'
-# alias ssh-zs-stage='ssh rhilgefort@50.17.140.74'
-# alias ssh-zs-dmp-stage='ssh rhilgefort@dmp-stage-b-01.zipscene.com'
-# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
-# alias ssh-zs-qa-tunnel='ssh -f rhilgefort@qa.zipscene.com -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
-# ssh tunnel on localhost:27018 to qa.zipscene.com for mongo
-# alias ssh-zs-dmp-stage-tunnel='ssh -f rhilgefort@dmp-stage-b-01.zipscene.com -L 27020:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
+# ssh tunnel on localhost:{localPort} to {remote} for {remoteServiceExposedonPort}
+# alias ssh-tunnel='ssh -f {user}@{remote} -L {localPort}:localhost:{remotePort} -i /Users/rjhilgefort/.ssh/id_rsa -N'
+alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
 # tig
 alias t='tig status'
@@ -191,9 +184,5 @@ alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter f
 
 # fix tmux line
 alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
-
-# npmrc
-alias npm-rjh='ln -sf ~/.npmrc-rjh ~/.npmrc'
-alias npm-zs='ln -sf ~/.npmrc-zs ~/.npmrc'
 
 source /usr/local/share/zsh/site-functions/_aws

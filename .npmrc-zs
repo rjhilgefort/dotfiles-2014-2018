@@ -1,5 +1,0 @@
-init.author.name=Rob Hilgefort
-init.author.email=rob.hilgefort@zipscene.com
-registry=https://npm.zipscene.com/
-always-auth=true
-ca=null
