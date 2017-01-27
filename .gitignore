@@ -6,8 +6,8 @@ node_modules
 .vim/.netrwhist
 .vim/swaps/*
 .vim/bundle/*
-.vim/sessions/*
 !.vim/bundle/neobundle.vim
+.vim/sessions/*
 .vim/colors/base16*
 
 # sublime text

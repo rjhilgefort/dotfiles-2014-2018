@@ -80,16 +80,25 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 alias c="tr -d '\n' | pbcopy"
 
 # THE most common commands get a short alias
+# General
 alias cl="clear"
-alias b="brew"
-alias bc="brew cask"
 alias g="git"
-alias no="node"
+# Homebrew
+alias b="brew"
+alias bs="brew search"
+alias bi="brew install"
+alias bc="brew cask"
+alias bcs="brew cask search"
+alias bci="brew cask install"
+# NPM
 alias n="npm"
+alias ni="npm install"
+alias nis="npm install --save"
+alias nisd="npm install --save-dev"
 alias nr="npm run"
 alias nrs="npm run start"
 alias nrl="npm run lint"
-
+alias nrlf="npm run lint-fix"
 # Emacs
 alias emacs="emacs -nw"
 alias em="emacs"
