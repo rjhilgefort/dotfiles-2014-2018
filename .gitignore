@@ -1,6 +1,7 @@
 node_modules
 .tmux.conf.local
 .npm-debug.log
+.npmrc
 
 # vim
 .vim/.netrwhist

@@ -58,8 +58,10 @@ slate.bindAll({
     'h': [
       $('barResize', 'left', 2),
       $('barResize', 'left', 1.5),
+      $('barResize', 'left', 1.335), // This is 3/4 of the screen
+      $('barResize', 'left', 4),
       $('barResize', 'left', 3)
-      // $('center',    'left', 3, 3)
+      // $('center', 'left', 3, 3)
     ],
 
     /*
@@ -84,8 +86,10 @@ slate.bindAll({
     'l': [
       $('barResize', 'right', 2),
       $('barResize', 'right', 1.5),
+      $('barResize', 'right', 1.335),
+      $('barResize', 'right', 4),
       $('barResize', 'right', 3)
-      // $('center',    'right', 3, 3)
+      // $('center', 'right', 3, 3)
     ],
 
     // Corners
@@ -142,7 +146,7 @@ slate.bindAll({
     '3': $('toss', '2', 'resize'),
 
     // Utility functions
-    'f2': 'relaunch',
+    'r': 'relaunch',
     'z': 'undo',
     // 'tab': 'hint',
 
