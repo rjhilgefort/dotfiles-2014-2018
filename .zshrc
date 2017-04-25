@@ -99,6 +99,8 @@ alias nr="npm run"
 alias nrs="npm run start"
 alias nrl="npm run lint"
 alias nrlf="npm run lint-fix"
+alias nrf="npm run flow"
+alias nrt="npm run test"
 # Emacs
 alias emacs="emacs -nw"
 alias em="emacs"

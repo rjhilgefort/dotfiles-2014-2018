@@ -15,3 +15,6 @@ npm install -g webpack
 npm install -g mocha
 
 npm install -g git-labelmaker
+
+# https://github.com/semantic-release/semantic-release
+npm install -g semantic-release-cli
