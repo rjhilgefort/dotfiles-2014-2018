@@ -29,6 +29,34 @@ var tossChain = [
   $('toss', '2', 'resize')
 ];
 
+// Sizes!
+// $('barResize', 'left', 2),     // 50%
+// $('barResize', 'left', 1.5),   // 66%
+// $('barResize', 'left', 1.335), // 75%
+// $('barResize', 'left', 4),     // 25%
+// $('barResize', 'left', 3),     // 33%
+
+const generateSide = (area) => [
+  $('barResize', area, 2),
+  $('barResize', area, 1.5),
+  $('barResize', area, 1.335),
+  $('barResize', area, 4),
+  $('barResize', area, 3),
+];
+
+const generateCorner = (area) => [
+  $('corner', area),
+  $('corner', area, 1.5),
+  $('corner', area, 3),
+  $('corner', area, 4),
+  // $('corner', area, 3, 3),
+];
+
+const generateCenter = (area) => [
+  $('center', area),
+  // $('center', area, 3, 3),
+];
+
 // Bindings
 slate.bindAll({
 
@@ -50,93 +78,33 @@ slate.bindAll({
       'y': [$.focus('Airmail'), $.focus('Sunrise Calendar')],
       'u': [$.focus('Wunderlist')],
       'i': [$.focus('Spotify'), $.focus('Sonos')],
-      'o': $.focus('Finder')
+      'o': $.focus('Finder'),
     },
 
-
     // Bars
-    'h': [
-      $('barResize', 'left', 2),
-      $('barResize', 'left', 1.5),
-      $('barResize', 'left', 1.335), // This is 3/4 of the screen
-      $('barResize', 'left', 4),
-      $('barResize', 'left', 3)
-      // $('center', 'left', 3, 3)
-    ],
-
-    /*
-     * For vertical monitory youtube:
-     * - With chrome bookmark bar:    j-2.787 k-1.385
-     * - Without chrome bookmark bar: j-2.8875 k-1.3875
-     */
-    'j': [
-      $('barResize', 'bottom', 2),
-      $('barResize', 'bottom', 1.5),
-      $('barResize', 'bottom', 3)
-      // $('barResize', 'bottom', 2.8875)
-    ],
-
-    'k': [
-      $('barResize', 'top', 2),
-      $('barResize', 'top', 1.5),
-      $('barResize', 'top', 3)
-      // $('barResize', 'top', 1.3875)
-    ],
-
-    'l': [
-      $('barResize', 'right', 2),
-      $('barResize', 'right', 1.5),
-      $('barResize', 'right', 1.335),
-      $('barResize', 'right', 4),
-      $('barResize', 'right', 3)
-      // $('center', 'right', 3, 3)
-    ],
+    'h': generateSide('left'),
+    'j': $('barResize', 'bottom', 2),
+    'k': $('barResize', 'top', 2),
+    'l': generateSide('right'),
 
     // Corners
-    'y': [
-      $('corner', 'top-left'),
-      $('corner', 'top-left', 1.5),
-      $('corner', 'top-left', 3, 2),
-      $('corner', 'top-left', 3, 3)
-    ],
-
-    'i': [
-      $('corner', 'top-right'),
-      $('corner', 'top-right', 1.5),
-      $('corner', 'top-right', 3, 2),
-      $('corner', 'top-right', 3, 3)
-    ],
-
-    'b': [
-      $('corner', 'bottom-left'),
-      $('corner', 'bottom-left', 1.5),
-      $('corner', 'bottom-left', 3, 2),
-      $('corner', 'bottom-left', 3, 3)
-    ],
-
-    'm': [
-      $('corner', 'bottom-right'),
-      $('corner', 'bottom-right', 1.5),
-      $('corner', 'bottom-right', 3, 2),
-      $('corner', 'bottom-right', 3, 3)
-    ],
+    'y': generateCorner('top-left'),
+    'i': generateCorner('top-right'),
+    'b': generateCorner('bottom-left'),
+    'm': generateCorner('bottom-right'),
 
     // Centers
-    'u': [
-      $('center', 'top'),
-      $('center', 'top', 3, 3)
-    ],
-
-    'n': [
-      $('center', 'bottom'),
-      $('center', 'bottom', 3, 3)
-    ],
+    'u': generateCenter('top'),
+    'n': generateCenter('bottom'),
 
     // Maximize
     'return': [
       $('barResize', 'top', 1),
-      $('center', 'center', 1.25, 1.25)
+      $('center', 'center', 1.25, 1.25),
     ],
+
+    // 'space': slate.operation('toggle', { app: ['Google Chrome'] }),
+    'space': $.focus('Google Chrome'),
 
     // Throw to monitor
     '`': tossChain,
@@ -153,7 +121,7 @@ slate.bindAll({
   },
 
   // Show Slate hints
-  'esc:cmd': 'hint'
+  'esc:cmd': 'hint',
 
 });
 
