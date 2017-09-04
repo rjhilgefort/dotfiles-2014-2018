@@ -80,6 +80,7 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 alias c="tr -d '\n' | pbcopy"
 
 # THE most common commands get a short alias
+alias lc="colorsls -r"
 # General
 alias cl="clear"
 alias g="git"
@@ -98,7 +99,7 @@ alias nisd="npm install --save-dev"
 alias nr="npm run"
 alias nrs="npm run start"
 alias nrl="npm run lint"
-alias nrlf="npm run lint-fix"
+alias nrlf="npm run lint:fix"
 alias nrf="npm run flow"
 alias nrt="npm run test"
 # Emacs
@@ -169,10 +170,12 @@ alias ssh-gd='ssh robhilgefort@97.74.249.1'
 alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
 alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
 alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
+alias ssh-losant-staging='ssh rjhilgefort@staging-2.structure.land'
 
 # ssh tunnel on localhost:{localPort} to {remote} for {remoteServiceExposedonPort}
 # alias ssh-tunnel='ssh -f {user}@{remote} -L {localPort}:localhost:{remotePort} -i /Users/rjhilgefort/.ssh/id_rsa -N'
 alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
+alias ssh-losant-staging-tunnel='ssh -f rjhilgefort@staging-2.structure.land -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
 # tig
 alias t='tig status'
@@ -188,3 +191,4 @@ alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter f
 alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
 
 source /usr/local/share/zsh/site-functions/_aws
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
