@@ -55,3 +55,6 @@
 [submodule ".hyper"]
 	path = .hyper
 	url = git@github.com:rjhilgefort/.hyper.git
+[submodule ".src/react-codemod"]
+	path = .src/react-codemod
+	url = https://github.com/reactjs/react-codemod.git
