@@ -58,3 +58,6 @@
 [submodule ".src/react-codemod"]
 	path = .src/react-codemod
 	url = https://github.com/reactjs/react-codemod.git
+[submodule "nvim"]
+	path = .config/nvim
+	url = https://github.com/SpaceVim/SpaceVim.git
