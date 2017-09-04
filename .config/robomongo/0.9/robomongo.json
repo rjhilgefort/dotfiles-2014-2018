@@ -44,52 +44,19 @@
    }
   },
   {
-   "connectionName" : "zs-dmp-stage",
+   "connectionName" : "do-personal",
    "credentials" : [
     {
      "databaseName" : "admin",
      "enabled" : false,
-     "mechanism" : "SCRAM-SHA-1",
+     "mechanism" : "MONGODB-CR",
      "userName" : "",
      "userPassword" : ""
     }
    ],
    "defaultDatabase" : "",
    "serverHost" : "localhost",
-   "serverPort" : 27020,
-   "ssh" : {
-    "askPassword" : false,
-    "enabled" : false,
-    "host" : "",
-    "method" : "publickey",
-    "passphrase" : "",
-    "port" : 22,
-    "privateKeyFile" : "",
-    "publicKeyFile" : "",
-    "userName" : "",
-    "userPassword" : ""
-   },
-   "ssl" : {
-    "allowInvalidCertificates" : false,
-    "allowInvalidHostnames" : false,
-    "askPassphrase" : false,
-    "caFile" : "",
-    "crlFile" : "",
-    "pemKeyFile" : "",
-    "pemPassPhrase" : "",
-    "sslEnabled" : false,
-    "useAdvancedOptions" : false,
-    "usePemFile" : false
-   }
-  },
-  {
-   "connectionName" : "qa.zipscene.com",
-   "credentials" : [
-
-   ],
-   "defaultDatabase" : "",
-   "serverHost" : "localhost",
-   "serverPort" : 27018,
+   "serverPort" : 27019,
    "ssh" : {
     "askPassword" : false,
     "enabled" : false,
@@ -116,7 +83,7 @@
    }
   },
   {
-   "connectionName" : "do-personal",
+   "connectionName" : "losant:staging",
    "credentials" : [
     {
      "databaseName" : "admin",
@@ -128,7 +95,7 @@
    ],
    "defaultDatabase" : "",
    "serverHost" : "localhost",
-   "serverPort" : 27019,
+   "serverPort" : 27018,
    "ssh" : {
     "askPassword" : false,
     "enabled" : false,
