@@ -8,6 +8,7 @@
       "markdown-format"
     ]
     projectHome: "/Users/rjhilgefort/Projects"
+    telemetryConsent: "limited"
     themes: [
       "atom-dark-ui"
       "tomorrow-night-eighties-syntax"

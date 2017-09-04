@@ -26,6 +26,7 @@ node_modules
 .atom/packages
 .atom/storage
 .atom/.apm
+.atom/.node-gyp
 
 # .config
 .config/configstore/update-notifier-bower.json
