@@ -83,8 +83,8 @@ slate.bindAll({
 
     // Bars
     'h': generateSide('left'),
-    'j': $('barResize', 'bottom', 2),
-    'k': $('barResize', 'top', 2),
+    // 'j': $('barResize', 'bottom', 2),
+    // 'k': $('barResize', 'top', 2),
     'l': generateSide('right'),
 
     // Corners
@@ -96,6 +96,10 @@ slate.bindAll({
     // Centers
     'u': generateCenter('top'),
     'n': generateCenter('bottom'),
+
+    // Nudge
+    'j': $('move', 2, 0),
+    'k': $('move', 0, 2),
 
     // Maximize
     'return': [
