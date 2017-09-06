@@ -1,0 +1,77 @@
+#!/usr/bin/env node
+
+// https://github.com/jiahaog/nativefier/blob/master/docs/api.md#programmatic-api
+
+const Tr = require('treis')
+const program = require('commander')
+const Promise = require('bluebird')
+const { exec } = require('../_lib/shelljs')
+const {
+  pipe, prop, compose, pick, merge, zipObj, __,
+  when, complement, equals, length
+} = require('ramda')
+
+const nativefier =
+  compose(
+    Promise.promisify,
+    prop('default')
+  )(require('nativefier'))
+
+const fatalError =
+  pipe(
+    console.error,
+    process.exit
+  )
+
+const errorWhenNotLength2 =
+  message =>
+    when(
+      pipe(
+        length,
+        complement(equals(2))
+      ),
+      () => fatalError(message)
+    )
+
+program
+  .usage("<name> <url>")
+  .parse(process.argv)
+
+const args =
+  pipe(
+    prop('args'),
+    errorWhenNotLength2('Not enough args! Use "--help"'),
+    zipObj(['name', 'targetUrl'])
+  )(program)
+
+const DEST_ROOT = '/Applications'
+const OS_POSTFIX = '-darwin-x64'
+
+const destFolder =
+  compose(
+    (name) => `${DEST_ROOT}/${name}${OS_POSTFIX}`,
+    prop('name')
+  )(args)
+
+const destApp =
+  compose(
+    (name) => `${destFolder}/${name}.app`,
+    prop('name')
+  )(args)
+
+const createApp =
+  pipe(
+    merge(__, {
+      out: DEST_ROOT,
+      fastQuit: true,
+      overwrite: true,
+    }),
+    nativefier
+  )
+
+// TODO: Remove prexisting app
+createApp(args)
+  .then(() => {
+    exec(`sudo mv ${destApp} ${DEST_ROOT}`)
+    exec(`sudo rm -rf ${destFolder}`)
+  })
