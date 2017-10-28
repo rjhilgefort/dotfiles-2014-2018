@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const S = require('shelljs');
-const R = require('Ramda');
+const R = require('ramda');
 const _ = require('lodash');
 const program = require('commander');
 const chalk = require('chalk');

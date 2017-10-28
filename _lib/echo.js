@@ -1,4 +1,4 @@
-const R = require('Ramda');
+const R = require('ramda');
 const chalk = require('chalk');
 const assert = require('assert');
 const pad = require('./pad');
