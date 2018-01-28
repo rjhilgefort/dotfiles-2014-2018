@@ -4,7 +4,7 @@
   "description": "@rjhilgefort dotfiles",
   "main": "install.js",
   "scripts": {
-    "install": "./install.js"
+    "bootstrap": "./install.js"
   },
   "repository": {
     "type": "git",

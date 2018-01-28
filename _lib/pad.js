@@ -1,4 +1,4 @@
-const R = require('Ramda');
+const R = require('ramda');
 const assert = require('assert');
 
 
