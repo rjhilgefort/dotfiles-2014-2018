@@ -19,8 +19,7 @@ fi
 # tmux-fix-status-line
 
 # Specify node version to use
-# nvm use lts/boron
-nvm use v6.11.2
+nvm use v8.9.0
 
 # Clean prompt to start
 clear

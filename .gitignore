@@ -3,6 +3,8 @@ node_modules
 .npm-debug.log
 .npmrc
 
+.zprofile-private
+
 # vim
 .vim/.netrwhist
 .vim/swaps/*
@@ -21,21 +23,15 @@ node_modules
 .sublime-user/Package\ Control.ca-certs/
 
 # atom
-.atom/.gitignore
-.atom/compile-cache
-.atom/packages
-.atom/storage
-.atom/.apm
-.atom/.node-gyp
+.atom
+!.atom/*.cson
 
 # .config
-.config/configstore/update-notifier-bower.json
-.config/configstore/update-notifier-bower.yml
-.config/configstore/insight-bower.json
-.config/configstore/insight-yo.json
-.config/configstore/update-notifier-yo.json
-.config/ranger/bookmarks
-.config/ranger/history
+.config/configstore
+.config/ranger
+.config/NzbDrone
+.config/yarn
+.config/.mono
 
 # .karabiner.d
 .karabiner.d/*

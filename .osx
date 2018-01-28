@@ -6,3 +6,6 @@ defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 
 # Remove finder global hotkeys
 defaults write com.apple.Finder NSUserKeyEquivalents -dict-add "New Smart Folder" nil
+
+# Change Screen Shot Location
+defaults write com.apple.screencapture location /Users/rjhilgefort/Desktop

@@ -59,6 +59,8 @@ source ~/.iterm2_shell_integration.zsh
 # NVM Setup
 export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 ###############################################################################
 # Alias
@@ -100,8 +102,22 @@ alias nr="npm run"
 alias nrs="npm run start"
 alias nrl="npm run lint"
 alias nrlf="npm run lint:fix"
+alias nrlw="npm run lint:watch"
+alias nrlc="npm run lint:changed"
 alias nrf="npm run flow"
 alias nrt="npm run test"
+# Yarn
+alias y="yarn"
+alias yi="yarn install"
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias yr="yarn run"
+alias yrs="yarn run start"
+alias yrl="yarn run lint"
+alias yrlf="yarn run lint:fix"
+alias yrlw="yarn run lint:watch"
+alias yrlc="yarn run lint:changed"
+alias yrt="yarn run test"
 # Emacs
 alias emacs="emacs -nw"
 alias em="emacs"
@@ -137,6 +153,9 @@ alias afk='afk-screen'
 # see what apps are currently using the network
 alias appsoninternet='sudo lsof -P -i -n | cut -f 1 -d " " | uniq'
 
+# Flush DNS
+alias flush-dns='sudo killall -HUP mDNSResponder'
+
 # list what ports are currently open
 alias listopenports='sudo lsof -i -P | grep -i "listen"'
 
@@ -165,16 +184,40 @@ alias jopen='fasd -f -e open'
 alias jcat='fasd -f -e cat'
 alias jless='fasd -f -e less'
 
+# docker
+alias d='docker'
+alias d-containers-stop-all='docker stop $(docker ps -a -q)'
+alias d-containers-remove-all='docker rm $(docker ps -a -q)'
+alias d-images-remove-all='docker rmi $(docker images -q)'
+alias d-volume-remove-all='docker volume rm $(docker volume ls -qf dangling=true)'
+d-exec() { docker exec -it $1 bash; }
+
+# docker-compose
+alias dc='docker-compose'
+
 # ssh shortcuts
+alias ssh-nas='ssh -p 24 rjhilgefort@10.0.1.100'
 alias ssh-gd='ssh robhilgefort@97.74.249.1'
 alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
 alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
 alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
-alias ssh-losant-staging='ssh rjhilgefort@staging-2.structure.land'
+
+alias ssh-losant-canary='ssh rjhilgefort@canary.structure.land'
+alias ssh-losant-staging-1='ssh rjhilgefort@staging-1.structure.land'
+alias ssh-losant-staging-2='ssh rjhilgefort@staging-2.structure.land'
+alias ssh-losant-release-1='ssh rjhilgefort@release-1.structure.land'
+alias ssh-losant-release-2='ssh rjhilgefort@release-2.structure.land'
+alias ssh-losant-prod-mongo='ssh rjhilgefort@prod-mongo-1a.structure.land'
+alias ssh-losant-prod-1='ssh rjhilgefort@prod-docker-1.structure.land'
+alias ssh-losant-prod-2='ssh rjhilgefort@prod-docker-2.structure.land'
+alias ssh-losant-prod-3='ssh rjhilgefort@prod-docker-3.structure.land'
+alias ssh-losant-prod-4='ssh rjhilgefort@prod-docker-4.structure.land'
+alias ssh-losant-prod-5='ssh rjhilgefort@prod-docker-5.structure.land'
 
 # ssh tunnel on localhost:{localPort} to {remote} for {remoteServiceExposedonPort}
 # alias ssh-tunnel='ssh -f {user}@{remote} -L {localPort}:localhost:{remotePort} -i /Users/rjhilgefort/.ssh/id_rsa -N'
 alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
+# TODO: Doesn't work, need to `mongo url`
 alias ssh-losant-staging-tunnel='ssh -f rjhilgefort@staging-2.structure.land -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
 # tig
@@ -191,4 +234,5 @@ alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter f
 alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
 
 source /usr/local/share/zsh/site-functions/_aws
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=/Users/rjhilgefort/.local/bin:$PATH
