@@ -163,9 +163,6 @@ alias listopenports='sudo lsof -i -P | grep -i "listen"'
 alias mount-drobo="mount -t afp afp://rjhilgefort@192.168.200.44/Home ~/Drobo"
 # alias mountdrobo="mount -t smbfs //rjhilgefort@192.168.200.44/Home ~/Drobo"
 
-# list all git submodules in the current directory
-alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
-
 # Mac dock mods - change the behavior of the dock
 alias dock-reset='defaults delete com.apple.dock autohide-delay && killall Dock' # Back to normal
 alias dock-meh='defaults write com.apple.dock autohide-delay -float 2 && killall Dock' # 2 seconds
@@ -196,7 +193,7 @@ d-exec() { docker exec -it $1 bash; }
 alias dc='docker-compose'
 
 # ssh shortcuts
-alias ssh-nas='ssh -p 24 rjhilgefort@10.0.1.100'
+alias ssh-nas='ssh -p 24 rjhilgefort@192.168.86.100'
 alias ssh-gd='ssh robhilgefort@97.74.249.1'
 alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
 alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
@@ -227,6 +224,7 @@ alias t='tig status'
 alias r='ranger'
 
 # git
+alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
 alias git-merge-complete='git add -A && git commit --no-edit && git pp'
 alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git pp'
 

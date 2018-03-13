@@ -1,0 +1,5 @@
+# Executes commands at login pre-zshrc, after .zprofile
+
+# Losant docker cloud
+export DOCKERCLOUD_USER=''
+export DOCKERCLOUD_PASS=''
