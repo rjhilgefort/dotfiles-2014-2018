@@ -23,7 +23,7 @@ slate.configAll({
   undoOps: ['active-snapshot', 'chain', 'grid', 'layout', 'move', 'resize', 'sequence', 'shell', 'push']
 });
 
-var tossChain = [
+let tossChain = [
   $('toss', '0', 'resize'),
   $('toss', '1', 'resize'),
   $('toss', '2', 'resize')
@@ -31,24 +31,46 @@ var tossChain = [
 
 // Sizes!
 // $('barResize', 'left', 2),     // 50%
+// $('barResize', 'left', 1.666), // 60%
+// $('barResize', 'left', 2.5),   // 40%
 // $('barResize', 'left', 1.5),   // 66%
+// $('barResize', 'left', 3),     // 33%
 // $('barResize', 'left', 1.335), // 75%
 // $('barResize', 'left', 4),     // 25%
-// $('barResize', 'left', 3),     // 33%
+
+const size = {
+  _25: 100 / 25,
+  _33: 100 / 33,
+  _40: 100 / 40,
+  _50: 100 / 50,
+  _60: 100 / 60,
+  _66: 100 / 66,
+  _75: 100 / 75,
+  _100: 100 / 100,
+};
+
+const fwdioo = action => area =>
 
 const generateSide = (area) => [
-  $('barResize', area, 2),
-  $('barResize', area, 1.5),
-  $('barResize', area, 1.335),
-  $('barResize', area, 4),
-  $('barResize', area, 3),
+  $('barResize', area, size._50),
+  $('barResize', area, size._25),
+  $('barResize', area, size._33),
+  $('barResize', area, size._40),
+  $('barResize', area, size._50),
+  $('barResize', area, size._60),
+  $('barResize', area, size._66),
+  $('barResize', area, size._75),
 ];
 
 const generateCorner = (area) => [
-  $('corner', area),
-  $('corner', area, 1.5),
-  $('corner', area, 3),
-  $('corner', area, 4),
+  $('corner', area, size._50),
+  $('corner', area, size._25),
+  $('corner', area, size._33),
+  $('corner', area, size._40),
+  $('corner', area, size._50),
+  $('corner', area, size._60),
+  $('corner', area, size._66),
+  $('corner', area, size._75),
   // $('corner', area, 3, 3),
 ];
 

@@ -54,13 +54,22 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # source ~/.bin/tmuxinator.zsh
 
 # automated iterm2 injected script
-source ~/.iterm2_shell_integration.zsh
+# source ~/.iterm2_shell_integration.zsh
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
 # NVM Setup
 export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+
+source /usr/local/share/zsh/site-functions/_aws
+
+export PATH=/Users/rjhilgefort/.local/bin:$PATH
 
 ###############################################################################
 # Alias
@@ -119,8 +128,7 @@ alias yrlw="yarn run lint:watch"
 alias yrlc="yarn run lint:changed"
 alias yrt="yarn run test"
 # Emacs
-alias emacs="emacs -nw"
-alias em="emacs"
+alias em="emacs -nw"
 alias ed="emacs --daemon"
 alias ec="emacsclient -c"
 alias e="ec"
@@ -197,25 +205,12 @@ alias ssh-nas='ssh -p 24 rjhilgefort@192.168.86.100'
 alias ssh-gd='ssh robhilgefort@97.74.249.1'
 alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
 alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
-alias ssh-pif='ssh robhilgefort@02d005f.netsolhost.com'
 
-alias ssh-losant-canary='ssh rjhilgefort@canary.structure.land'
-alias ssh-losant-staging-1='ssh rjhilgefort@staging-1.structure.land'
-alias ssh-losant-staging-2='ssh rjhilgefort@staging-2.structure.land'
-alias ssh-losant-release-1='ssh rjhilgefort@release-1.structure.land'
-alias ssh-losant-release-2='ssh rjhilgefort@release-2.structure.land'
-alias ssh-losant-prod-mongo='ssh rjhilgefort@prod-mongo-1a.structure.land'
-alias ssh-losant-prod-1='ssh rjhilgefort@prod-docker-1.structure.land'
-alias ssh-losant-prod-2='ssh rjhilgefort@prod-docker-2.structure.land'
-alias ssh-losant-prod-3='ssh rjhilgefort@prod-docker-3.structure.land'
-alias ssh-losant-prod-4='ssh rjhilgefort@prod-docker-4.structure.land'
-alias ssh-losant-prod-5='ssh rjhilgefort@prod-docker-5.structure.land'
+alias ssh-charter-bu='ssh ubuntu@ec2-18-188-21-221.us-east-2.compute.amazonaws.com -i DynEx-Key.pem'
 
 # ssh tunnel on localhost:{localPort} to {remote} for {remoteServiceExposedonPort}
 # alias ssh-tunnel='ssh -f {user}@{remote} -L {localPort}:localhost:{remotePort} -i /Users/rjhilgefort/.ssh/id_rsa -N'
 alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
-# TODO: Doesn't work, need to `mongo url`
-alias ssh-losant-staging-tunnel='ssh -f rjhilgefort@staging-2.structure.land -L 27018:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
 
 # tig
 alias t='tig status'
@@ -231,6 +226,3 @@ alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter f
 # fix tmux line
 alias tmux-fix-status-line='vim ~/dotfiles/README.md -c "q"'
 
-source /usr/local/share/zsh/site-functions/_aws
-
-export PATH=/Users/rjhilgefort/.local/bin:$PATH
